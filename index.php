@@ -5,8 +5,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Marketplace</title>
 
-    <meta name="author" content="Ashutosh Singh">
-    
     <!-- important for responsiveness remove to make your site non responsive. -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -36,17 +34,15 @@
     <link href="assets/css/owl.carousel.css" rel="stylesheet">
     <link href="assets/css/owl.theme.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" media="all">
-        
 
 </head>
 <body class="loaded">
-    <!-- MAIN Container Start here. -->
+    
     <div class="container">
 
-        <!-- Top Bar Starts Here -->
+    <!-- Top Nav-->
         <div class="top-info-bar">
             <div class="row">
-
                 <div class="medium-6 small-12 columns">
                     <ul class="menu">
                         <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html">Home</a></li>
@@ -57,18 +53,18 @@
                 </div><!-- Left Ends /-->
             </div><!-- row /-->
         </div>
-        <!-- top Bar Ends here /-->
-        <!-- Header Starts -->
+    <!-- top Nav END /-->
+
+    <!-- Header Starts -->
         <div class="header">
             <div class="row">
-
                 <div class="medium-4 small-12 columns logo-container">
                     <div class="logo float-left">
                         <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html">
                             <img alt="" src="./assets/logo.png">
                         </a>
                     </div><!-- Logo /-->
-                    <!-- Categories -->
+                <!-- Categories -->
                     <div class="top-bar-title float-right hide-for-large-only">
                         <span class="menu-icon light float-left" data-toggle="categories-dropdown" aria-controls="categories-dropdown" data-is-focus="false" data-yeti-box="categories-dropdown" aria-haspopup="true" aria-expanded="false"></span>
                         <div class="dropdown-pane main-nav-container bottom right" id="categories-dropdown" data-dropdown="kst27n-dropdown" data-hover="true" data-hover-pane="true" aria-hidden="true" data-yeti-box="categories-dropdown" data-resize="categories-dropdown"  data-events="resize">
@@ -191,7 +187,8 @@
                             </div><!-- widget /-->
                             <!-- Categories -->
                         </div> <!-- drop down container /-->
-                    </div> <!-- Categories /-->
+                    </div> 
+                <!-- Categories /-->
 
                 </div><!-- first column /-->
 
@@ -341,7 +338,8 @@
 
         </div>
         <!-- Banner Section Ends /-->
-        <!-- Featured Items Section -->
+
+    <!-- Featured Items Section -->
         <div class="featured_items row module">
 
             <div class="medium-9 small-12 columns">
@@ -354,52 +352,52 @@
 
                                     <?php
                                     
-                                    $topurl = "http://codewarriors.herokuapp.com/services/topservices.php";
-                                    $result=get_data($topurl);
-                                    $rows=json_decode($result);
-                                    $length=count($rows);
-									//Fetch just the top 4 services
-                                    for($i=0;$i<$length;$i++){
-                                printf('<div class="medium-3 small-12 columns wd100 product">');
-                                    printf('<div class="product-image">');
-                                    printf('<div class="sale-tag">Hot</div>');
-                                            printf('<a href="%s">',$rows[$i][0]);
-                                                printf('<img style="height:150px;" src="%s" alt="">',$rows[$i][3]);
-                                                printf('<img style="height:150px;" src="%s" alt="">',$rows[$i][3]);
-                                    printf('</a>');
-                                    printf('
-                                            <div class="pro-buttons menu-centered">
-                                                <ul class="menu">
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-                                                </ul>
-                                            </div><!-- product buttons /-->
+         //                            $topurl = "http://codewarriors.herokuapp.com/services/topservices.php";
+         //                            $result=get_data($topurl);
+         //                            $rows=json_decode($result);
+         //                            $length=count($rows);
+									// //Fetch just the top 4 services
+         //                            for($i=0;$i<$length;$i++){
+         //                        printf('<div class="medium-3 small-12 columns wd100 product">');
+         //                            printf('<div class="product-image">');
+         //                            printf('<div class="sale-tag">Hot</div>');
+         //                                    printf('<a href="%s">',$rows[$i][0]);
+         //                                        printf('<img style="height:150px;" src="%s" alt="">',$rows[$i][3]);
+         //                                        printf('<img style="height:150px;" src="%s" alt="">',$rows[$i][3]);
+         //                            printf('</a>');
+         //                            printf('
+         //                                    <div class="pro-buttons menu-centered">
+         //                                        <ul class="menu">
+         //                                            <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
+         //                                            <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
+         //                                            <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
+         //                                            <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
+         //                                        </ul>
+         //                                    </div><!-- product buttons /-->
 
-                                        </div><!-- Product Image /-->
-                                        <div class="product-title">
-										');
+         //                                </div><!-- Product Image /-->
+         //                                <div class="product-title">
+									// 	');
 
-                                           printf('<a href="%s">%s</a>',$rows[$i][0],$rows[$i][1]);
-                                        printf('</div><!-- product title /-->
-                                        <div class="product-meta">
-                                            <div class="prices">
-                                                <span class="price">Custom</span>
+         //                                   printf('<a href="%s">%s</a>',$rows[$i][0],$rows[$i][1]);
+         //                                printf('</div><!-- product title /-->
+         //                                <div class="product-meta">
+         //                                    <div class="prices">
+         //                                        <span class="price">Custom</span>
                                                 
-                                            </div>
-                                            <div class="last-row">
-                                                <div class="pro-rating float-left">');
-													printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$rows[$i][0],$rows[$i][5]);
-		                                        printf('</div>
-                                                <div class="store float-right">
-                                                    By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Ashutosh Singh</a>
-                                                </div>
-                                            </div><!-- last row /-->
-                                            <div class="clearfix"></div>
-                                        </div><!-- product meta /-->
-                                    </div><!-- Product /-->');
-                                    }
+         //                                    </div>
+         //                                    <div class="last-row">
+         //                                        <div class="pro-rating float-left">');
+									// 				printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$rows[$i][0],$rows[$i][5]);
+		       //                                  printf('</div>
+         //                                        <div class="store float-right">
+         //                                            By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Ashutosh Singh</a>
+         //                                        </div>
+         //                                    </div><!-- last row /-->
+         //                                    <div class="clearfix"></div>
+         //                                </div><!-- product meta /-->
+         //                            </div><!-- Product /-->');
+         //                            }
                                     ?>
                                     </div>
                 </div><!-- Featured Area /-->
@@ -458,277 +456,37 @@
 
         </div>
         <!-- Featured Items Section /-->
-        <!-- What's new section -->
+    <!-- ALL products/services section -->
         <div class="whats-new row module">
             <div class="big-section-title">
-                <h2><span>What's New?</span></h2>
+                <h2><span>Checkout ALL Products/ Services</span></h2>
             </div><!-- big Section title ends.-->
 
             <div class="new-content">
-               
-
-                <div class="tabs-content" data-tabs-content="new-items">
+               <div class="tabs-content" data-tabs-content="new-items">
 					 <ul>
-						<li><a href="#panel1">Products</a></li>
+						<li><a href="#panel1">ALL</a></li>
 						<li><a href="#panel2">Services</a></li>
 						
 					  </ul>
-					<div class="tabs-panel is-active" id="panel1" role="tabpanel" aria-hidden="false" aria-labelledby="panel1-label">
+					<div class="small-12 columns tabs-panel" id="panel1" role="tabpanel" aria-hidden="true" aria-labelledby="panel1-label">
                         <div class="small-12 columns" style="margin-left: -3.5%;width: 107%;">
                             <div class="featured-area">
-                                <div class="section-title">
-                                    <h2><span>Men</span> Collection</h2>
-                                </div><!-- section title /-->
-
-                                <div class="content-section new-items-wrap">
-
-                                    <div class="medium-3 small-12 columns product">
-                                        <div class="product-image">
-                                            <div class="sale-tag">Sale</div>
-                                            <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
-                                                <img src="./assets/productm4-1.jpg" alt="">
-                                                <img src="./assets/productm4-2.jpg" alt="" class="">
-                                            </a>
-
-                                            <div class="pro-buttons menu-centered">
-                                                <ul class="menu">
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-                                                </ul>
-                                            </div><!-- product buttons /-->
-
-                                        </div><!-- Product Image /-->
-                                        <div class="product-title">
-                                            <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">Small shirt dress with small laces</a>
-                                        </div><!-- product title /-->
-                                        <div class="product-meta">
-                                            <div class="prices">
-                                                <span class="price">$234</span> / Piece
-                                                <span class="sale-price">$333</span>
-                                            </div>
-                                            <div class="last-row">
-                                                <div class="pro-rating float-left">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star off"></i>
-                                                </div>
-                                                <div class="store float-right">
-                                                    By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Fajar Accessories</a>
-                                                </div>
-                                            </div><!-- last row /-->
-                                            <div class="clearfix"></div>
-                                        </div><!-- product meta /-->
-                                    </div><!-- Product /-->
-
-                                    <div class="product medium-3 small-12 columns">
-                                        <div class="product-image">
-                                            <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
-                                                <img src="./assets/productm1-1.jpg" alt="">
-                                                <img src="./assets/productm1-2.jpg" alt="" class="animated pulse">
-                                            </a>
-
-                                            <div class="pro-buttons menu-centered">
-                                                <ul class="menu">
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-                                                </ul>
-                                            </div><!-- product buttons /-->
-
-                                        </div><!-- Product Image /-->
-                                        <div class="product-title">
-                                            <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">Small shirt dress with small laces</a>
-                                        </div><!-- product title /-->
-                                        <div class="product-meta">
-                                            <div class="prices">
-                                                <span class="price">$234</span> / Piece
-                                            </div>
-                                            <div class="last-row">
-                                                <div class="pro-rating float-left">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star off"></i>
-                                                </div>
-                                                <div class="store float-right">
-                                                    By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Fajar Accessories</a>
-                                                </div>
-                                            </div><!-- last row /-->
-                                            <div class="clearfix"></div>
-                                        </div><!-- product meta /-->
-                                    </div><!-- Product /-->
-
-                                    <div class="medium-3 small-12 columns product">
-                                        <div class="product-image">
-                                            <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
-                                                <img src="./assets/productm2-1.jpg" alt="">
-                                                <img src="./assets/productm2-2.jpg" alt="">
-                                            </a>
-
-                                            <div class="pro-buttons menu-centered">
-                                                <ul class="menu">
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-                                                </ul>
-                                            </div><!-- product buttons /-->
-
-                                        </div><!-- Product Image /-->
-                                        <div class="product-title">
-                                            <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">Small shirt dress with small laces</a>
-                                        </div><!-- product title /-->
-                                        <div class="product-meta">
-                                            <div class="prices">
-                                                <span class="price">$234</span> / Piece
-                                            </div>
-                                            <div class="last-row">
-                                                <div class="pro-rating float-left">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star off"></i>
-                                                </div>
-                                                <div class="store float-right">
-                                                    By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Fajar Accessories</a>
-                                                </div>
-                                            </div><!-- last row /-->
-                                            <div class="clearfix"></div>
-                                        </div><!-- product meta /-->
-                                    </div><!-- Product /-->
-
-                                    <div class="medium-3 small-12 columns product">
-                                        <div class="product-image">
-                                            <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
-                                                <img src="./assets/productm3-1.jpg" alt="">
-                                                <img src="./assets/productm3-2.jpg" alt="">
-                                            </a>
-
-                                            <div class="pro-buttons menu-centered">
-                                                <ul class="menu">
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-                                                </ul>
-                                            </div><!-- product buttons /-->
-
-                                        </div><!-- Product Image /-->
-                                        <div class="product-title">
-                                            <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">Small shirt dress with small laces</a>
-                                        </div><!-- product title /-->
-                                        <div class="product-meta">
-                                            <div class="prices">
-                                                <span class="price">$234</span> / Piece
-                                            </div>
-                                            <div class="last-row">
-                                                <div class="pro-rating float-left">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star off"></i>
-                                                </div>
-                                                <div class="store float-right">
-                                                    By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Fajar Accessories</a>
-                                                </div>
-                                            </div><!-- last row /-->
-                                            <div class="clearfix"></div>
-                                        </div><!-- product meta /-->
-                                    </div><!-- Product /-->
-
-                                    <div class="clearfix"></div>
-                                </div><!-- Content Section /-->
-
-                            </div><!-- Featured Area /-->
-                        </div><!-- Featured Items /-->
+                            <?php include('includes/curlpages.php'); ?>
+                            </div>
+                        </div>
                     </div><!-- tab panel ends /-->
-
                     <div class="small-12 columns tabs-panel" id="panel2" role="tabpanel" aria-hidden="true" aria-labelledby="panel2-label">
                         <div class="small-12 columns" style="margin-left: -3.5%;width: 107%;">
                             <div class="featured-area">
-                                <div class="section-title">
-                                    <h2><span>Code Warriors</span></h2>
-                                </div><!-- section title /-->
-
-                                <div class="content-section owl-carousel">
-
-                                    <?php
-                                    function get_data($url) {
-                                    $ch = curl_init();
-                                    curl_setopt($ch, CURLOPT_URL, $url);
-                                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                                    $data = curl_exec($ch);
-                                    curl_close($ch);
-                                    return $data;
-                                    }
-
-                                    $url = "http://codewarriors.herokuapp.com/services/allservices.php";
-                                    $result=get_data($url);
-                                    $rows=json_decode($result);
-                                    $length=count($rows);
-									//Fetch just the top 4 services
-                                    for($i=0;$i<$length;$i++){
-                                printf('<div class="medium-3 small-12 columns wd100 product">');
-                                    printf('<div class="product-image">');
-                                    printf('<div class="sale-tag">Hot</div>');
-                                            printf('<a href="%s">',$rows[$i][0]);
-                                                printf('<img style="height:150px;" src="%s" alt="">',$rows[$i][3]);
-                                                printf('<img style="height:150px;" src="%s" alt="">',$rows[$i][3]);
-                                    printf('</a>');
-                                    printf('
-                                            <div class="pro-buttons menu-centered">
-                                                <ul class="menu">
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-                                                </ul>
-                                            </div><!-- product buttons /-->
-
-                                        </div><!-- Product Image /-->
-                                        <div class="product-title">
-										');
-
-                                           printf('<a href="%s">%s</a>',$rows[$i][0],$rows[$i][1]);
-                                        printf('</div><!-- product title /-->
-                                        <div class="product-meta">
-                                            <div class="prices">
-                                                <span class="price">Custom</span>
-                                                
-                                            </div>
-                                            <div class="last-row">
-                                                <div class="pro-rating float-left">');
-													printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$rows[$i][0],$rows[$i][5]);
-		                                        printf('</div>
-                                                <div class="store float-right">
-                                                    By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Ashutosh Singh</a>
-                                                </div>
-                                            </div><!-- last row /-->
-                                            <div class="clearfix"></div>
-                                        </div><!-- product meta /-->
-                                    </div><!-- Product /-->');
-                                    }
-                                    ?>
-                                    <div class="clearfix"></div>
-                                </div><!-- Content Section /-->
-
-                            </div><!-- Featured Area /-->
-                        </div><!-- Featured Items /-->
-                    </div><!-- tab panel ends /-->
-
-
+                            <h4>Need to split products and services into 2 separate php files (unlike the ALL implementation) and reference them in each of these buckets.</h4>
+                            </div>
+                        </div>
+                    </div><!-- tab panel ends /--> 
                 </div><!-- tabs content ends /-->
 
             </div><!-- New content /-->
-
+            </div>
         </div>
         <!-- What's new section Ends /-->
         <!-- Suggested Stores -->
