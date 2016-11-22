@@ -78,7 +78,7 @@
                     </div>
                     <div class="last-row">
                         <div class="pro-rating float-left">');
-                            printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$rows[$i][0],$rows[$i][5]);
+                            printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$rows[$i][0],$rows[$i][9]); //update 5 to 9
                         printf('</div>
                         <div class="store float-right">
                             By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">'.$author.'</a>
