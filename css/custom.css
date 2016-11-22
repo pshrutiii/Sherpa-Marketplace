@@ -1,0 +1,27 @@
+.img-team{
+height:266px;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 22px;
+
+}
+
+.pd0{
+    padding:0px !important;
+}
+
+.btpd50{
+    padding-bottom:50px !important;
+}
+
+.tpmg45{
+    margin-top:45px !important;
+}
+
+.wd100{
+    width:100%;
+}
