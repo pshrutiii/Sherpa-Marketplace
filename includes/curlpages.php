@@ -92,46 +92,57 @@
     }
 ?>
 
+<div class="small-12 columns tabs-panel" id="panel1" role="tabpanel" aria-hidden="false" aria-labelledby="panel1-label">
+    <div class="small-12 columns" style="margin-left: -3.5%;width: 107%;">
+        <div class="featured-area">
+            <!--ALL PRODUCTS/SERVICES of Shruti's site-->
+            <div class="section-title"><h2><span>Smedia</span></h2></div>
+            <div class="content-section owl-carousel">
+                <?php  show_products($shruti_rows, "Shruti Padmanabhan");?>
+                <div class="clearfix"></div>
+            </div>
 
-<!--ALL PRODUCTS/SERVICES of Ashutosh's site-->
-    <div class="section-title"><h2><span>Code Warriors</span></h2></div>
-    <div class="content-section owl-carousel">
-        <?php  show_products($ash_rows, "Ashutosh Singh");?>
-        <div class="clearfix"></div>
+            <!--ALL PRODUCTS/SERVICES of AJ's site-->
+            <div class="section-title"><h2><span>Cleaner City</span></h2></div>
+            <div class="content-section owl-carousel">
+                <?php  show_products($aj_rows, "Anthony Bell");?>
+                <div class="clearfix"></div>
+            </div>
+
+            <!--ALL PRODUCTS/SERVICES of Ami's site>
+            <div class="section-title"><h2><span>SiteName</span></h2></div>
+            <div class="content-section owl-carousel">
+                <?php  show_products($ami_rows, "Ami Patel");?>
+                <div class="clearfix"></div>
+            </div-->
+        </div>
     </div>
+</div>
 
-<!--ALL PRODUCTS/SERVICES of Shruti's site-->
-    <div class="section-title"><h2><span>Smedia</span></h2></div>
-    <div class="content-section owl-carousel">
-        <?php  show_products($shruti_rows, "Shruti Padmanabhan");?>
-        <div class="clearfix"></div>
+<div class="small-12 columns tabs-panel" id="panel2" role="tabpanel" aria-hidden="true" aria-labelledby="panel2-label">
+    <div class="small-12 columns" style="margin-left: -3.5%;width: 107%;">
+        <div class="featured-area">
+
+            <!--ALL PRODUCTS/SERVICES of Ashutosh's site-->
+            <div class="section-title"><h2><span>Code Warriors</span></h2></div>
+            <div class="content-section owl-carousel">
+                <?php  show_products($ash_rows, "Ashutosh Singh");?>
+                <div class="clearfix"></div>
+            </div>
+
+            <!--ALL PRODUCTS/SERVICES of Manu's site-->
+            <div class="section-title"><h2><span>Agent Immobilier</span></h2></div>
+            <div class="content-section owl-carousel">
+                <?php  show_products($manu_rows, "Manu Barsainyan");?>
+                <div class="clearfix"></div>
+            </div>
+
+            <!--ALL PRODUCTS/SERVICES of Hiral's site-->
+            <div class="section-title"><h2><span>Parikh's Snooker Club</span></h2></div>
+            <div class="content-section owl-carousel">
+                <?php  show_products($hiral_rows, "Hiral Parikh");?>
+                <div class="clearfix"></div>
+            </div-->
+        </div>
     </div>
-
-<!--ALL PRODUCTS/SERVICES of AJ's site-->
-    <div class="section-title"><h2><span>Cleaner City</span></h2></div>
-    <div class="content-section owl-carousel">
-        <?php  show_products($aj_rows, "Anthony Bell");?>
-        <div class="clearfix"></div>
-    </div>
-
-<!--ALL PRODUCTS/SERVICES of Ami's site>
-    <div class="section-title"><h2><span>SiteName</span></h2></div>
-    <div class="content-section owl-carousel">
-        <?php  show_products($ami_rows, "Ami Patel");?>
-        <div class="clearfix"></div>
-    </div>
-
-<!--ALL PRODUCTS/SERVICES of Manu's site-->
-    <div class="section-title"><h2><span>Agent Immobilier</span></h2></div>
-    <div class="content-section owl-carousel">
-        <?php  show_products($manu_rows, "Manu Barsainyan");?>
-        <div class="clearfix"></div>
-    </div>
-
-<!--ALL PRODUCTS/SERVICES of Hiral's site-->
-    <div class="section-title"><h2><span>Parikh's Snooker Club</span></h2></div>
-    <div class="content-section owl-carousel">
-        <?php  show_products($hiral_rows, "Hiral Parikh");?>
-        <div class="clearfix"></div>
-    </div-->
-
+</div>

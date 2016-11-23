@@ -27,10 +27,10 @@
     <!-- REVOLUTION LAYERS STYLES -->
     <link rel="stylesheet" type="text/css" href="./assets/layers.css">
 
-	
-	<link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link href="css/bootstrap-rating.css" rel="stylesheet">
+    
+    <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/bootstrap-rating.css" rel="stylesheet">
     <link href="assets/css/owl.carousel.css" rel="stylesheet">
     <link href="assets/css/owl.theme.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" media="all">
@@ -302,26 +302,26 @@
                                             <ul class="menu vertical">
                                                 <li role="menuitem"><a href="https://codewarriors.herokuapp.com/customwebsites.php">Custom Websites</a></li>
                                                 <li role="menuitem"><a href="https://codewarriors.herokuapp.com/consulting.php">Consulting</a></li>
-												<li role="menuitem"><a href="https://codewarriors.herokuapp.com/reporting.php">Data Warehousing and Reporting</a></li>
-												<li role="menuitem"><a href="https://codewarriors.herokuapp.com/seo.php">SEO</a></li>
-												<li role="menuitem"><a href="https://codewarriors.herokuapp.com/applicationdev.php">Application Dev</a></li>
-												<li role="menuitem"><a href="https://codewarriors.herokuapp.com/support.php">Support</a></li>
-												<li role="menuitem"><a href="https://codewarriors.herokuapp.com/mobiledev.php">Mobile Development</a></li>
-												<li role="menuitem"><a href="https://codewarriors.herokuapp.com/bpo.php">BPO Services</a></li>
-												<li role="menuitem"><a href="https://codewarriors.herokuapp.com/training.php">Software Training</a></li>
-												<li role="menuitem"><a href="https://codewarriors.herokuapp.com/webgamedev.php">Web Games Development</a></li>
-												<li role="menuitem"><a href="https://codewarriors.herokuapp.com/pcgamedev.php">PC Game Development</a></li>
-											</ul>
+                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/reporting.php">Data Warehousing and Reporting</a></li>
+                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/seo.php">SEO</a></li>
+                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/applicationdev.php">Application Dev</a></li>
+                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/support.php">Support</a></li>
+                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/mobiledev.php">Mobile Development</a></li>
+                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/bpo.php">BPO Services</a></li>
+                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/training.php">Software Training</a></li>
+                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/webgamedev.php">Web Games Development</a></li>
+                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/pcgamedev.php">PC Game Development</a></li>
+                                            </ul>
                                         </div>
                                     </li>
                                 </ul>
                             </li>
                             <li role="menuitem"><a href="https://smedia.herokuapp.com/"><i class="fa fa-mobile" aria-hidden="true"></i> SMedia</a></li>
                             <li role="menuitem"><a href="http://agentimmobilier.000webhostapp.com/index.php"><i class="flaticon-monitor"></i> Agent Immobilier</a></li>
-							<li role="menuitem"><a href="http://hiralparikh.000webhostapp.com/"><i class="flaticon-monitor"></i> Parikh's Snooker Club</a></li>
-							<li role="menuitem"><a href="http://cleanercity.co"><i class="flaticon-monitor"></i> Cleaner City</a></li>
-							<li role="menuitem"><a href="https://sign-privilege.000webhostapp.com"><i class="flaticon-monitor"></i> TravelHack</a></li>
-						</ul>
+                            <li role="menuitem"><a href="http://hiralparikh.000webhostapp.com/"><i class="flaticon-monitor"></i> Parikh's Snooker Club</a></li>
+                            <li role="menuitem"><a href="http://cleanercity.co"><i class="flaticon-monitor"></i> Cleaner City</a></li>
+                            <li role="menuitem"><a href="https://sign-privilege.000webhostapp.com"><i class="flaticon-monitor"></i> TravelHack</a></li>
+                        </ul>
                     </nav><!-- widget-content /-->
 
                 </div><!-- widget /-->
@@ -356,7 +356,7 @@
          //                            $result=get_data($topurl);
          //                            $rows=json_decode($result);
          //                            $length=count($rows);
-									// //Fetch just the top 4 services
+                                    // //Fetch just the top 4 services
          //                            for($i=0;$i<$length;$i++){
          //                        printf('<div class="medium-3 small-12 columns wd100 product">');
          //                            printf('<div class="product-image">');
@@ -377,7 +377,7 @@
 
          //                                </div><!-- Product Image /-->
          //                                <div class="product-title">
-									// 	');
+                                    //  ');
 
          //                                   printf('<a href="%s">%s</a>',$rows[$i][0],$rows[$i][1]);
          //                                printf('</div><!-- product title /-->
@@ -388,8 +388,8 @@
          //                                    </div>
          //                                    <div class="last-row">
          //                                        <div class="pro-rating float-left">');
-									// 				printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$rows[$i][0],$rows[$i][5]);
-		       //                                  printf('</div>
+                                    //              printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$rows[$i][0],$rows[$i][5]);
+               //                                  printf('</div>
          //                                        <div class="store float-right">
          //                                            By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Ashutosh Singh</a>
          //                                        </div>
@@ -464,25 +464,13 @@
 
             <div class="new-content">
                <div class="tabs-content" data-tabs-content="new-items">
-					 <ul>
-						<li><a href="#panel1">ALL</a></li>
-						<li><a href="#panel2">Services</a></li>
-						
-					  </ul>
-					<div class="small-12 columns tabs-panel" id="panel1" role="tabpanel" aria-hidden="true" aria-labelledby="panel1-label">
-                        <div class="small-12 columns" style="margin-left: -3.5%;width: 107%;">
-                            <div class="featured-area">
-                            <?php include('includes/curlpages.php'); ?>
-                            </div>
-                        </div>
-                    </div><!-- tab panel ends /-->
-                    <div class="small-12 columns tabs-panel" id="panel2" role="tabpanel" aria-hidden="true" aria-labelledby="panel2-label">
-                        <div class="small-12 columns" style="margin-left: -3.5%;width: 107%;">
-                            <div class="featured-area">
-                            <h4>Need to split products and services into 2 separate php files (unlike the ALL implementation) and reference them in each of these buckets.</h4>
-                            </div>
-                        </div>
-                    </div><!-- tab panel ends /--> 
+                    <ul>
+                        <li><a href="#panel1">Products</a></li>
+                        <li><a href="#panel2">Services</a></li>
+                        
+                    </ul>
+                    
+                    <?php include('includes/curlpages.php'); ?>
                 </div><!-- tabs content ends /-->
 
             </div><!-- New content /-->
@@ -725,8 +713,8 @@
     <!-- Page Preloader -->
     <div class="preloader" style="display: none;"></div>
 
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 
     <!-- Crousel JS -->
     <script type="text/javascript" src="./assets/owl.carousel.min.js.download"></script>
@@ -734,13 +722,13 @@
     <script src="./assets/jquery.simple.timer.js.download"></script>
 
    
-	
-	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
     
-	<script type="text/javascript" src="js/bootstrap-rating.min.js"></script>
-	<script type="text/javascript" src="js/rating.js"></script>
+    <script type="text/javascript" src="js/bootstrap-rating.min.js"></script>
+    <script type="text/javascript" src="js/rating.js"></script>
     <script>
     $(document).ready(function() {
         $(".owl-carousel").owlCarousel({
