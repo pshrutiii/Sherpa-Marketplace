@@ -344,7 +344,7 @@
 
             <div class="medium-9 small-12 columns">
                 <div class="featured-area">
-                    <div class="section-title"><h2><span>Customer Valued</span> Products/Services</h2></div><!-- section title /-->
+                    <div class="section-title"><h2><span>Frequently Visited</span> Products/Services</h2></div><!-- section title /-->
                         <div class="content-section owl-carousel"><?php include('includes/customerRated.php'); ?></div>
                 </div><!-- Featured Area /-->
             </div><!-- Customer Valued Products/Services /-->
