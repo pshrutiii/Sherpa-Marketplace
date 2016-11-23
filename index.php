@@ -13,9 +13,6 @@
     <!-- Foundation CSS File -->
     <link rel="stylesheet" type="text/css" href="./assets/foundation.min.css" media="all">
 
-    <!-- Font Awesome CSS File -->
-    <link rel="stylesheet" type="text/css" href="./assets/font-awesome.min.css" media="all">
-
     <!-- Theme Styles CSS File -->
     <link rel="stylesheet" type="text/css" href="./assets/style.css" media="all">
 
@@ -28,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/layers.css">
 
     
-    <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="css/bootstrap-rating.css" rel="stylesheet">
     <link href="assets/css/owl.carousel.css" rel="stylesheet">
@@ -293,28 +290,7 @@
 
                     <nav class="widget-content">
                         <ul class="menu vertical dropdown" data-responsive-menu="accordion medium-dropdown" role="menubar" data-dropdown-menu="vtz2ih-dropdown-menu">
-                            <li class="mega-menu parent-nav is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="Code Warriors" data-is-click="false">
-                                <a href="https://codewarriors.herokuapp.com/" tabindex="0"><i class="flaticon-black-female-dress"></i> Code Warriors</a>
-                                <ul class="child-nav backgroundstyle1 submenu is-dropdown-submenu first-sub vertical" data-submenu="" aria-hidden="true" role="menu">
-                                    <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
-                                        <div class="medium-3 small-12 columns inner-mega">
-                                            <h4>Hot Categories</h4>
-                                            <ul class="menu vertical">
-                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/customwebsites.php">Custom Websites</a></li>
-                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/consulting.php">Consulting</a></li>
-                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/reporting.php">Data Warehousing and Reporting</a></li>
-                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/seo.php">SEO</a></li>
-                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/applicationdev.php">Application Dev</a></li>
-                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/support.php">Support</a></li>
-                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/mobiledev.php">Mobile Development</a></li>
-                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/bpo.php">BPO Services</a></li>
-                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/training.php">Software Training</a></li>
-                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/webgamedev.php">Web Games Development</a></li>
-                                                <li role="menuitem"><a href="https://codewarriors.herokuapp.com/pcgamedev.php">PC Game Development</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <li class="menuitem"><a href="https://codewarriors.herokuapp.com/" tabindex="0"><i class="fa fa-grav" aria-hidden="true"></i> Code Warriors</a>
                             </li>
                             <li role="menuitem"><a href="https://smedia.herokuapp.com/"><i class="fa fa-mobile" aria-hidden="true"></i> SMedia</a></li>
                             <li role="menuitem"><a href="http://agentimmobilier.000webhostapp.com/index.php"><i class="flaticon-monitor"></i> Agent Immobilier</a></li>
@@ -344,7 +320,7 @@
 
             <div class="medium-9 small-12 columns">
                 <div class="featured-area">
-                    <div class="section-title"><h2><span>Frequently Visited</span> Products/Services</h2></div><!-- section title /-->
+                    <div class="section-title"><h2><span>Frequently Visited</span></h2></div><!-- section title /-->
                         <div class="content-section owl-carousel"><?php include('includes/customerRated.php'); ?></div>
                 </div><!-- Featured Area /-->
             </div><!-- Customer Valued Products/Services /-->
@@ -405,7 +381,7 @@
     <!-- ALL products/services section -->
         <div class="whats-new row module">
             <div class="big-section-title">
-                <h2><span>Checkout ALL Products/ Services</span></h2>
+                <h2><span>Our Products and Services</span></h2>
             </div><!-- big Section title ends.-->
 
             <div class="new-content">
