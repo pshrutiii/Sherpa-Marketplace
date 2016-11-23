@@ -339,69 +339,15 @@
         </div>
         <!-- Banner Section Ends /-->
 
-    <!-- Featured Items Section -->
+    <!-- Customer Valued Products/Services -->
         <div class="featured_items row module">
 
             <div class="medium-9 small-12 columns">
                 <div class="featured-area">
-                    <div class="section-title">
-                        <h2><span>Featured</span> Collection</h2>
-                    </div><!-- section title /-->
-                    
-                                <div class="content-section owl-carousel">
-
-                                    <?php
-                                    
-         //                            $topurl = "http://codewarriors.herokuapp.com/services/topservices.php";
-         //                            $result=get_data($topurl);
-         //                            $rows=json_decode($result);
-         //                            $length=count($rows);
-                                    // //Fetch just the top 4 services
-         //                            for($i=0;$i<$length;$i++){
-         //                        printf('<div class="medium-3 small-12 columns wd100 product">');
-         //                            printf('<div class="product-image">');
-         //                            printf('<div class="sale-tag">Hot</div>');
-         //                                    printf('<a href="%s">',$rows[$i][0]);
-         //                                        printf('<img style="height:150px;" src="%s" alt="">',$rows[$i][3]);
-         //                                        printf('<img style="height:150px;" src="%s" alt="">',$rows[$i][3]);
-         //                            printf('</a>');
-         //                            printf('
-         //                                    <div class="pro-buttons menu-centered">
-         //                                        <ul class="menu">
-         //                                            <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-         //                                            <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-         //                                            <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-         //                                            <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-         //                                        </ul>
-         //                                    </div><!-- product buttons /-->
-
-         //                                </div><!-- Product Image /-->
-         //                                <div class="product-title">
-                                    //  ');
-
-         //                                   printf('<a href="%s">%s</a>',$rows[$i][0],$rows[$i][1]);
-         //                                printf('</div><!-- product title /-->
-         //                                <div class="product-meta">
-         //                                    <div class="prices">
-         //                                        <span class="price">Custom</span>
-                                                
-         //                                    </div>
-         //                                    <div class="last-row">
-         //                                        <div class="pro-rating float-left">');
-                                    //              printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$rows[$i][0],$rows[$i][5]);
-               //                                  printf('</div>
-         //                                        <div class="store float-right">
-         //                                            By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Ashutosh Singh</a>
-         //                                        </div>
-         //                                    </div><!-- last row /-->
-         //                                    <div class="clearfix"></div>
-         //                                </div><!-- product meta /-->
-         //                            </div><!-- Product /-->');
-         //                            }
-                                    ?>
-                                    </div>
+                    <div class="section-title"><h2><span>Customer Valued</span> Products/Services</h2></div><!-- section title /-->
+                        <div class="content-section owl-carousel"><?php include('includes/customerRated.php'); ?></div>
                 </div><!-- Featured Area /-->
-            </div><!-- Featured Items /-->
+            </div><!-- Customer Valued Products/Services /-->
 
             <div class="medium-3 small-12 columns">
                 <div class="featured-area">
@@ -455,7 +401,7 @@
             </div><!-- Today's Deal /-->
 
         </div>
-        <!-- Featured Items Section /-->
+
     <!-- ALL products/services section -->
         <div class="whats-new row module">
             <div class="big-section-title">
@@ -470,7 +416,7 @@
                         
                     </ul>
                     
-                    <?php include('includes/curlpages.php'); ?>
+                    <?php include('includes/allProductServices.php'); ?>
                 </div><!-- tabs content ends /-->
 
             </div><!-- New content /-->

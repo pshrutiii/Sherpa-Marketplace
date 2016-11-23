@@ -1,53 +1,5 @@
 <?php
-    function get_data($url) {
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        $data = curl_exec($ch);
-        curl_close($ch);
-        return $data;
-    }
-
-    // Individual URLs to cURL
-    $ash_url = "http://codewarriors.herokuapp.com/services/allservices.php";
-    $shruti_url = "http://smedia.herokuapp.com/services/allservices.php";
-    $aj_url = "http://cleanercity.co/allservices.php";
-    // $ami_url = "http://sign-privilege.000webhostapp.com/searchServices.php";
-    $manu_url = "http://agentimmobilier.000webhostapp.com/getproducts.php";
-    $hiral_url = "http://hiralparikh.000webhostapp.com/allservices.php";
-
-    //cURL each of the URLs
-    $ash_result = get_data($ash_url);
-    $shruti_result = get_data($shruti_url);
-    $aj_result = get_data($aj_url);
-    // $ami_result = get_data($ami_url);
-    $manu_result = get_data($manu_url);
-    $hiral_result = get_data($hiral_url);
-
-    // contains all products & services in each of those sites
-    $ash_rows = json_decode($ash_result);
-    $shruti_rows = json_decode($shruti_result);
-    $aj_rows = json_decode($aj_result);
-    // $ami_rows = json_decode($ami_result);
-    $manu_rows = json_decode($manu_result);
-    $hiral_rows = json_decode($hiral_result);
-
-    // Initial testing
-    // printf("<table>");
-    // for($i=0;$i<count($shruti_rows);$i++){
-    //     echo "<tr><th>Title</th><th>Page URL</th><th>Image URL</th><th>Description</th><th>Star Count</th><th>Num of Ratings</th><th>Visits Count</th><th>Cost</th></tr>"; 
-    //     echo "<tr><td>".$shruti_rows[$i][1]. //title
-    //         "</td><td>".$shruti_rows[$i][2]. //page_url
-    //         "</td><td>".$shruti_rows[$i][3]. //image_url
-    //         "</td><td>".$shruti_rows[$i][4]. //description
-    //         "</td><td>".$shruti_rows[$i][5]. //total_rating
-    //         "</td><td>".$shruti_rows[$i][6]. //num_rating
-    //         "</td><td>".$shruti_rows[$i][7]. //visit
-    //         "</td><td>".$shruti_rows[$i][8]. //costs
-    //         "</td></tr>";
-    // }
-    // printf("</table>");
-    
+    //include('includes/curl.php');
 
     function show_products($rows, $author){
         for($i=0; $i<count($rows); $i++){
@@ -109,7 +61,7 @@
                 <div class="clearfix"></div>
             </div>
 
-            <!--ALL PRODUCTS/SERVICES of Ami's site>
+            <!--ALL PRODUCTS/SERVICES of Ami's site>        <!-- TODO: uncomment ami>
             <div class="section-title"><h2><span>SiteName</span></h2></div>
             <div class="content-section owl-carousel">
                 <?php  show_products($ami_rows, "Ami Patel");?>
