@@ -1,7 +1,6 @@
 <?php
 	include('curl.php');
-	findMostVisitedPg($ash_rows, $shruti_rows, $aj_rows, $manu_rows, $hiral_rows); // TODO: add $ami_rows
-	//print_r($top6Visits);
+	findMostVisitedPg($ash_rows, $shruti_rows, $ami_rows, $aj_rows, $manu_rows, $hiral_rows); 
     // print_r($id);
     // print_r($title);
     // print_r($page_url);

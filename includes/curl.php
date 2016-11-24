@@ -15,14 +15,14 @@
     $img_url = array();
     $avg_rating = array();
     $author = array();
-    function findMostVisitedPg($ash_rows, $shruti_rows, $aj_rows, $manu_rows, $hiral_rows){ // TODO: add $ami_rows
+    function findMostVisitedPg($ash_rows, $shruti_rows, $ami_rows, $aj_rows, $manu_rows, $hiral_rows){ 
         $allVisits = array();
         for($i=0; $i<10; $i++){
             global $top6Visits;
             array_push($allVisits, $ash_rows[$i][7]);
             array_push($allVisits, $shruti_rows[$i][7]);
             array_push($allVisits, $aj_rows[$i][7]);
-            //array_push($allVisits, $ami_rows[$i][7]); // TODO: uncomment ami
+            array_push($allVisits, $ami_rows[$i][7]); 
             array_push($allVisits, $manu_rows[$i][7]);
             array_push($allVisits, $hiral_rows[$i][7]);
         }
@@ -50,44 +50,43 @@
                     array_push($page_url, $ash_rows[$j][2]);
                     array_push($img_url, $ash_rows[$j][3]);
                     array_push($author, "Ashutosh Singh");
-                    //array_push($avg_rating, $ash_rows[$j][9]);            TODO: UNCOMMENT ONCE EVERYONE IMPLEMENTS COLUMN 9
+                    array_push($avg_rating, $ash_rows[$j][9]);            
                 }elseif($shruti_rows[$j][7] == $top6Visits[$i]){
                     array_push($id, $shruti_rows[$j][0]);
                     array_push($title, $shruti_rows[$j][1]);
                     array_push($page_url, $shruti_rows[$j][2]);
                     array_push($img_url, $shruti_rows[$j][3]);
                     array_push($author, "Shruti Padmanabhan");
-                    //array_push($avg_rating, $shruti_rows[$j][9]);         TODO: UNCOMMENT ONCE EVERYONE IMPLEMENTS COLUMN 9
+                    array_push($avg_rating, $shruti_rows[$j][9]);         
                 }elseif($aj_rows[$j][7] == $top6Visits[$i]){
                     array_push($id, $aj_rows[$j][0]);
                     array_push($title, $aj_rows[$j][1]);
                     array_push($page_url, $aj_rows[$j][2]);
                     array_push($img_url, $aj_rows[$j][3]);
                     array_push($author, "Anthony Bell");
-                    //array_push($avg_rating, $aj_rows[$j][9]);         TODO: UNCOMMENT ONCE EVERYONE IMPLEMENTS COLUMN 9
+                    array_push($avg_rating, $aj_rows[$j][9]);         
                 }elseif($manu_rows[$j][7] == $top6Visits[$i]){
                     array_push($id, $manu_rows[$j][0]);
                     array_push($title, $manu_rows[$j][1]);
                     array_push($page_url, $manu_rows[$j][2]);
                     array_push($img_url, $manu_rows[$j][3]);
                     array_push($author, "Manu Barsainyan");
-                    //array_push($avg_rating, $manu_rows[$j][9]);           TODO: UNCOMMENT ONCE EVERYONE IMPLEMENTS COLUMN 9
+                    array_push($avg_rating, $manu_rows[$j][9]);           
                 }elseif($hiral_rows[$j][7] == $top6Visits[$i]){
                     array_push($id, $hiral_rows[$j][0]);
                     array_push($title, $hiral_rows[$j][1]);
                     array_push($page_url, $hiral_rows[$j][2]);
                     array_push($img_url, $hiral_rows[$j][3]);
                     array_push($author, "Hiral Parikh");
-                    //array_push($avg_rating, $hiral_rows[$j][9]);          TODO: UNCOMMENT ONCE EVERYONE IMPLEMENTS COLUMN 9
+                    array_push($avg_rating, $hiral_rows[$j][9]);          
+                }else{                                       
+                    array_push($id, $ami_rows[$j][0]);
+                    array_push($title, $ami_rows[$j][1]);
+                    array_push($page_url, $ami_rows[$j][2]);
+                    array_push($img_url, $ami_rows[$j][3]);
+                    array_push($author, "Ami Patel");
+                    array_push($avg_rating, $ami_rows[$j][9]); 
                 }
-                // }else{                                       // TODO: uncomment AMI
-                //  array_push($id, $ami_rows[$j][0]);
-                //  array_push($title, $ami_rows[$j][1]);
-                //  array_push($page_url, $ami_rows[$j][2]);
-                //  array_push($img_url, $ami_rows[$j][3]);
-                // array_push($author, "Ami Patel");
-                //  array_push($avg_rating, $ami_rows[$j][9]);          TODO: UNCOMMENT ONCE EVERYONE IMPLEMENTS COLUMN 9
-                // }
             }
         }
     }
@@ -97,7 +96,7 @@
     $ash_url = "http://codewarriors.herokuapp.com/services/allservices.php";
     $shruti_url = "http://smedia.herokuapp.com/services/allservices.php";
     $aj_url = "http://cleanercity.co/allservices.php";
-    //$ami_url = "http://sign-privilege.000webhostapp.com/searchServices.php"; // TODO: uncomment ami
+    $ami_url = "http://sign-privilege.000webhostapp.com/searchServices.php"; 
     $manu_url = "http://agentimmobilier.000webhostapp.com/getproducts.php";
     $hiral_url = "http://hiralparikh.000webhostapp.com/allservices.php";
 
@@ -105,7 +104,7 @@
     $ash_result = get_data($ash_url);
     $shruti_result = get_data($shruti_url);
     $aj_result = get_data($aj_url);
-    //$ami_result = get_data($ami_url); // TODO: uncomment ami
+    $ami_result = get_data($ami_url);
     $manu_result = get_data($manu_url);
     $hiral_result = get_data($hiral_url);
 
@@ -113,7 +112,7 @@
     $ash_rows = json_decode($ash_result);
     $shruti_rows = json_decode($shruti_result);
     $aj_rows = json_decode($aj_result);
-    //$ami_rows = json_decode($ami_result); // TODO: uncomment ami
+    $ami_rows = json_decode($ami_result);
     $manu_rows = json_decode($manu_result);
     $hiral_rows = json_decode($hiral_result);
 

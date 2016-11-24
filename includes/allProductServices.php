@@ -61,12 +61,12 @@
                 <div class="clearfix"></div>
             </div>
 
-            <!--ALL PRODUCTS/SERVICES of Ami's site>        <!-- TODO: uncomment ami>
+            <!--ALL PRODUCTS/SERVICES of Ami's site-->      
             <div class="section-title"><h2><span>SiteName</span></h2></div>
             <div class="content-section owl-carousel">
                 <?php  show_products($ami_rows, "Ami Patel");?>
                 <div class="clearfix"></div>
-            </div-->
+            </div>
         </div>
     </div>
 </div>
