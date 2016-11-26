@@ -1,4 +1,6 @@
 <?php
+
+// BASIC curling through the individual sites
     function get_data($url) {
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
@@ -8,6 +10,7 @@
         return $data;
     }
 
+// Find most VISITED pages
     $top6Visits = array();
     $id = array();
     $title = array();
@@ -86,6 +89,90 @@
                     array_push($img_url, $ami_rows[$j][3]);
                     array_push($author, "Ami Patel");
                     array_push($avg_rating, $ami_rows[$j][9]); 
+                }
+            }
+        }
+    }
+
+// Find most RATED pages
+    $top3Rated = array();
+    $id_r = array();
+    $title_r = array();
+    $page_url_r = array();
+    $img_url_r = array();
+    $avg_rating_r = array();
+    $author_r = array();
+    function findMostRatedPg($ash_rows, $shruti_rows, $ami_rows, $aj_rows, $manu_rows, $hiral_rows){ 
+        $allRatings = array();
+        for($i=0; $i<10; $i++){
+            global $top3Rated;
+            array_push($allRatings, $ash_rows[$i][9]);
+            array_push($allRatings, $shruti_rows[$i][9]);
+            array_push($allRatings, $aj_rows[$i][9]);
+            array_push($allRatings, $ami_rows[$i][9]); 
+            array_push($allRatings, $manu_rows[$i][9]);
+            array_push($allRatings, $hiral_rows[$i][9]);
+        }
+        arsort($allRatings);
+        $count = 0;
+        foreach ($allRatings as $key => $val) {
+            // to save TOP 3 most rated pages
+            if($count < 3){
+                array_push($top3Rated, $val);
+            }            
+            $count++;
+        }   
+
+        for($i=0; $i<count($top3Rated); $i++){
+            for($j=0; $j<10; $j++){
+                global $id_r;
+                global $title_r;
+                global $page_url_r;
+                global $img_url_r;
+                global $avg_rating_r;
+                global $author_r;
+                if($ash_rows[$j][9] == $top3Rated[$i]){
+                    array_push($id_r, $ash_rows[$j][0]);
+                    array_push($title_r, $ash_rows[$j][1]);
+                    array_push($page_url_r, $ash_rows[$j][2]);
+                    array_push($img_url_r, $ash_rows[$j][3]);
+                    array_push($author_r, "Ashutosh Singh");
+                    array_push($avg_rating_r, $ash_rows[$j][9]);            
+                }elseif($shruti_rows[$j][9] == $top3Rated[$i]){
+                    array_push($id_r, $shruti_rows[$j][0]);
+                    array_push($title_r, $shruti_rows[$j][1]);
+                    array_push($page_url_r, $shruti_rows[$j][2]);
+                    array_push($img_url_r, $shruti_rows[$j][3]);
+                    array_push($author_r, "Shruti Padmanabhan");
+                    array_push($avg_rating_r, $shruti_rows[$j][9]);         
+                }elseif($aj_rows[$j][9] == $top3Rated[$i]){
+                    array_push($id_r, $aj_rows[$j][0]);
+                    array_push($title_r, $aj_rows[$j][1]);
+                    array_push($page_url_r, $aj_rows[$j][2]);
+                    array_push($img_url_r, $aj_rows[$j][3]);
+                    array_push($author_r, "Anthony Bell");
+                    array_push($avg_rating_r, $aj_rows[$j][9]);         
+                }elseif($manu_rows[$j][9] == $top3Rated[$i]){
+                    array_push($id_r, $manu_rows[$j][0]);
+                    array_push($title_r, $manu_rows[$j][1]);
+                    array_push($page_url_r, $manu_rows[$j][2]);
+                    array_push($img_url_r, $manu_rows[$j][3]);
+                    array_push($author_r, "Manu Barsainyan");
+                    array_push($avg_rating_r, $manu_rows[$j][9]);           
+                }elseif($hiral_rows[$j][9] == $top3Rated[$i]){
+                    array_push($id_r, $hiral_rows[$j][0]);
+                    array_push($title_r, $hiral_rows[$j][1]);
+                    array_push($page_url_r, $hiral_rows[$j][2]);
+                    array_push($img_url_r, $hiral_rows[$j][3]);
+                    array_push($author_r, "Hiral Parikh");
+                    array_push($avg_rating_r, $hiral_rows[$j][9]);          
+                }else{                                       
+                    array_push($id_r, $ami_rows[$j][0]);
+                    array_push($title_r, $ami_rows[$j][1]);
+                    array_push($page_url_r, $ami_rows[$j][2]);
+                    array_push($img_url_r, $ami_rows[$j][3]);
+                    array_push($author_r, "Ami Patel");
+                    array_push($avg_rating_r, $ami_rows[$j][9]); 
                 }
             }
         }

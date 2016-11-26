@@ -315,15 +315,15 @@
         </div>
         <!-- Banner Section Ends /-->
 
-    <!-- Customer Valued Products/Services -->
+    <!-- MOST VISITED PRODUCTS/SERVICES -->
         <div class="featured_items row module">
 
             <div class="medium-9 small-12 columns">
                 <div class="featured-area">
                     <div class="section-title"><h2><span>Frequently Visited</span></h2></div><!-- section title /-->
-                        <div class="content-section owl-carousel"><?php include('includes/customerRated.php'); ?></div>
+                        <div class="content-section owl-carousel"><?php include('includes/mostVisited.php'); ?></div>
                 </div><!-- Featured Area /-->
-            </div><!-- Customer Valued Products/Services /-->
+            </div>
 
             <div class="medium-3 small-12 columns">
                 <div class="featured-area">
@@ -376,6 +376,17 @@
                 </div><!-- Featured Area /-->
             </div><!-- Today's Deal /-->
 
+        </div>
+
+    <!--TOP RATED 4 PRODUCTS/ SERVICES-->
+        <div class="featured_items row module">
+
+            <div class="medium-12 small-12 columns">
+                <div class="featured-area">
+                    <div class="section-title"><h2><span>Top rated pages</span></h2></div><!-- section title /-->
+                    <div class="content-section owl-carousel"><?php include('includes/mostRated.php'); ?></div>
+                </div><!-- Featured Area /-->
+            </div>
         </div>
 
     <!-- ALL products/services section -->
