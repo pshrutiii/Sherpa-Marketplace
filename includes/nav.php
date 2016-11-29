@@ -220,7 +220,7 @@
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                             </div>
                             <div class="float-left cart-link">
-                                <a href=""><span class="cart-count">0</span> Item(s)</a>
+                                <a href="cart.php"><span class="cart-count">0</span> Item(s)</a>
                             </div>
                             <div class="clearfix"></div>
                         </div><!-- ends title /-->
