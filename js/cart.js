@@ -47,8 +47,8 @@ var ShoppingCart = {
         self.storage.setItem(self.shippingRates, totalShipping);
         self.addToCart({
             product: productName,
-            price: cost
-
+            price: cost,
+            qty:1
         });
 
         self.updateCartCount();
@@ -81,9 +81,13 @@ var ShoppingCart = {
 
         var cart = self._toJSONObject(self.storage.getItem(self.cartName));
         var items = cart.items;
-        console.log(items.length);
+        var count=0;
+         for (var i = 0; i < items.length; ++i) {
+             count+=parseInt(items[i]['qty']);
+         }
+        console.log(count);
         //Setting count to sessionstorage items        
-        self.cartCount.text(items.length);
+        self.cartCount.text(count);
                 }else{
 
                     self.cartCount.text('0');
@@ -108,6 +112,9 @@ var ShoppingCart = {
         console.log("Cart being displayed");
        var self=ShoppingCart;
        var cart = self._toJSONObject(self.storage.getItem(self.cartName));
+            if(cart==null){
+                return;
+            }
             var items = cart.items;
             console.log(items.length);
             var $tableCartBody = $(self.tableCart).find("tbody");
@@ -116,25 +123,37 @@ var ShoppingCart = {
             if (items.length == 0) {
                 $tableCartBody.html("");
             } else {
-                for (var i = 0; i < items.length; ++i) {
-                    var item = items[i];
+                
+                var productNameArr = $.map(items, function(item) {
+                    return item.product;
+                });
+
+                var groups = productNameArr.reduce(function(acc,e){acc[e] = (e in acc ? acc[e]+1 : 1); return acc}, {});
+
+                var itemArr=self._removeDuplicates(items,'product');
+                
+                
+                var subTotal=0;
+                for (var i = 0; i < itemArr.length; ++i) {
+                    
+                    var item = itemArr[i];
                     var product = item.product;
                     var price = self.currency + " " + item.price;
-                    var qty = item.qty;
+                    var qty = groups[product];
+                    subTotal+=parseInt(qty)*parseInt(item.price);
                     var html = "<tr><td class='pname'>" + product + "</td>" + "<td class='pqty'><input type='text' value='" + qty + "' class='qty'/></td>";
                     html += "<td class='pprice'>" + price + "</td><td class='pdelete'><a href='' data-product='" + product + "'>&times;</a></td></tr>";
 
                     $tableCartBody.html($tableCartBody.html() + html);
                 }
-
             }
 
-            if (items.length == 0) {
-               // self.$subTotal[0].innerHTML = self.currency + " " + 0.00;
-            } else {
+            var $subTotal=$('#sub-total');
 
-                //var total = self.storage.getItem(self.total);
-                //self.$subTotal[0].innerHTML = self.currency + " " + total;
+            if (items.length == 0) {
+                $subTotal[0].innerHTML = self.currency + " " + 0.00;
+            } else {
+                $subTotal[0].innerHTML = self.currency + " " + subTotal;
             }
     },
     _convertString: function (numStr) {
@@ -165,6 +184,22 @@ var ShoppingCart = {
     _convertNumber: function (n) {
         var str = n.toString();
         return str;
-    }
+    },
+    
+ _removeDuplicates(originalArray, prop) {
+     var newArray = [];
+     var lookupObject  = {};
+
+     for(var i in originalArray) {
+        lookupObject[originalArray[i][prop]] = originalArray[i];
+     }
+
+     for(i in lookupObject) {
+         newArray.push(lookupObject[i]);
+     }
+      return newArray;
+ }
+
+
 }
 
