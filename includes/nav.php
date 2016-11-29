@@ -198,7 +198,7 @@
                 
                 <div class="medium-5 small-12 columns search-wrap">
                     <div class="main-search-form">
-                        <form method = "post" action="search.php" autocomplete="off">
+                        <form method = "post" action="search.php">
                             <input type="text" placeholder="What you are shopping for ..."  name="searchValue"   class="search-head">
                             <select>
                                 <option value="0">All Categories</option>
@@ -220,7 +220,7 @@
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                             </div>
                             <div class="float-left cart-link">
-                                <a href="cart.php"><span class="cart-count">0</span> Item(s)</a>
+                                <a href="">2 Item(s)</a>
                             </div>
                             <div class="clearfix"></div>
                         </div><!-- ends title /-->
@@ -268,10 +268,12 @@
                                 <?php  extract($_POST);
                                        extract($_GET);
 
-                                    if (isset($_POST['logged'])){
+                                    if (isset($_GET['logged'])){
 
-                                        if($_POST['logged']==true){
-                                            echo "Welcome,". $_POST['username'];
+                                        if($_GET['logged']==true){
+                                            echo "Welcome,". $_GET['username'];
+                                            echo "<script>localStorage.setItem('username', ". $_GET['username'].");</script>";
+
                                         }
                                         else{
                                             echo '<a href="http://sherpaa.herokuapp.com/includes/login.php" class="sign-in special-margin">Sign in</a> 
