@@ -270,7 +270,7 @@
 
                                     if (isset($_POST['logged'])){
 
-                                        if($_POST['logged']=='true'){
+                                        if($_POST['logged']==true){
                                             echo "Welcome,". $_POST['username'];
                                         }
                                         else{
