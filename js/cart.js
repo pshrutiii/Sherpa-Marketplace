@@ -2,7 +2,6 @@ var ShoppingCart = {
     btnAddToCart: $('.addCart'),
     shippingPrice: ".shippingPrice",
     currency:"$",
-
     cartName: 'ShoppingCart',
     total: 'total',
     shippingRates: 'shippingRates',
@@ -78,13 +77,17 @@ var ShoppingCart = {
 
         console.log('Setting items');
         console.log(self.cartCount[0]);
+                if (self.storage.getItem(self.cartName) != null) {
 
         var cart = self._toJSONObject(self.storage.getItem(self.cartName));
         var items = cart.items;
         console.log(items.length);
         //Setting count to sessionstorage items        
         self.cartCount.text(items.length);
+                }else{
 
+                    self.cartCount.text('0');
+                }
         if (self.storage.getItem(self.cartName) == null) {
 
             var cart = {};
@@ -163,7 +166,5 @@ var ShoppingCart = {
         var str = n.toString();
         return str;
     }
-
-
 }
 
