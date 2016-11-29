@@ -1,13 +1,13 @@
 # Items left TO DO:
 AJ: 
 - UI fix
-- Autocomplete
+- Autocomplete (additional feature)
 
 Shruti:
 - Top nav add contents (Contact, About, Home)
 - Logo
 - Prev & Next btns fixed
-- Bg image (parallax effect)
+- Bg image (parallax effect) - (additional feature)
 - static image change
 
 Ashutosh:
@@ -15,11 +15,11 @@ Ashutosh:
 - Wishlist
 
 Manu:
-- timer thing on top sale
+- timer thing on top sale (additional feature)
 
 Ami:
 - change nav.php to have header & nav separately
-- video of the site
+- take VIDEO of the site and submit before 12/09 midnight
 
 Hiral:
 - UI fix
