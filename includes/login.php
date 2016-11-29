@@ -97,7 +97,7 @@
               if ($line = pg_fetch_assoc($result)) {
                 if ($line['rows'] == 0) {
                  echo "login failed";
-                 header('Location: ../index.php');
+                 header('Location:http://sherpaa.herokuapp.com/index.php');
                 }
               }
               else {
@@ -111,8 +111,9 @@
               }
             
           }
+          echo "<script>localStorage.setItem('username', ".$email.");</script>";
       }
-        echo "<script>localStorage.setItem('username', ".$email.");</script>";
+        
     ?>
   </body>
 </html>

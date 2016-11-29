@@ -201,10 +201,11 @@ if (!$con) {
               else {
                 header('Location:ihttp://sherpaa.herokuapp.com/index.php?logged=true&username='.$email);
               }
+              echo "<script>localStorage.setItem('username', ".$email.");</script>";
             }
             //pg_close($con);
                
-          echo "<script>localStorage.setItem('username', ".$email.");</script>";
+          
     ?>
 
  </body>
