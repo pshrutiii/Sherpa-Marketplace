@@ -32,8 +32,7 @@
             </div>
             <!-- Categories -->
             <!-- Main slider -->
-              <div class="medium-9 columns no-pad-left">
-          <div class="banner row module">
+           <div class="medium-9 columns no-pad-left">
 
  <?php 
     
@@ -46,16 +45,30 @@ $productgroup = $_GET['product_group'];
       function view_product_list($rows, $author,$pg){
         for($i=0; $i<count($rows); $i++){
             printf(' 
-                     <div class="medium-4 columns no-pad-left" style="height:400px;width:400px;">
-                        <h4 color="#1675E1">
-                        %s
-                        </h4>
-                         <a href="viewProduct.php?product_detail=%s&product_gr=%s"><img src="%s" style="height:300px;width:300px"></img></a>
-                                
-                      </div>
-                        ',$rows[$i][1],$i,$pg,$rows[$i][3]);
+
+                    <div class="medium-4 columns" style="margin-bottom: 20px;">
+                      
+                         <a href="viewProduct.php?product_detail=%s&product_gr=%s" class="portfolio-box"><img src="%s"  style="height:200px;width:auto" class="img-responsive" alt="">
+                             <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    
+                                </div>
+                                <div class="project-name">
+                                          %s
+
+                               </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                       ',$i,$pg,$rows[$i][3],$rows[$i][1]);
 
          }
+
+
+
+  
 
 
 
@@ -111,7 +124,8 @@ else if($productgroup=="hiral"){
     <!-- jQuery Timer plugin delete if not using -->
     <script src="./assets/jquery.simple.timer.js.download"></script>
 
-   
+   <script src="js/creative.min.js"></script>
+
     
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
