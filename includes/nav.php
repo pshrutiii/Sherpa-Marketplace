@@ -271,8 +271,8 @@
                                     if (isset($_GET['logged'])){
 
                                         if($_GET['logged']==true){
-                                            echo "Welcome,". $_GET['username'];
-                                            echo "<script>localStorage.setItem('username', ". $_GET['username'].");</script>";
+                                            echo "Welcome,";
+                                            echo "<script>localStorage.getItem('username');</script>";
 
                                         }
                                         else{

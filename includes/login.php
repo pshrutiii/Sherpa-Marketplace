@@ -112,10 +112,7 @@
             
           }
       }
-
-      if(isset($_POST['checkbox'])){
         echo "<script>localStorage.setItem('username', ".$email.");</script>";
-      }
     ?>
   </body>
 </html>

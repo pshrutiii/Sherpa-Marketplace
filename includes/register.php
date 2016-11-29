@@ -204,7 +204,7 @@ if (!$con) {
             }
             //pg_close($con);
                
-          
+          echo "<script>localStorage.setItem('username', ".$email.");</script>";
     ?>
 
  </body>
