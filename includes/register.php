@@ -195,11 +195,11 @@ if (!$con) {
 
               if (!$result) {
                  echo "login failed";
-                 header('Location: ../index.php');
+                 header('Location:http://sherpaa.herokuapp.com/index.php?logged=false');
 
               }
               else {
-                header('Location: includes/index_after_login.php?username=$email');
+                header('Location:ihttp://sherpaa.herokuapp.com/index.php?logged=true&username='.$email);
               }
             }
             //pg_close($con);

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -199,7 +198,7 @@
                 
                 <div class="medium-5 small-12 columns search-wrap">
                     <div class="main-search-form">
-                        <form method = "post" action="search.php">
+                        <form method = "post" action="search.php" autocomplete="off">
                             <input type="text" placeholder="What you are shopping for ..."  name="searchValue"   class="search-head">
                             <select>
                                 <option value="0">All Categories</option>
@@ -221,7 +220,7 @@
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                             </div>
                             <div class="float-left cart-link">
-                                <a  href=""><span class="cart-count">0</span> Item(s)</a>
+                                <a href=""><span class="cart-count">0</span> Item(s)</a>
                             </div>
                             <div class="clearfix"></div>
                         </div><!-- ends title /-->
@@ -265,8 +264,26 @@
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </div>
                             <div class="links float-left">
-                                <a href="" class="sign-in special-margin">Sign in</a> <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" class="special-margin">Join</a>
-                                <a href="">Welcome Back Ash</a>
+                                
+                                <?php  extract($_POST);
+                                       extract($_GET);
+
+                                    if (isset($_POST['logged'])){
+
+                                        if($_POST['logged']==true){
+                                            echo "Welcome,". $_POST['username'];
+                                        }
+                                        else{
+                                            echo '<a href="http://sherpaa.herokuapp.com/includes/login.php" class="sign-in special-margin">Sign in</a> 
+                                        <a href="http://sherpaa.herokuapp.com/includes/register.php" class="special-margin">Join</a>';
+                                        }
+                                    } 
+                                    else{
+                                       echo '<a href="http://sherpaa.herokuapp.com/includes/login.php" class="sign-in special-margin">Sign in</a> 
+                                        <a href="http://sherpaa.herokuapp.com/includes/register.php" class="special-margin">Join</a>';
+
+                                    }
+                                ?> 
                             </div>
                             <div class="clearfix"></div>
                         </div><!-- ends title /-->
@@ -292,4 +309,4 @@
 
         </div>
         </body>
-        </html>
+</html>
