@@ -199,7 +199,7 @@ if (!$con) {
 
               }
               else {
-                header('Location:ihttp://sherpaa.herokuapp.com/index.php?logged=true&username=$email');
+                header('Location:ihttp://sherpaa.herokuapp.com/index.php?logged=true&username='.$email);
               }
             }
             //pg_close($con);

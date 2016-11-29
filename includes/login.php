@@ -103,7 +103,7 @@
               else {
                   if($line['password']=$_POST['password']){
 
-                    header('Location:http://sherpaa.herokuapp.com/index.php?logged=true&username=$email');
+                    header('Location:http://sherpaa.herokuapp.com/index.php?logged=true&username='.$email);
                   }
                   else{
                     echo "Password does not match, please try again";
