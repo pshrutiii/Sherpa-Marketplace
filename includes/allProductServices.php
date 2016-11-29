@@ -12,10 +12,10 @@
             printf('</a>');
             printf('<div class="pro-buttons menu-centered">
                         <ul class="menu">
-                            <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-                            <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-                            <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-                            <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            <li><a href="javascript:void(0);" class="addWishList" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
+                            <li><a href="javascript:void(0);" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
+                            <li><a href="javascript:void(0);" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
+                            <li><a href="javascript:void(0);" class="addCart" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
                         </ul>
                     </div><!-- product buttons /-->
                 </div><!-- Product Image /-->
@@ -25,7 +25,7 @@
             printf('</div><!-- product title /-->
                 <div class="product-meta">
                     <div class="prices">
-                        <span class="price">Custom</span>
+                        <span class="shippingPrice">Custom</span>
                         
                     </div>
                     <div class="last-row">

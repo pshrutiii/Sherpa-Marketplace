@@ -211,7 +211,7 @@
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                             </div>
                             <div class="float-left cart-link">
-                                <a href="">2 Item(s)</a>
+                                <a href="cart.php" ><span class="cart-count">2 </span> Item(s)</a>
                             </div>
                             <div class="clearfix"></div>
                         </div><!-- ends title /-->
@@ -320,7 +320,7 @@
 
             <div class="medium-9 small-12 columns">
                 <div class="featured-area">
-                    <div class="section-title"><h2><span>Frequently Visited</span></h2></div><!-- section title /-->
+                    <div class="section-title"><h2><span>Most Popular</span></h2></div><!-- section title /-->
                         <div class="content-section owl-carousel"><?php include('includes/mostVisited.php'); ?></div>
                 </div><!-- Featured Area /-->
             </div>
@@ -343,17 +343,17 @@
                                 Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">00:</span><span class="minutes">00:</span><span class="seconds">00</span><span class="clearDiv"></span></span>
                             </div>
                             <div class="product-image">
-                                <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
+                                <a href="#">
                                     <img src="./assets/product4-1.jpg" alt="">
                                     <img src="./assets/product4-2.jpg" alt="" class="animated pulse">
                                 </a>
 
                                 <div class="pro-buttons menu-centered">
                                     <ul class="menu">
-                                        <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-                                        <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-                                        <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="#" class="addWishList" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
+                                        <li><a href="#" class="addCart" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div><!-- product buttons /-->
 
@@ -383,7 +383,7 @@
 
             <div class="medium-12 small-12 columns">
                 <div class="featured-area">
-                    <div class="section-title"><h2><span>Top rated pages</span></h2></div><!-- section title /-->
+                    <div class="section-title"><h2><span>Top Rated</span></h2></div><!-- section title /-->
                     <div class="content-section owl-carousel"><?php include('includes/mostRated.php'); ?></div>
                 </div><!-- Featured Area /-->
             </div>
@@ -392,7 +392,7 @@
     <!-- ALL products/services section -->
         <div class="whats-new row module">
             <div class="big-section-title">
-                <h2><span>Our Products and Services</span></h2>
+                <h2><span>All Products and Services</span></h2>
             </div><!-- big Section title ends.-->
 
             <div class="new-content">
@@ -662,6 +662,7 @@
     
     <script type="text/javascript" src="js/bootstrap-rating.min.js"></script>
     <script type="text/javascript" src="js/rating.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
     <script>
     $(document).ready(function() {
         $(".owl-carousel").owlCarousel({
@@ -689,6 +690,9 @@
             scrollPerPage : true
             
         });
+
+        ShoppingCart.init();
+
      });
 
     </script>
