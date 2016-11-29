@@ -199,9 +199,10 @@ if (!$con) {
 
               }
               else {
+                echo "<script>localStorage.setItem('username', ".$email.");</script>";
                 header('Location:ihttp://sherpaa.herokuapp.com/index.php?logged=true&username='.$email);
               }
-              echo "<script>localStorage.setItem('username', ".$email.");</script>";
+
             }
             //pg_close($con);
                
