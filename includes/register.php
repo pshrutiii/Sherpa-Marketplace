@@ -77,15 +77,15 @@ if (!$con) {
             <div class="row">
                 <div class="col-xs-4 col-md-4">
                     <select class="form-control" name="birthmonth[]" style="margin-bottom: 10px;">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
                         <option value="10">10</option>
                         <option value="11">11</option>
                         <option value="12">12</option>
@@ -93,15 +93,15 @@ if (!$con) {
                 </div>
                 <div class="col-xs-4 col-md-4">
                     <select class="form-control" name="birthdate[]" style="margin-bottom: 10px;">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
                         <option value="10">10</option>
                         <option value="11">11</option>
                         <option value="12">12</option>
@@ -191,7 +191,7 @@ if (!$con) {
 
               $result = pg_query($con, "insert into users(firstname,lastname,email,password,birthdate,gender)
                values('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['youremail']."','".$_POST['password']."','"
-                .$_POST['birthmonth'][0]."/".$_POST['birthdate'][0]."/".$_POST['birthyear'][0].$_POST['birthyear'][1].$_POST['birthyear'][2].$_POST['birthyear'][3]."','".$_POST['sex']."')");
+                .$_POST['birthmonth'][0].$_POST['birthmonth'][1]."/".$_POST['birthdate'][0].$_POST['birthdate'][1]."/".$_POST['birthyear'][0].$_POST['birthyear'][1].$_POST['birthyear'][2].$_POST['birthyear'][3]."','".$_POST['sex']."')");
 
               if (!$result) {
                  echo "login failed";
