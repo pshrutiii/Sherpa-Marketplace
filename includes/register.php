@@ -76,7 +76,7 @@ if (!$con) {
                 Birth Date</label>
             <div class="row">
                 <div class="col-xs-4 col-md-4">
-                    <select class="form-control" name="birthdate[]" style="margin-bottom: 10px;">
+                    <select class="form-control" name="birthmonth" style="margin-bottom: 10px;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -92,7 +92,7 @@ if (!$con) {
                     </select>
                 </div>
                 <div class="col-xs-4 col-md-4">
-                    <select class="form-control" style="margin-bottom: 10px;">
+                    <select class="form-control" name="birthdate" style="margin-bottom: 10px;">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -127,7 +127,7 @@ if (!$con) {
                     </select>
                 </div>
                 <div class="col-xs-4 col-md-4">
-                    <select class="form-control" style="margin-bottom: 10px;">
+                    <select class="form-control" name="birthyear" style="margin-bottom: 10px;">
                         <option value="2005">2005</option>
                         <option value="2004">2004</option>
                         <option value="2003">2003</option>
@@ -191,7 +191,7 @@ if (!$con) {
 
               $result = pg_query($con, "insert into users(firstname,lastname,email,password,birthdate,gender)
                values('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['youremail']."','".$_POST['password']."','"
-                .$_POST['birthdate'][0]."/".$_POST['birthdate'][1]."/".$_POST['birthdate'][2]."','".$_POST['sex']."')");
+                .$_POST['birthmonth']."/".$_POST['birthdate']."/".$_POST['birthyear']."','".$_POST['sex']."')");
 
               if (!$result) {
                  echo "login failed";
