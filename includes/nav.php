@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -265,8 +264,26 @@
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </div>
                             <div class="links float-left">
-                                <a href="" class="sign-in special-margin">Sign in</a> <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" class="special-margin">Join</a>
-                                <a href="">Welcome Back Ash</a>
+                                
+                                <?php  extract($_POST);
+                                       extract($_GET);
+
+                                    if (isset($_POST['logged'])){
+
+                                        if($_POST['logged']=='true'){
+                                            echo "Welcome,". $_POST['username'];
+                                        }
+                                        else{
+                                            echo '<a href="http://sherpaa.herokuapp.com/includes/login.php" class="sign-in special-margin">Sign in</a> 
+                                        <a href="http://sherpaa.herokuapp.com/includes/register.php" class="special-margin">Join</a>';
+                                        }
+                                    } 
+                                    else{
+                                       echo '<a href="http://sherpaa.herokuapp.com/includes/login.php" class="sign-in special-margin">Sign in</a> 
+                                        <a href="http://sherpaa.herokuapp.com/includes/register.php" class="special-margin">Join</a>';
+
+                                    }
+                                ?> 
                             </div>
                             <div class="clearfix"></div>
                         </div><!-- ends title /-->
@@ -292,4 +309,4 @@
 
         </div>
         </body>
-        </html>
+</html>
