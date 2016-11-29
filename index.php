@@ -263,14 +263,13 @@
                         <!-- Hidden Menus -->
                         <div class="dropdown-pane" id="myaccount-dropdown" data-dropdown="yfj7hn-dropdown" data-hover="true" data-hover-pane="true" aria-hidden="true" data-yeti-box="myaccount-dropdown" data-resize="myaccount-dropdown"  style="top: 56.6667px; left: 0px;" data-events="resize">
                             <ul class="menu vertical">
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">My Account</a></li>
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">My Orders</a></li>
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Message Center</a></li>
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Wish List</a></li>
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">My Favorite Stores</a></li>
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">My Coupons</a></li>
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Logout</a></li>
-                            </ul>
+                                    <li class="menuitem"><a href="productList.php?product_group=ash" tabindex="0">Code Warriors</a></li>
+                            <li role="menuitem"><a href="productList.php?product_group=aj">SMedia</a></li>
+                            <li role="menuitem"><a href="productList.php?product_group=manu">Agent Immobilier</a></li>
+                            <li role="menuitem"><a href="productList.php?product_group=hiral">Parikh's Snooker Club</a></li>
+                            <li role="menuitem"><a href="productList.php?product_group=shruti"> Cleaner City</a></li>
+                            <li role="menuitem"><a href="productList.php?product_group=ami"> TravelHack</a></li>
+                       </ul>
                         </div>
                         <!-- Hidden Menus /-->
                     </div><!-- my account holder /-->
@@ -290,14 +289,13 @@
 
                     <nav class="widget-content">
                         <ul class="menu vertical dropdown" data-responsive-menu="accordion medium-dropdown" role="menubar" data-dropdown-menu="vtz2ih-dropdown-menu">
-                            <li class="menuitem"><a href="https://codewarriors.herokuapp.com/" tabindex="0"><i class="fa fa-grav" aria-hidden="true"></i> Code Warriors</a>
-                            </li>
-                            <li role="menuitem"><a href="https://smedia.herokuapp.com/"><i class="fa fa-mobile" aria-hidden="true"></i> SMedia</a></li>
-                            <li role="menuitem"><a href="http://agentimmobilier.000webhostapp.com/index.php"><i class="flaticon-monitor"></i> Agent Immobilier</a></li>
-                            <li role="menuitem"><a href="http://hiralparikh.000webhostapp.com/"><i class="flaticon-monitor"></i> Parikh's Snooker Club</a></li>
-                            <li role="menuitem"><a href="http://cleanercity.co"><i class="flaticon-monitor"></i> Cleaner City</a></li>
-                            <li role="menuitem"><a href="https://sign-privilege.000webhostapp.com"><i class="flaticon-monitor"></i> TravelHack</a></li>
-                        </ul>
+                              <li class="menuitem"><a href="productList.php?product_group=ash" tabindex="0">Code Warriors</a></li>
+                            <li role="menuitem"><a href="productList.php?product_group=shruti">SMedia</a></li>
+                            <li role="menuitem"><a href="productList.php?product_group=manu">Agent Immobilier</a></li>
+                            <li role="menuitem"><a href="productList.php?product_group=hiral">Parikh's Snooker Club</a></li>
+                            <li role="menuitem"><a href="productList.php?product_group=aj"> Cleaner City</a></li>
+                            <li role="menuitem"><a href="productList.php?product_group=ami"> TravelHack</a></li>
+                       </ul>
                     </nav><!-- widget-content /-->
 
                 </div><!-- widget /-->
