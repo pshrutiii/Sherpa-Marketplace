@@ -73,7 +73,11 @@
       extract($_POST);
       extract($_GET);
 
-      $conn_string = "host=sheep port=5432 dbname=test user=lamb password=bar";
+
+      $server = "ec2-174-129-242-241.compute-1.amazonaws.com";
+      $postgres_user="acrxklsjedgwdc";
+      $postgres_pass="v6vtN4K4Pbgj7UIKfNIKmbT2PQ";
+      $db="d4a07qknvais7o";
     
       if(isset($_POST['submit']) && isset($_POST['email']) && isset($_POST['password'])){
           $email=$_POST['email'];
@@ -81,13 +85,11 @@
          
               //make a db call and check whether the user exist or not
 
-              $con = pg_connect($conn_string);
-
-              if (!$con) {
-                      
-                  die("Connection could not be established: ");
-                           
-              }
+                $con = pg_connect("host=$server port=5432 dbname=$db user=$postgres_user password=$postgres_pass");
+                if (!$con) {
+                  echo "A connection error occurred.\n";
+                  exit;
+                }
               else{
 
               $result = pg_query($con, "select * from users where email=". $email);
