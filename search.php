@@ -1,7 +1,8 @@
 <?php include('includes/nav.php')?>
+
 <?php
 
-$var = $_POST['searchValue'];
+$var = $_GET['searchValue'];
 //echo $var;
 
    function get_data($url) {
@@ -48,295 +49,49 @@ $var = $_POST['searchValue'];
 
     //Initial testing
     $flag = true;
+
+    //$productgroup = $_GET['product_group'];
     
+      function view_product_list($rows,$pg,$var){
+      	for($i=0;$i<count($rows);$i++){
+      		if(stripos($rows[$i][1],$var) !== false){
+      			global $flag;
+	        	printf(' 
+
+                    <div class="medium-3 columns" style="margin-bottom: 20px;">
+                      
+                         <a href="viewProduct.php?product_detail=%s&product_gr=%s" class="portfolio-box"><img src="%s"  style="height:200px;width:auto;" class="img-responsive" alt="">
+                             <div class="portfolio-box-caption" >
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"  >
+                                    
+                                </div>
+                                <div class="project-name">
+                                          %s
+
+                               </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                       ',$i,$pg,$rows[$i][3],$rows[$i][1]);
+
+	        	$flag = false;
+        	}
+        }
+
+     }
+
      printf("<table>");
      if(strlen($var) != 0){
-		     for($i=0;$i<count($aj_rows);$i++){
-		          
-		           
-
-						         if(stripos($aj_rows[$i][1],$var) !== false){
-						         
-						         printf('<div class="medium-3 product" align="middle">');
-						                                    printf('<div class="product-image">');
-						                                    //printf('<div class="sale-tag">Hot</div>');
-						                                            printf('<a href="%s">',$aj_rows[$i][0]);
-						                                                printf('<img style="height:270px; width:270px" src="%s" alt="">',$aj_rows[$i][3]);
-						                                                printf('<img style="height:270px; width:270px" src="%s" alt="">',$aj_rows[$i][3]);
-						                                    printf('</a>');
-						                                    printf('
-						                                            <div class="pro-buttons menu-centered" >
-						                                                <ul class="menu">
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-						                                                </ul>
-						                                            </div><!-- product buttons /-->
-
-						                                        </div><!-- Product Image /-->
-						                                        <div class="product-title">
-																');
-
-						                                           printf('<a href="%s">%s</a>',$aj_rows[$i][0],$aj_rows[$i][1]);
-
-						                                        printf('</div><!-- product title /-->
-						                                        <div class="product-meta" >
-						                                            <div class="prices">
-						                                            	<span class="price">$%s</span>
-						                                            </div>
-						                                            <div class="last-row">
-						                                                <div class="pro-rating float-left">',$aj_rows[$i][8]);
-																			printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$aj_rows[$i][0],$aj_rows[$i][5]);
-								                                        printf('</div>
-						                                                <div class="store float-right">
-						                                                    By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Anthony Bell</a>
-						                                                </div>
-						                                            </div><!-- last row /-->
-						                                            <div class="clearfix"></div>
-						                                        </div><!-- product meta /-->
-						                                    </div><!-- Product /-->');
-
-						                                    $flag = false;
-						                                    
-							         
-
-						         }
-						         if(strpos(strtolower($ash_rows[$i][1]),strtolower($var)) !== false){
+		view_product_list($aj_rows,"aj",$var);	
+		view_product_list($ash_rows,"ash",$var);
+		view_product_list($shruti_rows,"shruti",$var);
+		view_product_list($manu_rows,"manu",$var);
+		view_product_list($hiral_rows,"hiral",$var);
+		view_product_list($ami_rows,"ami",$var);
 
 
-							         printf('<div class="medium-3 product" align="middle">');
-						                                    printf('<div class="product-image">');
-						                                    //printf('<div class="sale-tag">Hot</div>');
-						                                            printf('<a href="%s">',$ash_rows[$i][0]);
-						                                                printf('<img style="height:270px; width:270px" src="%s" alt="">',$ash_rows[$i][3]);
-						                                                printf('<img style="height:270px; width:270px" src="%s" alt="">',$ash_rows[$i][3]);
-						                                    printf('</a>');
-						                                    printf('
-						                                            <div class="pro-buttons menu-centered" >
-						                                                <ul class="menu">
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-						                                                </ul>
-						                                            </div><!-- product buttons /-->
-
-						                                        </div><!-- Product Image /-->
-						                                        <div class="product-title">
-																');
-
-						                                           printf('<a href="%s">%s</a>',$ash_rows[$i][0],$ash_rows[$i][1]);
-
-						                                        printf('</div><!-- product title /-->
-						                                        <div class="product-meta">
-						                                            <div class="prices">
-						                                            	<span class="price">$%s</span>
-						                                            </div>
-						                                            <div class="last-row">
-						                                                <div class="pro-rating float-left">',$ash_rows[$i][8]);
-																			printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$ash_rows[$i][0],$ash_rows[$i][5]);
-								                                        printf('</div>
-						                                                <div class="store float-right">
-						                                                    By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Ashutosh Singh</a>
-						                                                </div>
-						                                            </div><!-- last row /-->
-						                                            <div class="clearfix"></div>
-						                                        </div><!-- product meta /-->
-						                                    </div><!-- Product /-->');
-
-						                                    $flag = false;
-
-						         }
-						         if(stripos($shruti_rows[$i][1],$var) !== false){
-
-						          printf('<div class="medium-3 product" align="middle">');
-						                                    printf('<div class="product-image">');
-						                                    //printf('<div class="sale-tag">Hot</div>');
-						                                            printf('<a href="%s">',$shruti_rows[$i][0]);
-						                                                printf('<img style="height:270px; width:270px" src="%s" alt="">',$shruti_rows[$i][3]);
-						                                                printf('<img style="height:270px; width:270px" src="%s" alt="">',$shruti_rows[$i][3]);
-						                                    printf('</a>');
-						                                    printf('
-						                                            <div class="pro-buttons menu-centered" >
-						                                                <ul class="menu">
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-						                                                </ul>
-						                                            </div><!-- product buttons /-->
-
-						                                        </div><!-- Product Image /-->
-						                                        <div class="product-title">
-																');
-
-						                                           printf('<a href="%s">%s</a>',$shruti_rows[$i][0],$shruti_rows[$i][1]);
-
-						                                        printf('</div><!-- product title /-->
-						                                        <div class="product-meta">
-						                                            <div class="prices">
-						                                            	<span class="price">$%s</span>
-						                                            </div>
-						                                            <div class="last-row">
-						                                                <div class="pro-rating float-left">',$shruti_rows[$i][8]);
-																			printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$shruti_rows[$i][0],$shruti_rows[$i][5]);
-								                                        printf('</div>
-						                                                <div class="store float-right">
-						                                                    By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Shruti Padmanabhan</a>
-						                                                </div>
-						                                            </div><!-- last row /-->
-						                                            <div class="clearfix"></div>
-						                                        </div><!-- product meta /-->
-						                                    </div><!-- Product /-->');
-
-						                                    $flag = false;
-							         
-
-						         }
-
-						         if(stripos($ami_rows[$i][1],$var) !== false){
-							          printf('<div class="medium-3 product" align="middle">');
-						                                    printf('<div class="product-image">');
-						                                    //printf('<div class="sale-tag">Hot</div>');
-						                                            printf('<a href="%s">',$ami_rows[$i][0]);
-						                                                printf('<img style="height:270px; width:270px" src="%s" alt="">',$ami_rows[$i][3]);
-						                                                printf('<img style="height:270px; width:270px" src="%s" alt="">',$ami_rows[$i][3]);
-						                                    printf('</a>');
-						                                    printf('
-						                                            <div class="pro-buttons menu-centered" >
-						                                                <ul class="menu">
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-						                                                </ul>
-						                                            </div><!-- product buttons /-->
-
-						                                        </div><!-- Product Image /-->
-						                                        <div class="product-title">
-																');
-
-						                                           printf('<a href="%s">%s</a>',$ami_rows[$i][0],$ami_rows[$i][1]);
-
-						                                        printf('</div><!-- product title /-->
-						                                        <div class="product-meta">
-						                                            <div class="prices">
-						                                            	<span class="price">$%s</span>
-						                                            </div>
-						                                            <div class="last-row">
-						                                                <div class="pro-rating float-left">',$ami_rows[$i][8]);
-																			printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$ami_rows[$i][0],$ami_rows[$i][5]);
-								                                        printf('</div>
-						                                                <div class="store float-right">
-						                                                    By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Ami Patel</a>
-						                                                </div>
-						                                            </div><!-- last row /-->
-						                                            <div class="clearfix"></div>
-						                                        </div><!-- product meta /-->
-						                                    </div><!-- Product /-->');
-
-						                                    $flag = false;
-
-
-						     }
-
-						     if(stripos($manu_rows[$i][1],$var) !== false){
-							          printf('<div class="medium-3 product" align="middle">');
-						                                    printf('<div class="product-image">');
-						                                    //printf('<div class="sale-tag">Hot</div>');
-						                                            printf('<a href="%s">',$manu_rows[$i][0]);
-						                                                printf('<img style="height:270px; width:270px" src="%s" alt="">',$manu_rows[$i][3]);
-						                                                printf('<img style="height:270px; width:270px" src="%s" alt="">',$manu_rows[$i][3]);
-						                                    printf('</a>');
-						                                    printf('
-						                                            <div class="pro-buttons menu-centered" >
-						                                                <ul class="menu">
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-						                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-						                                                </ul>
-						                                            </div><!-- product buttons /-->
-
-						                                        </div><!-- Product Image /-->
-						                                        <div class="product-title">
-																');
-
-						                                           printf('<a href="%s">%s</a>',$manu_rows[$i][0],$manu_rows[$i][1]);
-
-						                                        printf('</div><!-- product title /-->
-						                                        <div class="product-meta">
-						                                            <div class="prices">
-						                                            	<span class="price">$%s</span>
-						                                            </div>
-						                                            <div class="last-row">
-						                                                <div class="pro-rating float-left">',$manu_rows[$i][8]);
-																			printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$manu_rows[$i][0],$manu_rows[$i][5]);
-								                                        printf('</div>
-						                                                <div class="store float-right">
-						                                                    By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Manu Barsainyan</a>
-						                                                </div>
-						                                            </div><!-- last row /-->
-						                                            <div class="clearfix"></div>
-						                                        </div><!-- product meta /-->
-						                                    </div><!-- Product /-->');
-
-						                                    $flag = false;
-
-
-						     }
-
-						     if(stripos($hiral_rows[$i][1],$var) !== false){
-	          printf('<div class="medium-3 product" align="middle">');
-                                    printf('<div class="product-image">');
-                                    //printf('<div class="sale-tag">Hot</div>');
-                                            printf('<a href="%s">',$hiral_rows[$i][0]);
-                                                printf('<img style="height:270px; width:270px" src="%s" alt="">',$hiral_rows[$i][3]);
-                                                printf('<img style="height:270px; width:270px" src="%s" alt="">',$hiral_rows[$i][3]);
-                                    printf('</a>');
-                                    printf('
-                                            <div class="pro-buttons menu-centered" >
-                                                <ul class="menu">
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-                                                    <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-                                                </ul>
-                                            </div><!-- product buttons /-->
-
-                                        </div><!-- Product Image /-->
-                                        <div class="product-title">
-										');
-
-                                           printf('<a href="%s">%s</a>',$hiral_rows[$i][0],$hiral_rows[$i][1]);
-
-                                        printf('</div><!-- product title /-->
-                                        <div class="product-meta">
-                                            <div class="prices">
-                                            	<span class="price">$%s</span>
-                                            </div>
-                                            <div class="last-row">
-                                                <div class="pro-rating float-left">',$hiral_rows[$i][8]);
-													printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$hiral_rows[$i][0],$hiral_rows[$i][5]);
-		                                        printf('</div>
-                                                <div class="store float-right">
-                                                    By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">Hiral Parikh</a>
-                                                </div>
-                                            </div><!-- last row /-->
-                                            <div class="clearfix"></div>
-                                        </div><!-- product meta /-->
-                                    </div><!-- Product /-->');
-
-                                    $flag = false;
-
-
-                                    }
-
-
-     				
-		     
-		     }
      }else{
      	echo "Empty Search. ";
      }
