@@ -127,12 +127,12 @@ $min=intval(($time-$hr*3600)/60);
     
 	
 }
-
+echo '</div></div>';
 }
                         
                         ?>
                    
-			echo '</div></div>';
+			
                 </div><!-- Featured Area /-->
             </div><!-- Today's Deal /-->
 
