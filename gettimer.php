@@ -15,7 +15,7 @@ else
 {
 	echo 'connected';
 $result = pg_query($con, "select * from todaysdeals");
-while($line=mysqli_fetch_assoc($result))
+while($line=pg_fetch_assoc($result))
 {
 	echo 'found data';
 $time=strtotime($line['date']);
