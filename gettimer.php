@@ -1,5 +1,5 @@
 <?php include('includes/nav.php')?>
-<?php include('includes/curl.php')?>
+
 
         <!-- Header Ends /-->
         <!-- Banner Section Starts -->
