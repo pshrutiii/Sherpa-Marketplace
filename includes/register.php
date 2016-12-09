@@ -195,7 +195,7 @@ if (!$con) {
 
               if (!$result) {
                  echo "registeration failed, please try again later";
-               #  header('Location:http://sherpaa.herokuapp.com/index.php?logged=false');
+                 header('Location:http://sherpaa.herokuapp.com/index.php?logged=false');
 
               }
               else {
