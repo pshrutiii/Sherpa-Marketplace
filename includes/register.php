@@ -166,10 +166,11 @@ if (!$con) {
     </div>
 </div>
 
+
 <?php
 
       extract($_POST);
-      extract($_GET);
+#      extract($_GET);
 
       //$conn_string = "host=sheep port=5432 dbname=test user=lamb password=bar";
       
