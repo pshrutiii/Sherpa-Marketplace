@@ -56,6 +56,7 @@
                         </div>
                         <div class="clearfix"></div>
                     </div><!-- section title /-->
+			  <div class="content-section owl-carousel">
                         <?php 
                         $server = "ec2-174-129-242-241.compute-1.amazonaws.com";
                         $postgres_user="acrxklsjedgwdc";
@@ -108,29 +109,26 @@ $min=intval(($time-$hr*3600)/60);
 		 $rows=$hiral_rows; 
 	   }
          echo ' 
-                    <div class="content-section today-deal medium-12 columns">
-                        <div class="product ">
-					
+                  
+                       <div class="medium-3 small-12 columns wd100 product">
+			<div class="product-image">
+			<div class="sale-tag">Deal</div>
+			<img style="height:150px;" src="'.$rows[$line['product_id']][3].'" alt="">
+			<img style="height:150px;" src="'.$rows[$line['product_id']][3].'" alt="">
                              <div class="timer">
                                 Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span><span class="minutes">'.$min.':</span><span class="seconds">'.$sec.'</span><span class="clearDiv"></span></span>
                             </div>
-                                                        <div class="product-image">
-                                <a href="#">
-                                    <img src="'.$rows[$line['product_id']][3].'" alt="">
-                                    <img src="'.$rows[$line['product_id']][3].'" alt="" class="animated pulse">
-                                </a>
-
-                                <div class="pro-buttons menu-centered">
-                                    <ul class="menu">
-                                        <li><a href="#" class="addWishList" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-                                        <li><a href="#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-                                        <li><a href="#" class="addCart" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
-                                    </ul>
-                                </div><!-- product buttons /-->
-
-                            </div><!-- Product Image /-->
-                            <div class="product-title">
+                              
+ <div class="pro-buttons menu-centered">
+	            <ul class="menu">
+	                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
+	                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
+	                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
+	                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
+	            </ul>
+	        </div><!-- product buttons /-->
+	    </div><!-- Product Image /-->
+	  
                                 <a href="viewProduct.php?product_detail='.$list[product_id].'&product_gr='.$list[product_group].'">'.$rows[$list[product_id][3]].'"</a>
                             </div><!-- product title /-->
                             <div class="product-meta">
@@ -143,7 +141,7 @@ $min=intval(($time-$hr*3600)/60);
                         </div><!-- Product /-->
 
                         <div class="clearfix"></div>
-                    </div><!-- content section /-->
+
                        ';   
 	
 }
@@ -151,7 +149,7 @@ $min=intval(($time-$hr*3600)/60);
 }
                         
                         ?>
-                   
+                                       </div><!-- content section /-->
 
                 </div><!-- Featured Area /-->
             </div><!-- Today's Deal /-->
