@@ -78,14 +78,11 @@ $result = pg_query($con, "select * from todaysdeals");
                             <div class="timer">'
 while($line=pg_fetch_assoc($result))
 {
-        
         $time=strtotime($line['date']);
-
-$currtime=strtotime("now");
-	
-$time=$time-$currtime;
+	$currtime=strtotime("now");
+	$time=$time-$currtime;
 	$hr=intval($time/3600);
-$min=intval(($time-$hr*3600)/60);
+	$min=intval(($time-$hr*3600)/60);
 	$sec=intval($time-$hr*3600-$min*60);
 	if($line['product_group']=="manu")
 	   {
@@ -111,15 +108,16 @@ $min=intval(($time-$hr*3600)/60);
 	   {
 		 $rows=$hiral_rows; 
 	   }
-         echo ' 
-                   
-                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span><span class="minutes">'.$min.':</span><span class="seconds">'.$sec.'</span><span class="clearDiv"></span></span>
-                           ';   
+         echo                  'Ends in: <span class="countdown timeout" data-seconds-left="5400">
+				<span class="hours">'.$hr.':</span>
+				<span class="minutes">'.$min.':</span>
+				<span class="seconds">'.$sec.'</span>
+				<span class="clearDiv"></span></span>';   
 	
 }
 	echo ' </div>
                             <div class="product-image">
-                                <a href="#"></div>';
+                                <a href="#"></div></div></div>';
 
 
 }
