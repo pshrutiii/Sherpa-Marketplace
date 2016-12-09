@@ -63,7 +63,7 @@ $server = "ec2-174-129-242-241.compute-1.amazonaws.com";
 $postgres_user="acrxklsjedgwdc";
 $postgres_pass="v6vtN4K4Pbgj7UIKfNIKmbT2PQ";
  $db="d4a07qknvais7o";
-echo 'here';
+
 			?>
 
                 </div><!-- Featured Area /-->
