@@ -118,14 +118,7 @@ $min=intval(($time-$hr*3600)/60);
 	   {
 		 $rows=$hiral_rows; 
 	   }
-	echo' <div class="item ">
-      <img src="'.$rows[$line['product_id']][3].'" alt="Chania">
-      <div class="carousel-caption">
-        <h3>'.$rows[$line['product_id']][1].'</h3>
-        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-      </div>
-    </div>';
-    
+	
 	
 }
 echo '</div></div>';
