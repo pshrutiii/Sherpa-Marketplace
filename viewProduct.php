@@ -30,9 +30,8 @@
             </div>
             <!-- Categories -->
             <!-- Main slider -->
-              <div class="medium-9 columns no-pad-left">
+              <div class="medium-9 columns no-pad-left" style="background-color:white">
           
-
  <?php 
     
 
@@ -42,34 +41,31 @@ $product_no = $_GET['product_detail'];
 $productgr = $_GET['product_gr'];
 $insertURL="";
       function view_products($rows, $author,$productno){
-        /*for($i=0; $i<count($rows); $i++){
-        */    printf(' <div class="banner row module">
-                        <h1 color="#000099" >
+        
+          printf(' <div class="banner row module" style="background-color:#FF5733">
+                     <center> <h1 style="color:white;font-family:comic sans mf;" class="lazyEffect "  >
                         %s
-                        </h1>
+                        </h1></center>
                      </div>
                      <div class="banner row module">
-                          <div class="medium-12 columns no-pad-left" ><img src="%s" height="600" width="800"></img></div>
+                          <div class="medium-6 columns no-pad-left" >
+                                   <center><img src="%s" height="400" width="400" class="img-thumbnail"></img></center>
+                                <br><br>   <h3  style="color:blue;font-family:comic sans mf;" class="price">Price : %s</h3><h3  style="color:blue;font-family:comic sans mf;" class="price" style="align:left"> Ratings : %s /5 </h3>
                           
-                    </div>
-                    <div class="banner row module">
-                     <div class="medium-8 columns no-pad-left"> %s
-                         </div>  
-                         <div class="medium-4 columns no-pad-left" >
-                            <h3  style="color:red;font-family:comic sans mf" class="price">Price : %s</h3>
-                          
-                           <h3  style="color:blue;font-family:comic sans mf">Ratings : %s out of 5 </h3>
-                                  
+                                 <br>   
                              <form><input type="button" class="btn btn-primary" name="atc" style="background-color:#4CAF50; color: white;padding: 15px 32px;text-align: center;font-size: 16px;height:100;width:500;" value="Add to Cart"></form>
                              <br>
-                            <form><input type="button" class="btn btn-primary" name="bn" style="background-color:#0000ff; color: white;padding: 15px 32px;text-align: center;font-size: 16px;height:100;width:500;" value="Buy Now"></form>
-                        
-                        </div>
-                        ',$rows[$productno][1],$rows[$productno][3],$rows[$productno][4],$rows[$productno][8],round($rows[$productno][9]));
+                          </div>
+                     <div class="medium-6 columns no-pad-left" style="color:black;"> %s
+                         </div>  
+                              
+                    </div>
+                        ',$rows[$productno][1],$rows[$productno][3],$rows[$productno][8],round($rows[$productno][9]),$rows[$productno][4]);
 
-        /* }
-*/
+        
+
     }
+
  if($productgr=="ami"){
         $visits=$ami_rows[$product_no][7]+1;
         $insertURL="http://sign-privilege.000webhostapp.com/increaseVisits.php?prodid=".$ami_rows[$product_no][0]."&&visits=".$visits ;
