@@ -82,7 +82,7 @@ echo '<div id="myCarousel" class="carousel slide" data-ride="carousel">
     <li data-target="#myCarousel" data-slide-to="2"></li>
     <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
-   <div class="carousel-inner" role="listbox">'
+   <div class="carousel-inner" role="listbox">';
 while($line=pg_fetch_assoc($result))
 {
         
