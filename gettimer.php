@@ -1,6 +1,23 @@
 <?php include('includes/nav.php')?>
 
+ <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 
+    <!-- Crousel JS -->
+    <script type="text/javascript" src="./assets/owl.carousel.min.js.download"></script>
+    <!-- jQuery Timer plugin delete if not using -->
+    <script src="./assets/jquery.simple.timer.js.download"></script>
+
+   
+    
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    
+    <script type="text/javascript" src="js/bootstrap-rating.min.js"></script>
+    <script type="text/javascript" src="js/rating.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+    <script>
         <!-- Header Ends /-->
         <!-- Banner Section Starts -->
         <div class="banner row module">
@@ -425,24 +442,7 @@ echo '</div>
     <!-- Page Preloader -->
     <div class="preloader" style="display: none;"></div>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-
-    <!-- Crousel JS -->
-    <script type="text/javascript" src="./assets/owl.carousel.min.js.download"></script>
-    <!-- jQuery Timer plugin delete if not using -->
-    <script src="./assets/jquery.simple.timer.js.download"></script>
-
    
-    
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-    
-    <script type="text/javascript" src="js/bootstrap-rating.min.js"></script>
-    <script type="text/javascript" src="js/rating.js"></script>
-    <script type="text/javascript" src="js/cart.js"></script>
-    <script>
     $(document).ready(function() {
         $(".owl-carousel").owlCarousel({
             items:3,
