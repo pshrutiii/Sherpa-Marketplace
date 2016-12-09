@@ -22,8 +22,7 @@ $currtime=strtotime("now");
 $time=$time-$currtime;
 	$hr=intval($time/3600);
 $min=intval(($time-$hr*3600)/60);
-	echo $line['product_group'];
-	echo $line['product_id'];
+	$sec=intval($time-$hr*3600-$min*60);
 	if($line['product_group']=="manu")
 	   {
 		 $rows=$manu_rows; 
@@ -48,17 +47,17 @@ $min=intval(($time-$hr*3600)/60);
 	   {
 		 $rows=$hiral_rows; 
 	   }
-           echo $rows;
+           
 			 echo ' 
                     <div class="content-section today-deal">
                         <div class="product small-12 columns">
 					
                             <div class="timer">
-                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span><span class="minutes">00:</span><span class="seconds">00</span><span class="clearDiv"></span></span>
+                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span><span class="minutes">'.$min.':</span><span class="seconds">'.$sec.'</span><span class="clearDiv"></span></span>
                             </div>
                             <div class="product-image">
                                 <a href="#">
-                                    <img src="" alt="">
+                                    <img src="'.$rows[$list['product_image']][3].'" alt="">
                                    
                                 </a>
                                 <div class="pro-buttons menu-centered">
@@ -71,7 +70,9 @@ $min=intval(($time-$hr*3600)/60);
                                 </div><!-- product buttons /-->
                             </div><!-- Product Image /-->
                             <div class="product-title">
-                                <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">abc</a>
+                                <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
+				'.$rows[$list['product_image']][3].'
+				</a>
                             </div><!-- product title /-->
                             <div class="product-meta">
                                 <div class="prices">
