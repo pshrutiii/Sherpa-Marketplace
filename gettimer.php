@@ -57,6 +57,7 @@
                         <div class="clearfix"></div>
                     </div><!-- section title /-->
                         <?php 
+                        $server = "ec2-174-129-242-241.compute-1.amazonaws.com";
                         ?>
                    
 
