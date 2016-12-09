@@ -117,7 +117,7 @@ $min=intval(($time-$hr*3600)/60);
                             </div>
                           <div class="product-image">
                                 <a href="#">
-                                    <img src="'.$rows[$line['product_id']][2].'" alt="">
+                                    <img src="'.$rows[$line['product_id']][3].'" alt="">
                                     <img src="./assets/product4-2.jpg" alt="" class="animated pulse">
                                 </a>
 
