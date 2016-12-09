@@ -57,18 +57,71 @@
                         <div class="clearfix"></div>
                     </div><!-- section title /-->
 
+                    <?php
+ include('includes/curl.php');
+$server = "ec2-174-129-242-241.compute-1.amazonaws.com";
+$postgres_user="acrxklsjedgwdc";
+$postgres_pass="v6vtN4K4Pbgj7UIKfNIKmbT2PQ";
+ $db="d4a07qknvais7o";
+echo 'here';
+$con = pg_connect("host=$server port=5432 dbname=$db user=$postgres_user password=$postgres_pass");
+if (!$con) {
+echo "A connection error occurred.\n";
+exit;
+}
+else
+{
+	echo 'connected';
+$result = pg_query($con, "select * from todaysdeals");
+while($line=pg_fetch_assoc($result))
+{
+	
+$time=strtotime($line['date']);
+echo date('D, d M Y H:i:s',$time);
+$currtime=strtotime("now");
+	echo date('D, d M Y H:i:s',$currtime);
+$time=$time-$currtime;
+	$hr=intval($time/3600);
+$min=intval(($time-$hr*3600)/60);
+	$sec=intval($time-$hr*3600-$min*60);
+	if($line['product_group']=="manu")
+	   {
+		 $rows=$manu_rows; 
+	   }
+	   if($line['product_group']=="ami")
+	   {
+		 $rows=$ami_rows; 
+	   }
+	   if($line['product_group']=="shruti")
+	   {
+		 $rows=$shruti_rows; 
+	   }
+	   if($line['product_group']=="aj")
+	   {
+		 $rows=$aj_rows; 
+	   }
+	   if($line['product_group']=="ash")
+	   {
+		 $rows=$ash_rows; 
+	   }
+	   if($line['product_group']=="hiral")
+	   {
+		 $rows=$hiral_rows; 
+	   }
+           
+
+			 echo ' 
                     <div class="content-section today-deal">
                         <div class="product small-12 columns">
 					
                             <div class="timer">
-                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">00:</span><span class="minutes">00:</span><span class="seconds">00</span><span class="clearDiv"></span></span>
+                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span><span class="minutes">'.$min.':</span><span class="seconds">'.$sec.'</span><span class="clearDiv"></span></span>
                             </div>
                             <div class="product-image">
                                 <a href="#">
-                                    <img src="./assets/product4-1.jpg" alt="">
-                                    <img src="./assets/product4-2.jpg" alt="" class="animated pulse">
+                                    <img src="'.$rows[$line['product_id']][3].'" alt="">
+                                   
                                 </a>
-
                                 <div class="pro-buttons menu-centered">
                                     <ul class="menu">
                                         <li><a href="#" class="addWishList" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
@@ -77,10 +130,11 @@
                                         <li><a href="#" class="addCart" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div><!-- product buttons /-->
-
                             </div><!-- Product Image /-->
                             <div class="product-title">
-                                <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">Small shirt dress with small laces</a>
+                                <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
+				'.$rows[$line['product_id']][1].'
+				</a>
                             </div><!-- product title /-->
                             <div class="product-meta">
                                 <div class="prices">
@@ -90,10 +144,12 @@
                                 <div class="clearfix"></div>
                             </div><!-- product meta /-->
                         </div><!-- Product /-->
-
                         <div class="clearfix"></div>
                     </div><!-- content section /-->
-
+                       ';
+         }
+}
+?>
                 </div><!-- Featured Area /-->
             </div><!-- Today's Deal /-->
 
