@@ -4,7 +4,7 @@ $server = "ec2-174-129-242-241.compute-1.amazonaws.com";
 $postgres_user="acrxklsjedgwdc";
 $postgres_pass="v6vtN4K4Pbgj7UIKfNIKmbT2PQ";
  $db="d4a07qknvais7o";
-echo 'here';
+echo '<p>I am in php</p>'
 $con = pg_connect("host=$server port=5432 dbname=$db user=$postgres_user password=$postgres_pass");
 if (!$con) {
 echo "A connection error occurred.\n";
@@ -12,15 +12,12 @@ exit;
 }
 else
 {
-	echo 'connected';
 $result = pg_query($con, "select * from todaysdeals");
 while($line=pg_fetch_assoc($result))
 {
 	
 $time=strtotime($line['date']);
-echo date('D, d M Y H:i:s',$time);
 $currtime=strtotime("now");
-	echo date('D, d M Y H:i:s',$currtime);
 $time=$time-$currtime;
 	$hr=intval($time/3600);
 $min=intval(($time-$hr*3600)/60);
