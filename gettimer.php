@@ -54,7 +54,7 @@ $min=intval(($time-$hr*3600)/60);
                         <div class="product small-12 columns">
 					
                             <div class="timer">
-                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">.$hr.:</span><span class="minutes">00:</span><span class="seconds">00</span><span class="clearDiv"></span></span>
+                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span><span class="minutes">00:</span><span class="seconds">00</span><span class="clearDiv"></span></span>
                             </div>
                             <div class="product-image">
                                 <a href="#">
