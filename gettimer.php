@@ -99,7 +99,7 @@ $min=intval(($time-$hr*3600)/60);
 	   }
     	 printf('<div class="medium-3 small-12 columns wd100 product">');
 	printf('<div class="product-image">');
-	printf('<div class="sale-tag">Hot</div>');
+	printf('<div class="sale-tag">Deal</div>');
 	printf('<a href="%s">',$list['product_id']);
 	printf('<img style="height:150px;" src="%s" alt="">',$rows[$line['product_id']][3]);
 	printf('<img style="height:150px;" src="%s" alt="">',$rows[$line['product_id']][3]);
