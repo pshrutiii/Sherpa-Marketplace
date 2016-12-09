@@ -20,7 +20,7 @@ while($line=pg_fetch_assoc($result))
 $time=strtotime($line['date']);
 echo date('D, d M Y H:i:s',$time);
 $currtime=strtotime("now");
-	echo date('D, d M Y H:i:s',$currtime
+	echo date('D, d M Y H:i:s',$currtime);
 $time=$time-$currtime;
 	$hr=intval($time/3600);
 $min=intval(($time-$hr*3600)/60);
