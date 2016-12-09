@@ -112,13 +112,15 @@ $min=intval(($time-$hr*3600)/60);
                         <div class="product small-12 columns">
 					
                             <div class="timer">
-                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span><span class="minutes">'.$min.':</span><span class="seconds">'.$sec.'</span><span class="clearDiv"></span></span>
+                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span>
+				<span class="minutes">'.$min.':</span><span class="seconds">'.$sec.'</span><span class="clearDiv"></span></span>
                             </div>
-                            <div class="product-image">
+                          <div class="product-image">
                                 <a href="#">
-                                    <img src="'.$rows[$line['product_id']][3].'" alt="">
-                                   
+                                    <img src="'.$rows[$line['product_id']][2].'" alt="">
+                                    <img src="./assets/product4-2.jpg" alt="" class="animated pulse">
                                 </a>
+
                                 <div class="pro-buttons menu-centered">
                                     <ul class="menu">
                                         <li><a href="#" class="addWishList" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
@@ -127,6 +129,7 @@ $min=intval(($time-$hr*3600)/60);
                                         <li><a href="#" class="addCart" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div><!-- product buttons /-->
+
                             </div><!-- Product Image /-->
                             <div class="product-title">
                                 <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
