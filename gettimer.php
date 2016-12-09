@@ -18,11 +18,12 @@ $result = pg_query($con, "select * from todaysdeals");
 while($line=pg_fetch_assoc($result))
 {
 	echo 'found data';
-	$hr=intval($time/3600);
-$min=intval(($time-$hr*3600)/60)
 $time=strtotime($line['date']);
 $currtime=strtotime("now");
 $time=$time-$currtime;
+	$hr=intval($time/3600);
+$min=intval(($time-$hr*3600)/60);
+	
 	if($line['product_group']=="manu")
 	   {
 		 $rows=$manu_rows; 
