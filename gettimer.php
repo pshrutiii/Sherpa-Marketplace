@@ -23,7 +23,8 @@ $currtime=strtotime("now");
 $time=$time-$currtime;
 	$hr=intval($time/3600);
 $min=intval(($time-$hr*3600)/60);
-	
+	echo $line['product_group'];
+	echo $line['product_id'];
 	if($line['product_group']=="manu")
 	   {
 		 $rows=$manu_rows; 
@@ -48,7 +49,7 @@ $min=intval(($time-$hr*3600)/60);
 	   {
 		 $rows=$hiral_rows; 
 	   }
-           
+           echo $rows;
 			 printf(' 
 
                    <div class="content-section today-deal">
