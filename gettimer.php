@@ -71,7 +71,7 @@ $min=intval(($time-$hr*3600)/60);
                             </div><!-- Product Image /-->
                             <div class="product-title">
                                 <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
-				'.$rows[$list['product_image']][3].'
+				'.$rows[$list['product_image']][1].'
 				</a>
                             </div><!-- product title /-->
                             <div class="product-meta">
