@@ -1,23 +1,5 @@
 <?php include('includes/nav.php')?>
 
- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-
-    <!-- Crousel JS -->
-    <script type="text/javascript" src="./assets/owl.carousel.min.js.download"></script>
-    <!-- jQuery Timer plugin delete if not using -->
-    <script src="./assets/jquery.simple.timer.js.download"></script>
-
-   
-    
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-    
-    <script type="text/javascript" src="js/bootstrap-rating.min.js"></script>
-    <script type="text/javascript" src="js/rating.js"></script>
-    <script type="text/javascript" src="js/cart.js"></script>
-   
         <!-- Header Ends /-->
         <!-- Banner Section Starts -->
         <div class="banner row module">
@@ -56,14 +38,14 @@
     <!-- MOST VISITED PRODUCTS/SERVICES -->
         <div class="featured_items row module">
 
-            <div class="medium-9 small-12 columns">
+            <div class="medium-12 small-12 columns">
                 <div class="featured-area">
                     <div class="section-title"><h2><span>Most Popular</span></h2></div><!-- section title /-->
                         <div class="content-section owl-carousel"><?php include('includes/mostVisited.php'); ?></div>
                 </div><!-- Featured Area /-->
             </div>
 
-            <div class="medium-3 small-12 columns">
+            <div class="medium-12 small-12 columns">
                 <div class="featured-area">
                     <div class="section-title">
                         <div class="float-left">
@@ -90,18 +72,6 @@ else
 {
 echo 'connected';
 $result = pg_query($con, "select * from todaysdeals");
-	
-echo '<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">';
 while($line=pg_fetch_assoc($result))
 {
         
@@ -137,38 +107,51 @@ $min=intval(($time-$hr*3600)/60);
 	   {
 		 $rows=$hiral_rows; 
 	   }
-	echo '<div class="item">
-	<div class="timer">
-                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span>
-				<span class="minutes">'.$min.':</span><span class="seconds">'.$sec.'</span><span class="clearDiv"></span></span>
+         echo ' 
+                    <div class="content-section today-deal">
+                        <div class="product small-4 columns">
+					
+                            <div class="timer">
+                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span><span class="minutes">'.$min.':</span><span class="seconds">'.$sec.'</span><span class="clearDiv"></span></span>
                             </div>
-      <img src="'.$rows[$line['product_id']][3].'" alt="Chania">
-      <div class="carousel-caption">
-        <h3>'.$rows[$line['product_id']][1].'</h3>
-        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-      </div>
-    </div>';
-    
-    
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="'.$rows[$line['product_id']][3].'" alt="">
+                                   
+                                </a>
+                                <div class="pro-buttons menu-centered">
+                                    <ul class="menu">
+                                        <li><a href="#" class="addWishList" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
+                                        <li><a href="#" class="addCart" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div><!-- product buttons /-->
+                            </div><!-- Product Image /-->
+                            <div class="product-title">
+                                <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
+				'.$rows[$line['product_id']][1].'
+				</a>
+                            </div><!-- product title /-->
+                            <div class="product-meta">
+                                <div class="prices">
+                                    <span class="price">$12</span> / Piece
+                                    <span class="off-tag">-25%</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div><!-- product meta /-->
+                        </div><!-- Product /-->
+                        <div class="clearfix"></div>
+                    </div><!-- content section /-->
+                       ';   
 	
 }
-echo '</div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>';
 }
                         
                         ?>
                    
-			
+
                 </div><!-- Featured Area /-->
             </div><!-- Today's Deal /-->
 
@@ -441,8 +424,25 @@ echo '</div>
     <a href="index.html#top" id="top" class="animated fadeInUp start-anim" style="display: none;"><i class="fa fa-angle-up"></i></a>
     <!-- Page Preloader -->
     <div class="preloader" style="display: none;"></div>
-<script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+    <!-- Crousel JS -->
+    <script type="text/javascript" src="./assets/owl.carousel.min.js.download"></script>
+    <!-- jQuery Timer plugin delete if not using -->
+    <script src="./assets/jquery.simple.timer.js.download"></script>
+
    
+    
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    
+    <script type="text/javascript" src="js/bootstrap-rating.min.js"></script>
+    <script type="text/javascript" src="js/rating.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+    <script>
     $(document).ready(function() {
         $(".owl-carousel").owlCarousel({
             items:3,
