@@ -40,80 +40,80 @@
     <link href="assets/css/owl.theme.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" media="all">
         
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      <script>
-      $( function() {
-        var availableTags = [
-            "Smart Trash Compactor",
-            "Smart Recycle Can",
-            "Smart Trash Can (No Compactor)",
-            "Smart Can Model #4",
-            "Smart Can Model #5",
-            "Smart Can Model #6",
-            "Smart Can Model #7",
-            "Smart Can Model #8",
-            "Smart Can Model #9",
-            "Smart Can Model #10",
-            "PC Game Development",
-            "SEO",
-            "Application Development",
-            "IT Software Consulting Services",
-            "Custom Websites",
-            "Mobel Development",
-            "Maintenance and Support",
-            "Web Games Development",
-            "Software Training",
-            "Data Warehousing And Reports",
-            "BPO Services",
-            "Simplicity",
-            "Hot Air Balloon",
-            "Nature",
-            "Wildlife",
-            "Outdoor Sport",
-            "Big Sur",
-            "Nature",
-            "Wildlife",
-            "Simplicty",
-            "Outdoor Sport",
-            "California",
-            "Disneyland",
-            "New York",
-            "London",
-            "Switzerland",
-            "Turkey",
-            "Ticket Booking",
-            "Family Package",
-            "Hotel Booking",
-            "Couple Packages",
-            "Team Up",
-            "Book A Table",
-            "Organize Competition",
-            "Learn And Play",
-            "Club's Olympic",
-            "Chat Rooms",
-            "Meetups",
-            "Club's Cafe",
-            "Rent an Equipment",
-            "Donate to Scholarships",
-            "2 BHK bunglow, 1450 sq ft.",
-            "1 BHK appartment, 1450 sq ft.",
-            "Beautiful luxury house designed by omung goyal",
-            "1 BHK in-budget house for sale, 950 sqft.",
-            "One month subscription. Sell properties.",
-            "Vermont farm house, 8000 sq ft.",
-            "Commercial property at 75th and 3rd menchester ave",
-            "One month subscription.Real estate councelling",
-            "Real estate project M409, San Jose",
-            "Industrial area, 19000 sqft, santa clara"
-        ];
-        $( "#tags" ).autocomplete({
-          source: availableTags
-        });
-      } );
-      </script>
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">       
+        <link rel="stylesheet" href="/resources/demos/style.css">       
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>        
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>      
+          <script>      
+          $( function() {       
+            var availableTags = [       
+                "Smart Trash Compactor",        
+                "Smart Recycle Can",        
+                "Smart Trash Can (No Compactor)",       
+                "Smart Can Model #4",       
+                "Smart Can Model #5",       
+                "Smart Can Model #6",       
+                "Smart Can Model #7",       
+                "Smart Can Model #8",       
+                "Smart Can Model #9",       
+                "Smart Can Model #10",      
+                "PC Game Development",      
+                "SEO",      
+                "Application Development",      
+                "IT Software Consulting Services",      
+                "Custom Websites",      
+                "Mobel Development",        
+                "Maintenance and Support",      
+                "Web Games Development",        
+                "Software Training",        
+                "Data Warehousing And Reports",     
+                "BPO Services",     
+                "Simplicity",       
+                "Hot Air Balloon",      
+                "Nature",       
+                "Wildlife",     
+                "Outdoor Sport",        
+                "Big Sur",      
+                "Nature",       
+                "Wildlife",     
+                "Simplicty",        
+                "Outdoor Sport",        
+                "California",       
+                "Disneyland",       
+                "New York",     
+                "London",       
+                "Switzerland",      
+                "Turkey",       
+                "Ticket Booking",       
+                "Family Package",       
+                "Hotel Booking",        
+                "Couple Packages",      
+                "Team Up",      
+                "Book A Table",     
+                "Organize Competition",     
+                "Learn And Play",       
+                "Club's Olympic",       
+                "Chat Rooms",       
+                "Meetups",      
+                "Club's Cafe",      
+                "Rent an Equipment",        
+                "Donate to Scholarships",       
+                "2 BHK bunglow, 1450 sq ft.",       
+                "1 BHK appartment, 1450 sq ft.",        
+                "Beautiful luxury house designed by omung goyal",       
+                "1 BHK in-budget house for sale, 950 sqft.",        
+                "One month subscription. Sell properties.",     
+                "Vermont farm house, 8000 sq ft.",      
+                "Commercial property at 75th and 3rd menchester ave",       
+                "One month subscription.Real estate councelling",       
+                "Real estate project M409, San Jose",       
+                "Industrial area, 19000 sqft, santa clara"      
+            ];      
+            $( "#tags" ).autocomplete({     
+              source: availableTags     
+            });     
+          } );      
+          </script>
 </head>
 <body class="loaded">
     <!-- MAIN Container Start here. -->
@@ -274,12 +274,13 @@
                 
                 <div class="medium-5 small-12 columns search-wrap">
                     <div class="main-search-form">
-                        <form method = "get" action="search.php" autocomplete="off">
+                        <form method = "get" action="search.php" autocomplete="off">    
                             <input type="text" placeholder="What you are shopping for ..."  id="tags" name="searchValue"   class="search-head" >
                             <select>
                                 <option value="0">All Categories</option>
                                 <option value="1">Products</option>
                                 <option value="2">Services</option>
+                                
                             </select>
                             <button type="submit" class="primary button"><i class="fa fa-search"></i></button>
                         </form>
@@ -344,11 +345,12 @@
                                 <?php  extract($_POST);
                                        extract($_GET);
 
-                                    if (isset($_GET['logged'])){
+                                    if (isset($_GET['logged']) || isset($_POST['logged'])){
+                                        echo "hii";
 
-                                        if($_GET['logged']==true){
+                                        if($_POST['logged']=='true'){
                                             echo "Welcome,";
-                                            echo "<script>localStorage.getItem('username');</script>";
+                                            echo "<script type='text/javascript'> localStorage.getItem('username');</script>";
 
                                         }
                                         else{
