@@ -111,14 +111,15 @@ $min=intval(($time-$hr*3600)/60);
                     <div class="content-section today-deal">
                         <div class="product small-4 columns">
 					
-                            <div class="timer">
+                             <div class="timer">
                                 Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span><span class="minutes">'.$min.':</span><span class="seconds">'.$sec.'</span><span class="clearDiv"></span></span>
                             </div>
-                            <div class="product-image">
+                                                        <div class="product-image">
                                 <a href="#">
-                                    <img src="'.$rows[$line['product_id']][3].'" alt="">
-                                   
+                                    <img src="'.$rows[$list[product_id][3]].'" alt="">
+                                    <img src="'.$rows[$list[product_id][3]].'"" alt="" class="animated pulse">
                                 </a>
+
                                 <div class="pro-buttons menu-centered">
                                     <ul class="menu">
                                         <li><a href="#" class="addWishList" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
@@ -127,11 +128,10 @@ $min=intval(($time-$hr*3600)/60);
                                         <li><a href="#" class="addCart" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div><!-- product buttons /-->
+
                             </div><!-- Product Image /-->
                             <div class="product-title">
-                                <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
-				'.$rows[$line['product_id']][1].'
-				</a>
+                                <a href="viewProduct.php?product_detail='.$list[product_id].'&product_gr='.$list[product_group].'">'.$rows[$list[product_id][3]].'"</a>
                             </div><!-- product title /-->
                             <div class="product-meta">
                                 <div class="prices">
@@ -141,6 +141,7 @@ $min=intval(($time-$hr*3600)/60);
                                 <div class="clearfix"></div>
                             </div><!-- product meta /-->
                         </div><!-- Product /-->
+
                         <div class="clearfix"></div>
                     </div><!-- content section /-->
                        ';   
