@@ -99,6 +99,7 @@
                  echo "login failed";
                  header('Location:http://sherpaa.herokuapp.com/index.php?logged=false');
                 }
+              }
               else {
                   if($line['password']==$_POST['password']){
                     echo "<script>localStorage.setItem('username', ".$email.");</script>";
