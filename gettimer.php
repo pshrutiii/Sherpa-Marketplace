@@ -73,9 +73,6 @@ else
 {
 echo 'connected';
 $result = pg_query($con, "select * from todaysdeals");
-		echo  		'<div class="content-section today-deal">
-                         <div class="product small-12 columns">		
-                         <div class="timer">';
 while($line=pg_fetch_assoc($result))
 {
         $time=strtotime($line['date']);
@@ -108,17 +105,9 @@ while($line=pg_fetch_assoc($result))
 	   {
 		 $rows=$hiral_rows; 
 	   }
-
-         echo                  'Ends in: <span class="countdown timeout" data-seconds-left="5400">
-				<span class="hours">'.$hr.':</span>
-				<span class="minutes">'.$min.':</span>
-				<span class="seconds">'.$sec.'</span>
-				<span class="clearDiv"></span></span>';   
+	
 	
 }
-	echo ' </div>
-                            <div class="product-image">
-                                <a href="#"></a></div></div></div>';
 
 
 }
