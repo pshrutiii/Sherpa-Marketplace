@@ -6,7 +6,6 @@ $postgres_pass="v6vtN4K4Pbgj7UIKfNIKmbT2PQ";
  $db="d4a07qknvais7o";
 echo 'here';
 $con = pg_connect("host=$server port=5432 dbname=$db user=$postgres_user password=$postgres_pass");
-
 if (!$con) {
 echo "A connection error occurred.\n";
 exit;
@@ -51,19 +50,17 @@ $min=intval(($time-$hr*3600)/60);
 	   }
            echo $rows;
 			 printf(' 
-
                     <div class="content-section today-deal">
                         <div class="product small-12 columns">
 					
                             <div class="timer">
-                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">%s:</span><span class="minutes">%s:</span><span class="seconds">00</span><span class="clearDiv"></span></span>
+                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">00:</span><span class="minutes">00:</span><span class="seconds">00</span><span class="clearDiv"></span></span>
                             </div>
                             <div class="product-image">
                                 <a href="#">
-                                    <img src="%s" alt="">
-                                    <img src="./assets/product4-2.jpg" alt="" class="animated pulse">
+                                    <img src="" alt="">
+                                   
                                 </a>
-
                                 <div class="pro-buttons menu-centered">
                                     <ul class="menu">
                                         <li><a href="#" class="addWishList" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
@@ -72,10 +69,9 @@ $min=intval(($time-$hr*3600)/60);
                                         <li><a href="#" class="addCart" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div><!-- product buttons /-->
-
                             </div><!-- Product Image /-->
                             <div class="product-title">
-                                <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">%s</a>
+                                <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">abc</a>
                             </div><!-- product title /-->
                             <div class="product-meta">
                                 <div class="prices">
@@ -85,14 +81,9 @@ $min=intval(($time-$hr*3600)/60);
                                 <div class="clearfix"></div>
                             </div><!-- product meta /-->
                         </div><!-- Product /-->
-
                         <div class="clearfix"></div>
                     </div><!-- content section /-->
-
-                       ',$hr,$min,$rows[$line['product_id']][3],$rows[$line['product_id']][1]);
+                       ');
          }
-
-
 }
-
 ?>
