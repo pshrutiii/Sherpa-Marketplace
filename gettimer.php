@@ -1,7 +1,5 @@
 <?php include('includes/nav.php')?>
-
 <?php include('includes/curl.php')?>
-
 
         <!-- Header Ends /-->
         <!-- Banner Section Starts -->
@@ -60,8 +58,10 @@
                         <div class="clearfix"></div>
                     </div><!-- section title /-->
 
-
-
+                    <php 
+                         echo 'copied';
+                         
+                         ?>
 
                 </div><!-- Featured Area /-->
             </div><!-- Today's Deal /-->
