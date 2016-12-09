@@ -108,8 +108,8 @@ $min=intval(($time-$hr*3600)/60);
 		 $rows=$hiral_rows; 
 	   }
          echo ' 
-                    <div class="content-section today-deal">
-                        <div class="product small-4 columns">
+                    <div class="content-section today-deal col-md-3">
+                        <div class="product ">
 					
                              <div class="timer">
                                 Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span><span class="minutes">'.$min.':</span><span class="seconds">'.$sec.'</span><span class="clearDiv"></span></span>
