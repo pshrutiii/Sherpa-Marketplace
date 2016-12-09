@@ -41,7 +41,7 @@ $time=$time-$currtime;
 		 $rows=$hiral_rows; 
 	   }
            
-			printf('<div>%s</div>',$time)
+			printf('<div>%s</div>',$time);
          }
 
 
