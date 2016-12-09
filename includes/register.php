@@ -194,8 +194,8 @@ if (!$con) {
                 .$_POST['birthmonth'][0].$_POST['birthmonth'][1]."/".$_POST['birthdate'][0].$_POST['birthdate'][1]."/".$_POST['birthyear'][0].$_POST['birthyear'][1].$_POST['birthyear'][2].$_POST['birthyear'][3]."','".$_POST['sex']."')");
 
               if (!$result) {
-                 echo "login failed";
-                 header('Location:http://sherpaa.herokuapp.com/index.php?logged=false');
+                 echo "registeration failed, please try again later";
+               #  header('Location:http://sherpaa.herokuapp.com/index.php?logged=false');
 
               }
               else {
