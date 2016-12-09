@@ -58,7 +58,7 @@
                         <div class="clearfix"></div>
                     </div><!-- section title /-->
 
-                    <php 
+                    <?php 
                          printf('copied');
                          
                          ?>
