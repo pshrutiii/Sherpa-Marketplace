@@ -24,10 +24,20 @@ var ShoppingCart = {
             return price;
         }
     },
+    EmptyCart:function(){
+        var self=ShoppingCart;
+        $('.cart-body').empty();
+    },
     getProductName: function (element) {
         var _this = ShoppingCart;
         var $item = $(element);
         return $item.parentsUntil('.owl-item').find(".product-title>a").text();
+    },
+    getImage:function(element){
+        var self=ShoppingCart;
+        var $item = $(element);
+        var img= $item.parentsUntil('.owl-item').find(".product-image>a>img");
+        return img.attr('src');
     },
     AddToCart: function () {
         //var self=this;
@@ -35,6 +45,8 @@ var ShoppingCart = {
         console.log('Added to Cart');
         var cost = self.getShippingPrice(this);
         var productName = self.getProductName(this);
+        var image=self.getImage(this);
+        
         var total = self._convertString(self.storage.getItem(self.total));
         var sTotal = total + cost;
         self.storage.setItem(self.total, sTotal);
@@ -47,6 +59,7 @@ var ShoppingCart = {
         self.storage.setItem(self.shippingRates, totalShipping);
         self.addToCart({
             product: productName,
+            imgProduct:image,
             price: cost,
             qty:1
         });
@@ -141,7 +154,10 @@ var ShoppingCart = {
                     var price = self.currency + " " + item.price;
                     var qty = groups[product];
                     subTotal+=parseInt(qty)*parseInt(item.price);
-                    var html = "<tr><td class='pname'>" + product + "</td>" + "<td class='pqty'><input type='text' value='" + qty + "' class='qty'/></td>";
+
+                    var img=  item.imgProduct;
+                    
+                    var html = "<tr>"+"<td><img src='"+ img+"' /></td>"+"<td class='pId'>" + (parseInt(1)+ parseInt(i)) + "</td>"+"<td class='pname'>" + product + "</td>" + "<td class='pqty'><input type='number' value='" + qty + "' class='qty'/></td>";
                     html += "<td class='pprice'>" + price + "</td><td class='pdelete'><a href='' data-product='" + product + "'>&times;</a></td></tr>";
 
                     $tableCartBody.html($tableCartBody.html() + html);

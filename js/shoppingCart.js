@@ -7,9 +7,11 @@ var ShoppingCart = {
     cartName: 'ShoppingCart',
     total: 'total',
     shippingRates: 'shippingRates',
+    productDiv:$('#dvHidden'),
     cartCount: $('.cart-count'),
-    tableCart:'.shopping-cart',
-    cartBody:$('.cart-body'),
+    //incrementerButton:$('.incrementer'),
+    //tableCart:'.shopping-cart',
+    cartBody:$('.contentDiv'),
     totalId:$('#stotal'),
     storage: sessionStorage, // shortcut to the sessionStorage object
     init: function () {
@@ -18,17 +20,51 @@ var ShoppingCart = {
         self.displayCart();
         $('.qty').change(self.recalculate);
         self.btnEmptyCart.click(self.EmptyCart);
-        $('.product-item').click(self.DeleteProduct);
-       
+        $('.delete-item').click(self.DeleteProduct);
+       self.recalculate();
+       $('.plus').click(self.increment);
+       $('.minus').click(self.decrement);
+    },
+    increment:function(){
+    var self=ShoppingCart;
+    var $button = $(this);
+    var oldValue = $button.parents(".pqty").find('.qty').val();
+    var newVal = parseFloat(oldValue) + 1;
+
+    $button.parents(".pqty").find('.qty').val(newVal);
+    self.recalculate();
+
+    },
+        decrement:function(){
+    var self=ShoppingCart;
+    var $button = $(this);
+    var oldValue = $button.parents(".pqty").find('.qty').val();
+    
+   // Don't allow decrementing below zero
+    if (oldValue > 2) {
+      var newVal = parseFloat(oldValue) - 1;
+    } else {
+      newVal = 1;
+    }
+  
+   $button.parents(".pqty").find('.qty').val(newVal);
+
+    self.recalculate();
     },
     DeleteProduct:function(obj){
+        //alert('Delete called');
         event.preventDefault();
         var self=ShoppingCart;
-        console.log($(this).parent());
-        $(this).remove();
+        console.log('Delete');
+
+        var product=$(this).parents('.product-item');
+        //$(this).parent().parent()[0].remove();
+        product.parent().remove();
         self.recalculate();
 
-        var pName=$(this).find('.pname').text().trim();
+        var pName=product.find('.pname').text().trim();
+        
+        console.log(pName);
         var cart = self.storage.getItem(self.cartName);
 
         var cartObject = self._toJSONObject(cart);
@@ -37,7 +73,7 @@ var ShoppingCart = {
         var newItems=self.deleteFromCart(items,'product',pName);
         cartCopy.items=newItems;
 
-        console.log(pName);
+        //console.log(pName);
         self.storage.setItem(self.cartName, self._toJSONString(cartCopy));
         return false;
     },
@@ -55,18 +91,21 @@ var ShoppingCart = {
     recalculate:function(){
       
       var self=ShoppingCart;
-      var num=0;
-       self.cartBody.find("tr").each(function(i, tr) {
-       console.log(tr);
-       var index=$(tr).find('.pId').text(i+1);    
-       var value = $(tr).find('.pprice').text().replace("$ ","");
-       var quantity = $(tr).find('.qty').val();
+      var num=0,count=0;
+       console.log('Inside recalculate');
+      
+       $("div.product-item").each(function(i, dv) {
+       var value = self._convertString($(dv).find('.pprice').text().replace("$ ",""));
+       var quantity = self._convertString($(dv).find('.qty').val());
        num+=value*quantity;
-       
+       count+=quantity;
     });
-
+    //console.log(self.totalId);
     self.totalId.text(self.currency+" "+num);    
-    },
+    $('.item-count').text(count);
+    }
+    
+    ,
     EmptyCart:function(){
         var self=ShoppingCart;
         self.storage.removeItem(self.cartName);
@@ -74,6 +113,8 @@ var ShoppingCart = {
         self.storage.removeItem(self.total);
         self.cartBody.empty();
         self.totalId.text(self.currency+" "+0);
+        $('.item-count').text(0);
+
     },
     getProductName: function (element) {
         var _this = ShoppingCart;
@@ -177,11 +218,13 @@ var ShoppingCart = {
             }
             var items = cart.items;
             console.log(items.length);
-            var $tableCartBody = $(self.tableCart).find("tbody");
+            //var $tableCartBody = $(self.tableCart).find("tbody");
+            var cartBody=self.cartBody;
             //console.log(self.$tableCart[0]);    
-            console.log($tableCartBody[0]);
+            //console.log($tableCartBody[0]);
             if (items.length == 0) {
-                $tableCartBody.html("");
+                //$tableCartBody.html("");
+                cartBody.empty();
             } else {
                 
                 var productNameArr = $.map(items, function(item) {
@@ -201,12 +244,25 @@ var ShoppingCart = {
                     var price = self.currency + " " + item.price;
                     var qty = groups[product];
                     subTotal+=parseInt(qty)*parseInt(item.price);
-                    var img=item.imgProduct;
-                  var html = "<tr class='product-item'>"+"<td><img height='100px' width='100px' src='"+ img+"' /></td>"+"<td class='pId'>" + (parseInt(1)+ parseInt(i)) + "</td>"+"<td class='pname'>" + product + "</td>" + "<td class='pqty'><input type='number' value='" + qty + "' class='qty'/></td>";
-                    html += "<td class='pprice'>" + price + "</td><td class='pdelete'><a href='' data-product='" + product + "'>&times;</a></td></tr>";
 
-                    $tableCartBody.html($tableCartBody.html() + html);
-                }
+                    var img=item.imgProduct;
+                 
+                    var div = document.createElement('div');
+                    div.innerHTML = document.getElementById('dvHidden').innerHTML;
+
+                    $(div).find('.dvHidden').removeClass('dvHidden').addClass('product-item');
+                    $(div).find('.a-spacing-top-base').addClass('product-item');
+                    //console.log($(div));
+                    //$(div).find('.dvHidden').removeClass('dvHidden');
+                    $(div).find('.product-image').attr('src',img);
+                    $(div).find('.pname').text(product);
+                    $(div).find('.pprice').text(price);
+                    $(div).find('.qty').val(qty);
+                    //console.log($('.contentDiv').html());
+                    $('.contentDiv').append($(div));
+                    //$('.contentDiv').html($('.contentDiv').html() + $(div)[0]);
+                    //console.log($('.contentDiv').html());
+                 }
             }
 
             var $subTotal=self.totalId;
