@@ -57,12 +57,44 @@
                         <div class="clearfix"></div>
                     </div><!-- section title /-->
 
-<div>
-	<div>
-		<div>
-			
-			
-			     </div><!-- Featured Area /-->
+                    <div class="content-section today-deal">
+                        <div class="product small-12 columns">
+					
+                            <div class="timer">
+                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">00:</span><span class="minutes">00:</span><span class="seconds">00</span><span class="clearDiv"></span></span>
+                            </div>
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="./assets/product4-1.jpg" alt="">
+                                    <img src="./assets/product4-2.jpg" alt="" class="animated pulse">
+                                </a>
+
+                                <div class="pro-buttons menu-centered">
+                                    <ul class="menu">
+                                        <li><a href="#" class="addWishList" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
+                                        <li><a href="#" class="addCart" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div><!-- product buttons /-->
+
+                            </div><!-- Product Image /-->
+                            <div class="product-title">
+                                <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">Small shirt dress with small laces</a>
+                            </div><!-- product title /-->
+                            <div class="product-meta">
+                                <div class="prices">
+                                    <span class="price">$12</span> / Piece
+                                    <span class="off-tag">-25%</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div><!-- product meta /-->
+                        </div><!-- Product /-->
+
+                        <div class="clearfix"></div>
+                    </div><!-- content section /-->
+
+                </div><!-- Featured Area /-->
             </div><!-- Today's Deal /-->
 
         </div>
