@@ -94,14 +94,13 @@
 
               $result = pg_query($con, "select * from users where email=". $email);
 
-              if ($line = pg_fetch_assoc($result)) {
+              if ($line = pg_fetch_row($result)) {
                 if ($line['rows'] == 0) {
                  echo "login failed";
-                 header('Location:http://sherpaa.herokuapp.com/index.php');
+                 header('Location:http://sherpaa.herokuapp.com/index.php?logged=false');
                 }
-              }
               else {
-                  if($line['password']==$_POST['password']){
+                  if($line[2]==$_POST['password']){
                     echo "<script>localStorage.setItem('username', ".$email.");</script>";
                     header('Location:http://sherpaa.herokuapp.com/index.php?logged=true&username='.$email);
                     
