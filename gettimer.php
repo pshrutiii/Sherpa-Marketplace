@@ -58,7 +58,7 @@
                     </div><!-- section title /-->
 
                     <?php
- include('includes/curl.php');
+ 
 
 			printf('here');
 
