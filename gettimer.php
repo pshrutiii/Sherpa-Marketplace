@@ -69,7 +69,14 @@ echo "A connection error occurred.\n";
 exit;
 }
 else
-{}
+{
+echo 'connected';
+$result = pg_query($con, "select * from todaysdeals");
+while($line=pg_fetch_assoc($result))
+{
+}
+
+}
                         
                         ?>
                    
