@@ -48,6 +48,7 @@ $min=intval(($time-$hr*3600)/60);
 		 $rows=$hiral_rows; 
 	   }
            
+	echo $rows[$line['product_id']][1];
 			 echo ' 
                     <div class="content-section today-deal">
                         <div class="product small-12 columns">
@@ -57,7 +58,7 @@ $min=intval(($time-$hr*3600)/60);
                             </div>
                             <div class="product-image">
                                 <a href="#">
-                                    <img src="'.$rows[$list['product_image']][3].'" alt="">
+                                    <img src="'.$rows[$line['product_id']][3].'" alt="">
                                    
                                 </a>
                                 <div class="pro-buttons menu-centered">
