@@ -198,12 +198,12 @@ if (!$con) {
 
               if (!$result) {
                  echo "registeration failed, please try again later";
-                 header('Location:http://sherpaa.herokuapp.com/index.php?logged=false');
+                 header('Location:http://sherpaa.herokuapp.com/index.php');
 
               }
               else {
-                echo "<script>localStorage.setItem('username', '$email');</script>";
-                header('Location:http://sherpaa.herokuapp.com/index.php?logged=true&username='.$email);
+               # echo "<script>localStorage.setItem('username', '$email');</script>";
+                header('Location:http://sherpaa.herokuapp.com/includes/login.php');
               }
 
             }

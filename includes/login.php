@@ -101,8 +101,12 @@
                 }
               }
               else {
+
                   if($line['password']=$_POST['password']){
-                    echo "<script>localStorage.setItem('username', '$email');</script>";
+                    session_start();
+                    $_session['username']='$email';
+                    print_r($_SESSION);
+                  #  echo "<script>localStorage.setItem('username', '$email');</script>";
                     header('Location:http://sherpaa.herokuapp.com/index.php?logged=true&username='.$email);
                     
                   }
