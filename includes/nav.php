@@ -346,9 +346,8 @@
                                        extract($_GET);
 
                                     if (isset($_GET['logged']) || isset($_POST['logged'])){
-                                        echo "hii";
 
-                                        if($_POST['logged']=='true'){
+                                        if($_POST['logged']=='true' || $_GET['logged']=='true'){
                                             echo "Welcome,";
                                             echo "<script type='text/javascript'> localStorage.getItem('username');</script>";
 
