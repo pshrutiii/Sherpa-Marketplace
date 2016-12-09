@@ -60,10 +60,7 @@
                         <div class="clearfix"></div>
                     </div><!-- section title /-->
 
-                
-<?php 
-                        echo 'abc';
-                        ?>
+
 
 
                 </div><!-- Featured Area /-->
