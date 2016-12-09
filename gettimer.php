@@ -17,7 +17,7 @@
     <script type="text/javascript" src="js/bootstrap-rating.min.js"></script>
     <script type="text/javascript" src="js/rating.js"></script>
     <script type="text/javascript" src="js/cart.js"></script>
-    <script>
+   
         <!-- Header Ends /-->
         <!-- Banner Section Starts -->
         <div class="banner row module">
@@ -441,7 +441,7 @@ echo '</div>
     <a href="index.html#top" id="top" class="animated fadeInUp start-anim" style="display: none;"><i class="fa fa-angle-up"></i></a>
     <!-- Page Preloader -->
     <div class="preloader" style="display: none;"></div>
-
+<script>
    
     $(document).ready(function() {
         $(".owl-carousel").owlCarousel({
