@@ -72,6 +72,10 @@ else
 {
 echo 'connected';
 $result = pg_query($con, "select * from todaysdeals");
+	echo  '<div class="content-section today-deal">
+                        <div class="product small-12 columns">
+					
+                            <div class="timer">'
 while($line=pg_fetch_assoc($result))
 {
         
@@ -108,16 +112,57 @@ $min=intval(($time-$hr*3600)/60);
 		 $rows=$hiral_rows; 
 	   }
          echo ' 
-                    <div class="content-section today-deal">
-                        <div class="product small-12 columns">
-					
-                            <div class="timer">
+                   
                                 Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span><span class="minutes">'.$min.':</span><span class="seconds">'.$sec.'</span><span class="clearDiv"></span></span>
-                            </div>
+                           ';   
+	
+}
+	echo ' </div>
                             <div class="product-image">
-                                <a href="#">
+                                <a href="#">';
+	while($line=pg_fetch_assoc($result))
+{
+        
+        $time=strtotime($line['date']);
+
+$currtime=strtotime("now");
+	
+$time=$time-$currtime;
+	$hr=intval($time/3600);
+$min=intval(($time-$hr*3600)/60);
+	$sec=intval($time-$hr*3600-$min*60);
+	if($line['product_group']=="manu")
+	   {
+		 $rows=$manu_rows; 
+	   }
+	   if($line['product_group']=="ami")
+	   {
+		 $rows=$ami_rows; 
+	   }
+	   if($line['product_group']=="shruti")
+	   {
+		 $rows=$shruti_rows; 
+	   }
+	   if($line['product_group']=="aj")
+	   {
+		 $rows=$aj_rows; 
+	   }
+	   if($line['product_group']=="ash")
+	   {
+		 $rows=$ash_rows; 
+	   }
+	   if($line['product_group']=="hiral")
+	   {
+		 $rows=$hiral_rows; 
+	   }
+	echo '
                                     <img src="'.$rows[$line['product_id']][3].'" alt="">
-                                   
+                              
+                       '
+
+}
+
+echo '     
                                 </a>
                                 <div class="pro-buttons menu-centered">
                                     <ul class="menu">
@@ -129,9 +174,50 @@ $min=intval(($time-$hr*3600)/60);
                                 </div><!-- product buttons /-->
                             </div><!-- Product Image /-->
                             <div class="product-title">
-                                <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
+                               	while($line=pg_fetch_assoc($result))
+{
+        
+        $time=strtotime($line['date']);
+
+$currtime=strtotime("now");
+	
+$time=$time-$currtime;
+	$hr=intval($time/3600);
+$min=intval(($time-$hr*3600)/60);
+	$sec=intval($time-$hr*3600-$min*60);
+	if($line['product_group']=="manu")
+	   {
+		 $rows=$manu_rows; 
+	   }
+	   if($line['product_group']=="ami")
+	   {
+		 $rows=$ami_rows; 
+	   }
+	   if($line['product_group']=="shruti")
+	   {
+		 $rows=$shruti_rows; 
+	   }
+	   if($line['product_group']=="aj")
+	   {
+		 $rows=$aj_rows; 
+	   }
+	   if($line['product_group']=="ash")
+	   {
+		 $rows=$ash_rows; 
+	   }
+	   if($line['product_group']=="hiral")
+	   {
+		 $rows=$hiral_rows; 
+	   }
+	echo '
+                                    <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
 				'.$rows[$line['product_id']][1].'
 				</a>
+                       '
+
+}
+
+			       
                             </div><!-- product title /-->
                             <div class="product-meta">
                                 <div class="prices">
@@ -142,10 +228,8 @@ $min=intval(($time-$hr*3600)/60);
                             </div><!-- product meta /-->
                         </div><!-- Product /-->
                         <div class="clearfix"></div>
-                    </div><!-- content section /-->
-                       ';   
-	
-}
+                    </div><!-- content section /-->'
+	';
 
 }
                         
