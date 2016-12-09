@@ -47,7 +47,7 @@
 
            <div class="medium-12 small-12 columns">
                 <div class="featured-area">
-                    <div class="section-title"><h2><span>Most Popular</span></h2></div><!-- section title /-->
+                    <div class="section-title"><h2><span>Today's deals</span></h2></div><!-- section title /-->
                         <div class="content-section owl-carousel">
                         <?php 
                         $server = "ec2-174-129-242-241.compute-1.amazonaws.com";
@@ -119,7 +119,7 @@ $min=intval(($time-$hr*3600)/60);
 	    </div><!-- Product Image /-->
 	    <div class="product-title">
 	 ');
-	       printf('<a href="%s">%s</a>',$rows[$line['product_id']][3],$rows[$line['product_id']][q]);
+	       printf('<a href="%s">%s</a>',$rows[$line['product_id']][3],$rows[$line['product_id']][1]);
 	    printf('</div><!-- product title /-->
 	    <div class="product-meta">
 	        <div class="prices">
@@ -128,8 +128,8 @@ $min=intval(($time-$hr*3600)/60);
 	        </div>
 	        <div class="last-row">
 	           
-	            <div class="store float-right">
-	                By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">'.$author[$i].'</a>
+	            <div class="store">
+	                Available till: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">'.$hr.':'.$min.':'.$sec.'</a>
 	            </div>
 	        </div><!-- last row /-->
 	        <div class="clearfix"></div>
