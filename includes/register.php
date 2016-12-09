@@ -59,7 +59,7 @@ if (!$con) {
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
             <legend><a href="/"><i class="glyphicon glyphicon-globe" style=" color:#FF8C00"></i></a> Sign up!</legend>
-            <form action="#" method="post" class="form" role="form">
+            <form action="register.php" method="post" class="form" role="form">
             <div class="row">
                 <div class="col-xs-6 col-md-6">
                     <input class="form-control" name="firstname" placeholder="First Name" type="text" style="margin-bottom: 10px;"

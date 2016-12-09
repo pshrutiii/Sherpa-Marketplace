@@ -46,7 +46,7 @@
     
       <div class="col-xs-12 col-sm-12 col-md-3 well well-sm" >
 
-      <form class="form-signin" method="post" action="/login.php">
+      <form class="form-signin" method="post" action="login.php">
         <legend><a href=""><i class="glyphicon glyphicon-globe" style=" color:#FF8C00"></i></a> Sign in! </legend>
      
         <label for="inputEmail" class="sr-only" style="height:30px;">Email address</label>
