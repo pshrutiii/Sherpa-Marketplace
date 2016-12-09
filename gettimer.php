@@ -117,7 +117,7 @@ while($line=pg_fetch_assoc($result))
 }
 	echo ' </div>
                             <div class="product-image">
-                                <a href="#"></div></div></div>';
+                                <a href="#"></a></div></div></div>';
 
 
 }
