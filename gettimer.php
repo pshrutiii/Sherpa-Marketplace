@@ -16,7 +16,7 @@ else
 $result = pg_query($con, "select * from todaysdeals");
 while($line=pg_fetch_assoc($result))
 {
-	echo 'found data';
+	
 $time=strtotime($line['date']);
 $currtime=strtotime("now");
 $time=$time-$currtime;
@@ -48,7 +48,7 @@ $min=intval(($time-$hr*3600)/60);
 		 $rows=$hiral_rows; 
 	   }
            
-	echo $rows[$line['product_id']][1];
+
 			 echo ' 
                     <div class="content-section today-deal">
                         <div class="product small-12 columns">
@@ -72,7 +72,7 @@ $min=intval(($time-$hr*3600)/60);
                             </div><!-- Product Image /-->
                             <div class="product-title">
                                 <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
-				'.$rows[$list['product_image']][1].'
+				'.$rows[$line['product_id']][1].'
 				</a>
                             </div><!-- product title /-->
                             <div class="product-meta">
