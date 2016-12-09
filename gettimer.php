@@ -56,7 +56,8 @@
                         </div>
                         <div class="clearfix"></div>
                     </div><!-- section title /-->
-
+                        <?php 
+                        ?>
                    
 
                 </div><!-- Featured Area /-->
