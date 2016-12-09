@@ -110,11 +110,11 @@ $min=intval(($time-$hr*3600)/60);
 	   }
          echo ' 
                   
-                       <div class="medium-3 small-12 columns wd100 product">
+                       <div class="medium-3 small-3 columns wd100 product">
 			<div class="product-image">
 			<div class="sale-tag">Deal</div>
 			<img style="height:150px;" src="'.$rows[$line['product_id']][3].'" alt="">
-			<img style="height:150px;" src="'.$rows[$line['product_id']][3].'" alt="">
+			
                              <div class="timer">
                                 Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span><span class="minutes">'.$min.':</span><span class="seconds">'.$sec.'</span><span class="clearDiv"></span></span>
                             </div>
