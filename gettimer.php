@@ -69,7 +69,7 @@ echo "A connection error occurred.\n";
 exit;
 }
 else
-{
+{}
                         
                         ?>
                    
