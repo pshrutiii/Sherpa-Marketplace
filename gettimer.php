@@ -74,6 +74,40 @@ echo 'connected';
 $result = pg_query($con, "select * from todaysdeals");
 while($line=pg_fetch_assoc($result))
 {
+        
+        $time=strtotime($line['date']);
+
+$currtime=strtotime("now");
+	
+$time=$time-$currtime;
+	$hr=intval($time/3600);
+$min=intval(($time-$hr*3600)/60);
+	$sec=intval($time-$hr*3600-$min*60);
+	if($line['product_group']=="manu")
+	   {
+		 $rows=$manu_rows; 
+	   }
+	   if($line['product_group']=="ami")
+	   {
+		 $rows=$ami_rows; 
+	   }
+	   if($line['product_group']=="shruti")
+	   {
+		 $rows=$shruti_rows; 
+	   }
+	   if($line['product_group']=="aj")
+	   {
+		 $rows=$aj_rows; 
+	   }
+	   if($line['product_group']=="ash")
+	   {
+		 $rows=$ash_rows; 
+	   }
+	   if($line['product_group']=="hiral")
+	   {
+		 $rows=$hiral_rows; 
+	   }
+           
 }
 
 }
