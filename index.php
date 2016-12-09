@@ -11,10 +11,10 @@
 
                     <nav class="widget-content">
                         <ul class="menu vertical dropdown" data-responsive-menu="accordion medium-dropdown" role="menubar" data-dropdown-menu="vtz2ih-dropdown-menu">
-                              <li class="menuitem"><a href="productList.php?product_group=ash" tabindex="0">Code Warriors</a></li>
+                            <li class="menuitem"><a href="productList.php?product_group=ash" tabindex="0">Code Warriors</a></li>
                             <li role="menuitem"><a href="productList.php?product_group=shruti">SMedia</a></li>
                             <li role="menuitem"><a href="productList.php?product_group=manu">Agent Immobilier</a></li>
-                            <li role="menuitem"><a href="productList.php?product_group=hiral">Parikh's Snooker Club</a></li>
+                            <li role="menuitem"><a href="productList.php?product_group=hiral">Parikh Snooker Club</a></li>
                             <li role="menuitem"><a href="productList.php?product_group=aj"> Cleaner City</a></li>
                             <li role="menuitem"><a href="productList.php?product_group=ami"> TravelHack</a></li>
                        </ul>
@@ -365,6 +365,7 @@
     <a href="index.html#top" id="top" class="animated fadeInUp start-anim" style="display: none;"><i class="fa fa-angle-up"></i></a>
     <!-- Page Preloader -->
     <div class="preloader" style="display: none;"></div>
+    <link rel="stylesheet" href="css/carousel.css" media="screen" type="text/css" />
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
@@ -405,7 +406,10 @@
             
             // Navigation
             navigation : true,
-            navigationText : ["Prev","Next"],
+            navigationText : [
+                "<i class='icon-chevron-left icon-white'><</i>",
+                "<i class='icon-chevron-right icon-white'>></i>"
+            ],
             rewindNav : true,
             scrollPerPage : true
             
