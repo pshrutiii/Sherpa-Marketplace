@@ -349,7 +349,7 @@
 
                                         if($_POST['logged']=='true' || $_GET['logged']=='true'){
                                             echo "Welcome,";
-                                            echo $_SESSION['username'];
+                                            echo "<script type='text/javascript'> localStorage.getItem('username');</script>";
 
                                         }
                                         else{
