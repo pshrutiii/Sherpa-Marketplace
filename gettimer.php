@@ -45,18 +45,10 @@
                 </div><!-- Featured Area /-->
             </div>
 
-            <div class="medium-12 small-12 columns">
+           <div class="medium-12 small-12 columns">
                 <div class="featured-area">
-                    <div class="section-title">
-                        <div class="float-left">
-                            <h2><span>Today's</span> Deal</h2>
-                        </div>
-                        <div class="float-right left-out">
-                            231 Left
-                        </div>
-                        <div class="clearfix"></div>
-                    </div><!-- section title /-->
-			  <div class="content-section owl-carousel">
+                    <div class="section-title"><h2><span>Most Popular</span></h2></div><!-- section title /-->
+                        <div class="content-section owl-carousel">
                         <?php 
                         $server = "ec2-174-129-242-241.compute-1.amazonaws.com";
                         $postgres_user="acrxklsjedgwdc";
@@ -108,18 +100,15 @@ $min=intval(($time-$hr*3600)/60);
 	   {
 		 $rows=$hiral_rows; 
 	   }
-         echo ' 
-                  
-                       <div class="medium-3 small-3 columns wd100 product">
-			<div class="product-image">
-			<div class="sale-tag">Deal</div>
-			<img style="height:150px;" src="'.$rows[$line['product_id']][3].'" alt="">
-			
-                             <div class="timer">
-                                Ends in: <span class="countdown timeout" data-seconds-left="5400"><span class="hours">'.$hr.':</span><span class="minutes">'.$min.':</span><span class="seconds">'.$sec.'</span><span class="clearDiv"></span></span>
-                            </div>
-                              
- <div class="pro-buttons menu-centered">
+    	 printf('<div class="medium-3 small-12 columns wd100 product">');
+	printf('<div class="product-image">');
+	printf('<div class="sale-tag">Hot</div>');
+	printf('<a href="%s">',$list['product_id']);
+	printf('<img style="height:150px;" src="%s" alt="">',$rows[$line['product_id']][3]);
+	printf('<img style="height:150px;" src="%s" alt="">',$rows[$line['product_id']][3]);
+	printf('</a>');
+	printf('
+	        <div class="pro-buttons menu-centered">
 	            <ul class="menu">
 	                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
 	                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
@@ -128,21 +117,24 @@ $min=intval(($time-$hr*3600)/60);
 	            </ul>
 	        </div><!-- product buttons /-->
 	    </div><!-- Product Image /-->
-	  
-                                <a href="viewProduct.php?product_detail='.$list[product_id].'&product_gr='.$list[product_group].'">'.$rows[$list[product_id][3]].'"</a>
-                            </div><!-- product title /-->
-                            <div class="product-meta">
-                                <div class="prices">
-                                    <span class="price">$12</span> / Piece
-                                    <span class="off-tag">-25%</span>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div><!-- product meta /-->
-                        </div><!-- Product /-->
-
-                        <div class="clearfix"></div>
-
-                       ';   
+	    <div class="product-title">
+	 ');
+	       printf('<a href="%s">%s</a>',$rows[$line['product_id']][3],$rows[$line['product_id']][q]);
+	    printf('</div><!-- product title /-->
+	    <div class="product-meta">
+	        <div class="prices">
+	            <span class="price">Custom</span>
+	            
+	        </div>
+	        <div class="last-row">
+	           
+	            <div class="store float-right">
+	                By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">'.$author[$i].'</a>
+	            </div>
+	        </div><!-- last row /-->
+	        <div class="clearfix"></div>
+	    </div><!-- product meta /-->
+	</div><!-- Product /-->');
 	
 }
 
