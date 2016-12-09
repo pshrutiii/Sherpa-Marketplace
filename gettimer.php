@@ -131,7 +131,7 @@ $min=intval(($time-$hr*3600)/60);
     
 	
 }
-echo '  </div>
+echo '</div>
 
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -142,7 +142,7 @@ echo '  </div>
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>'
+</div>';
 }
                         
                         ?>
