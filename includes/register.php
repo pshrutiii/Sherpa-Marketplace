@@ -200,7 +200,7 @@ if (!$con) {
               }
               else {
                 echo "<script>localStorage.setItem('username', ".$email.");</script>";
-                header('Location:ihttp://sherpaa.herokuapp.com/index.php?logged=true&username='.$email);
+                header('Location:http://sherpaa.herokuapp.com/index.php?logged=true&username='.$email);
               }
 
             }
