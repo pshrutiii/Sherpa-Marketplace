@@ -59,7 +59,7 @@
                     </div><!-- section title /-->
 
                     <php 
-                         echo 'copied';
+                         printf('copied');
                          
                          ?>
 
