@@ -74,15 +74,7 @@ else
 echo 'connected';
 $result = pg_query($con, "select * from todaysdeals");
 	
-echo '<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
-   <div class="carousel-inner" role="listbox">';
+
 while($line=pg_fetch_assoc($result))
 {
         
@@ -128,7 +120,7 @@ $min=intval(($time-$hr*3600)/60);
     
 	
 }
-echo '</div></div>';
+
 }
                         
                         ?>
