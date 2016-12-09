@@ -123,14 +123,7 @@ $min=intval(($time-$hr*3600)/60);
 	while($line=pg_fetch_assoc($result))
 {
         
-        $time=strtotime($line['date']);
-
-$currtime=strtotime("now");
-	
-$time=$time-$currtime;
-	$hr=intval($time/3600);
-$min=intval(($time-$hr*3600)/60);
-	$sec=intval($time-$hr*3600-$min*60);
+     
 	if($line['product_group']=="manu")
 	   {
 		 $rows=$manu_rows; 
@@ -155,10 +148,10 @@ $min=intval(($time-$hr*3600)/60);
 	   {
 		 $rows=$hiral_rows; 
 	   }
-	echo '
-                                    <img src="'.$rows[$line['product_id']][3].'" alt="">
+	echo 
+                                    '<img src="'.$rows[$line['product_id']][3].'" alt="">'
                               
-                       '
+                       
 
 }
 
@@ -173,18 +166,11 @@ echo '
                                     </ul>
                                 </div><!-- product buttons /-->
                             </div><!-- Product Image /-->
-                            <div class="product-title">
+                            <div class="product-title">'
+	
                                	while($line=pg_fetch_assoc($result))
 {
-        
-        $time=strtotime($line['date']);
-
-$currtime=strtotime("now");
-	
-$time=$time-$currtime;
-	$hr=intval($time/3600);
-$min=intval(($time-$hr*3600)/60);
-	$sec=intval($time-$hr*3600-$min*60);
+     
 	if($line['product_group']=="manu")
 	   {
 		 $rows=$manu_rows; 
@@ -212,13 +198,13 @@ $min=intval(($time-$hr*3600)/60);
 	echo '
                                     <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/single-product.html">
 				'.$rows[$line['product_id']][1].'
-				</a>
-                       '
+				</a>'
+                       
 
 }
 
 			       
-                            </div><!-- product title /-->
+              echo '</div><!-- product title /-->
                             <div class="product-meta">
                                 <div class="prices">
                                     <span class="price">$12</span> / Piece
@@ -228,7 +214,7 @@ $min=intval(($time-$hr*3600)/60);
                             </div><!-- product meta /-->
                         </div><!-- Product /-->
                         <div class="clearfix"></div>
-                    </div><!-- content section /-->'
+                    </div><!-- content section /-->
 	';
 
 }
