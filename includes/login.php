@@ -46,14 +46,14 @@
     
       <div class="col-xs-12 col-sm-12 col-md-3 well well-sm" >
 
-      <form class="form-signin" method="post"action="login.php">
+      <form class="form-signin" method="post" action="#">
         <legend><a href=""><i class="glyphicon glyphicon-globe" style=" color:#FF8C00"></i></a> Sign in! </legend>
      
         <label for="inputEmail" class="sr-only" style="height:30px;">Email address</label>
 
-        <input type="email" id="inputEmail" class="form-control"  style="margin-bottom:10px;" placeholder="Email address" name="email" required autofocus>
+        <input type="email" id="email" class="form-control"  style="margin-bottom:10px;" placeholder="Email address" name="email" required autofocus>
         <label for="inputPassword" class="sr-only" >Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
+        <input type="password" id="email" class="form-control" placeholder="Password" name="password" required>
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me" name="checkbox"> Remember me
