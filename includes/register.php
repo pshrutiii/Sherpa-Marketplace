@@ -177,7 +177,7 @@ if (!$con) {
   if(isset($_POST['submit']) && isset($_POST['youremail']) && isset($_POST['reenteremail']) && isset($_POST['password'])){
           
               //make a db call and enter the user data
-            $email=isset($_POST['youremail']);
+            $email=$_POST['youremail'];
 
               // $con = pg_connect($conn_string);
 
