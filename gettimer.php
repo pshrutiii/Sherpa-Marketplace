@@ -58,10 +58,6 @@
                         <div class="clearfix"></div>
                     </div><!-- section title /-->
 
-                    <?php 
-                         printf('copied');
-                         
-                         ?>
 
                 </div><!-- Featured Area /-->
             </div><!-- Today's Deal /-->
