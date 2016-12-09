@@ -49,7 +49,7 @@ $min=intval(($time-$hr*3600)/60);
 		 $rows=$hiral_rows; 
 	   }
            echo $rows;
-			 printf(' 
+			 echo ' 
                     <div class="content-section today-deal">
                         <div class="product small-12 columns">
 					
@@ -83,7 +83,7 @@ $min=intval(($time-$hr*3600)/60);
                         </div><!-- Product /-->
                         <div class="clearfix"></div>
                     </div><!-- content section /-->
-                       ');
+                       ';
          }
 }
 ?>
