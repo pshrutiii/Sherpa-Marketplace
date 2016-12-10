@@ -29,13 +29,13 @@
 
 	    </div><!-- Product Image /-->
 	    <div class="product-title">
-	 ');
+	 ',$id[$i]);
 
 	       printf('<a href="%s">%s</a>',$id[$i],$title[$i]);
 	    printf('</div><!-- product title /-->
 	    <div class="product-meta">
 	        <div class="prices">
-	            <span class="price">Custom</span>
+	            <span class="price">%s</span>
 	            
 	        </div>
 	        <div class="last-row">
@@ -48,7 +48,7 @@
 	        </div><!-- last row /-->
 	        <div class="clearfix"></div>
 	    </div><!-- product meta /-->
-	</div><!-- Product /-->');
+	</div><!-- Product /-->',$price[$i]);
 	}
 
 ?>
