@@ -201,6 +201,7 @@ if (!$con) {
 
               }
               else {
+       
                # echo "<script>localStorage.setItem('username', '$email');</script>";
                 header('Location:http://sherpaa.herokuapp.com/includes/login.php');
               }
