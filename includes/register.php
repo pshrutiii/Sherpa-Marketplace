@@ -197,13 +197,13 @@ if (!$con) {
                 
                 
                $affectedRows =pg_affected_rows($result);
-            var_dump($affectedRows);
+            #var_dump($affectedRows);
                 echo $affectedRows;
               if ($affectedRows==1) {
                 
                 echo "registration successful, click here to sign in";
-                echo '<a href="http://sherpaa.herokuapp.com/includes/login.php" class="sign-in special-margin">Sign in</a>';
-               #echo "<script>localStorage.setItem('username', '$email');</script>";
+                echo '<a href="http://sherpaa.herokuapp.com/includes/login.php" class="sign-in special-margin">&nbsp &nbsp Sign in &nbsp</a>';
+                #echo "<script>localStorage.setItem('username', '$email');</script>";
                 #header('Location:http://sherpaa.herokuapp.com/includes/login.php');
 
               }
