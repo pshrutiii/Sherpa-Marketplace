@@ -30,15 +30,18 @@
             array_push($allVisits, $manu_rows[$i][7]);
             array_push($allVisits, $hiral_rows[$i][7]);
         }
+
         arsort($allVisits);
         $count = 0;
         foreach ($allVisits as $key => $val) {
             // to save TOP 6 most visited pages
             if($count < 6){
                 array_push($top6Visits, $val);
+
             }            
             $count++;
         }   
+
 
         for($i=0; $i<count($top6Visits); $i++){
             for($j=0; $j<10; $j++){
@@ -89,7 +92,7 @@
                     array_push($author, "Hiral Parikh");
                     array_push($avg_rating, $hiral_rows[$j][9]); 
                     array_push($price, $hiral_rows[$j][8]);  
-                }else{                                       
+                }elseif($ami_rows[$j][7] == $top6Visits[$i]){                                     
                     array_push($id, $ami_rows[$j][0]);
                     array_push($title, $ami_rows[$j][1]);
                     array_push($page_url, $ami_rows[$j][2]);

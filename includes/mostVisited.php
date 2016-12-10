@@ -6,7 +6,7 @@
     // print_r($page_url);
     // print_r($img_url);
     // print_r($avg_rating);
-    //print_r($author);
+    // print_r($author);
 
 	//Fetch just the top 4 services
 	for($i=0;$i<count($top6Visits);$i++){
