@@ -25,7 +25,7 @@
             printf('</div><!-- product title /-->
                 <div class="product-meta">
                     <div class="prices">
-                        <span class="shippingPrice">$</span><span class="shippingPrice">%s</span>
+                        $<span class="shippingPrice">%s</span>
                         
                     </div>
                     <div class="last-row">

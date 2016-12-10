@@ -55,10 +55,7 @@ else{
 	printf('
 	        <div class="pro-buttons menu-centered">
 	            <ul class="menu">
-	                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to wish list"><i class="fa fa-heart"></i></a></li>
-	                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Open Product Page"><i class="fa fa-retweet"></i></a></li>
-	                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Quick View"><i class="fa fa-search-plus"></i></a></li>
-	                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" title="Add to cart"><i class="fa fa-shopping-cart"></i></a></li>
+	                <a href="javascript:void(0);" class="addCart" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
 	            </ul>
 	        </div><!-- product buttons /-->
 	    </div><!-- Product Image /-->
@@ -68,7 +65,7 @@ else{
 	    printf('</div><!-- product title /-->
 	    <div class="product-meta">
 	        <div class="prices">
-	            <span class="price">$%s</span>
+	            $<span class="shippingPrice">%s</span>
 	            
 	        </div>
 	        <div class="last-row">

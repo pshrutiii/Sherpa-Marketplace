@@ -16,6 +16,9 @@ var ShoppingCart = {
     getShippingPrice: function (element) {
         var _this = ShoppingCart;
         var $item = $(element);
+        console.log($item);
+        console.log($item.parentsUntil('.owl-item').find(".prices").find(".shippingPrice"));
+        console.log($item.parentsUntil('.owl-item').find(".shippingPrice"));
         var price = $item.parentsUntil('.owl-item').find(".shippingPrice").text();
         if (isNaN(price)) {
             return 0;
@@ -66,7 +69,7 @@ var ShoppingCart = {
 
         self.updateCartCount();
         console.log(total);
-        alert('Added to cart');
+        // alert('Added to cart');
 
         console.log(shipping);
         //  alert(shipping);
