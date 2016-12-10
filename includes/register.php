@@ -199,7 +199,7 @@ if (!$con) {
                $affectedRows =pg_affected_rows($result);
             var_dump($affectedRows);
                 echo $affectedRows;
-              if ($affectedRows>0) {
+              if ((int)$affectedRows>(int)0) {
                     
                # echo "<script>localStorage.setItem('username', '$email');</script>";
                 header('Location:http://sherpaa.herokuapp.com/includes/login.php');
