@@ -18,6 +18,7 @@
     $img_url = array();
     $avg_rating = array();
     $author = array();
+    $price = array();
     function findMostVisitedPg($ash_rows, $shruti_rows, $ami_rows, $aj_rows, $manu_rows, $hiral_rows){ 
         $allVisits = array();
         for($i=0; $i<10; $i++){
