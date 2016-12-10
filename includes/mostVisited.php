@@ -35,7 +35,7 @@
 	    printf('</div><!-- product title /-->
 	    <div class="product-meta">
 	        <div class="prices">
-	            <span class="price">%s</span>
+	            <span class="price">custom</span>
 	            
 	        </div>
 	        <div class="last-row">
@@ -48,7 +48,7 @@
 	        </div><!-- last row /-->
 	        <div class="clearfix"></div>
 	    </div><!-- product meta /-->
-	</div><!-- Product /-->',$price[$i]);
+	</div><!-- Product /-->');
 	}
 
 ?>
