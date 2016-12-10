@@ -119,20 +119,7 @@
     <!-- MAIN Container Start here. -->
     <div class="container">
 
-        <!-- Top Bar Starts Here -->
-        <div class="top-info-bar">
-            <div class="row">
-
-                <div class="medium-6 small-12 columns">
-                    <ul class="menu">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div><!-- Left Ends /-->
-            </div><!-- row /-->
-        </div>
+       
         <!-- top Bar Ends here /-->
         <!-- Header Starts -->
         <div class="header">
