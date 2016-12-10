@@ -113,6 +113,7 @@
     $img_url_r = array();
     $avg_rating_r = array();
     $author_r = array();
+    $price_r = array();
     function findMostRatedPg($ash_rows, $shruti_rows, $ami_rows, $aj_rows, $manu_rows, $hiral_rows){ 
         $allRatings = array();
         for($i=0; $i<10; $i++){
@@ -132,7 +133,7 @@
                 array_push($top3Rated, $val);
             }            
             $count++;
-        }   
+        }
 
         for($i=0; $i<count($top3Rated); $i++){
             for($j=0; $j<10; $j++){
@@ -142,41 +143,47 @@
                 global $img_url_r;
                 global $avg_rating_r;
                 global $author_r;
+                global $price_r;
                 if($ash_rows[$j][9] == $top3Rated[$i]){
                     array_push($id_r, $ash_rows[$j][0]);
                     array_push($title_r, $ash_rows[$j][1]);
                     array_push($page_url_r, $ash_rows[$j][2]);
                     array_push($img_url_r, $ash_rows[$j][3]);
                     array_push($author_r, "Ashutosh Singh");
-                    array_push($avg_rating_r, $ash_rows[$j][9]);            
+                    array_push($avg_rating_r, $ash_rows[$j][9]);
+                    array_push($price_r, $ash_rows[$j][8]);              
                 }elseif($shruti_rows[$j][9] == $top3Rated[$i]){
                     array_push($id_r, $shruti_rows[$j][0]);
                     array_push($title_r, $shruti_rows[$j][1]);
                     array_push($page_url_r, $shruti_rows[$j][2]);
                     array_push($img_url_r, $shruti_rows[$j][3]);
                     array_push($author_r, "Shruti Padmanabhan");
-                    array_push($avg_rating_r, $shruti_rows[$j][9]);         
+                    array_push($avg_rating_r, $shruti_rows[$j][9]);   
+                    array_push($price_r, $shruti_rows[$j][8]);       
                 }elseif($aj_rows[$j][9] == $top3Rated[$i]){
                     array_push($id_r, $aj_rows[$j][0]);
                     array_push($title_r, $aj_rows[$j][1]);
                     array_push($page_url_r, $aj_rows[$j][2]);
                     array_push($img_url_r, $aj_rows[$j][3]);
                     array_push($author_r, "Anthony Bell");
-                    array_push($avg_rating_r, $aj_rows[$j][9]);         
+                    array_push($avg_rating_r, $aj_rows[$j][9]);
+                    array_push($price_r, $aj_rows[$j][8]);          
                 }elseif($manu_rows[$j][9] == $top3Rated[$i]){
                     array_push($id_r, $manu_rows[$j][0]);
                     array_push($title_r, $manu_rows[$j][1]);
                     array_push($page_url_r, $manu_rows[$j][2]);
                     array_push($img_url_r, $manu_rows[$j][3]);
                     array_push($author_r, "Manu Barsainyan");
-                    array_push($avg_rating_r, $manu_rows[$j][9]);           
+                    array_push($avg_rating_r, $manu_rows[$j][9]);
+                    array_push($price_r, $manu_rows[$j][8]);            
                 }elseif($hiral_rows[$j][9] == $top3Rated[$i]){
                     array_push($id_r, $hiral_rows[$j][0]);
                     array_push($title_r, $hiral_rows[$j][1]);
                     array_push($page_url_r, $hiral_rows[$j][2]);
                     array_push($img_url_r, $hiral_rows[$j][3]);
                     array_push($author_r, "Hiral Parikh");
-                    array_push($avg_rating_r, $hiral_rows[$j][9]);          
+                    array_push($avg_rating_r, $hiral_rows[$j][9]); 
+                    array_push($price_r, $hiral_rows[$j][8]);          
                 }elseif($ami_rows[$j][9] == $top3Rated[$i]){                                     
                     array_push($id_r, $ami_rows[$j][0]);
                     array_push($title_r, $ami_rows[$j][1]);
@@ -184,6 +191,7 @@
                     array_push($img_url_r, $ami_rows[$j][3]);
                     array_push($author_r, "Ami Patel");
                     array_push($avg_rating_r, $ami_rows[$j][9]); 
+                    array_push($price_r, $ami_rows[$j][8]); 
                 }
             }
         }

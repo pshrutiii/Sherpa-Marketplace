@@ -32,9 +32,7 @@
                         <div class="pro-rating float-left">',$rows[$i][8]);
                             printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$rows[$i][0],$rows[$i][9]);
                         printf('</div>
-                        <div class="store float-right">
-                            By: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">'.$author.'</a>
-                        </div>
+                        <div class="store float-right"> By: '.$author.' </div>
                     </div><!-- last row /-->
                     <div class="clearfix"></div>
                 </div><!-- product meta /-->

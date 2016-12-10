@@ -70,9 +70,7 @@ else{
 	        </div>
 	        <div class="last-row">
 	           
-	            <div class="store">
-	                Available till: <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/store-front.html">'.$hr.':'.$min.':'.$sec.'</a>
-	            </div>
+	            <div class="store"> Available till:'.$hr.':'.$min.':'.$sec.' </div>
 	        </div><!-- last row /-->
 	        <div class="clearfix"></div>
 	    </div><!-- product meta /-->

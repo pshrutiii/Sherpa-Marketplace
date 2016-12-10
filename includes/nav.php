@@ -131,130 +131,7 @@
                             <img alt="" src="./assets/logo.png" style="height:50px;">
                         </a>
                     </div><!-- Logo /-->
-                    <!-- Categories -->
-                    <div class="top-bar-title float-right hide-for-large-only">
-                        <span class="menu-icon light float-left" data-toggle="categories-dropdown" aria-controls="categories-dropdown" data-is-focus="false" data-yeti-box="categories-dropdown" aria-haspopup="true" aria-expanded="false"></span>
-                        <div class="dropdown-pane main-nav-container bottom right" id="categories-dropdown" data-dropdown="kst27n-dropdown" data-hover="true" data-hover-pane="true" aria-hidden="true" data-yeti-box="categories-dropdown" data-resize="categories-dropdown"  data-events="resize">
-                            <!-- Categories -->
-                            <div class="widget categories">
-                                <h2>Categories</h2>
-
-                                <nav class="widget-content">
-                                    <ul class="menu vertical dropdown" data-responsive-menu="accordion medium-dropdown" role="menubar" data-dropdown-menu="xarcsv-dropdown-menu">
-                                        <li class="mega-menu parent-nav is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label=" Women’s Clothing">
-                                            <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#" tabindex="0"><i class="flaticon-black-female-dress"></i> Women’s Clothing</a>
-                                            <ul class="child-nav backgroundstyle1 submenu is-dropdown-submenu first-sub vertical" data-submenu="" aria-hidden="true" role="menu">
-                                                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
-                                                    <div class="medium-3 small-12 columns inner-mega">
-                                                        <h4>Hot Categories</h4>
-                                                        <ul class="menu vertical">
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Dresses</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Blouses &amp; Shirts</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">T-Shirts</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Tank Tops</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Jumpsuits &amp; Rompers</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Bra &amp; Brief Sets</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                    <div class="medium-3 small-12 columns inner-mega">
-                                                        <h4>Bottoms</h4>
-                                                        <ul class="menu vertical">
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Skirts</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Shorts</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Jeans</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Pants &amp; Capris</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Leggings</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                    <div class="medium-3 small-12 columns inner-mega">
-                                                        <h4>Outwear &amp; Sweaters</h4>
-                                                        <ul class="menu vertical">
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Blazers</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Hoodies &amp; Sweatshirts</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Basic Jackets</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Trench</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Cardigans</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Pullovers</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                    <div class="medium-3 small-12 columns inner-mega">
-                                                        <h4>Intim &amp; Sleepwear</h4>
-                                                        <ul class="menu vertical">
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Bras</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Panties</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Shapers</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Bra &amp; Brief Sets</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Nightgowns &amp; Sleepshirts</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Pajama Sets</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                    <div class="medium-3 small-12 columns inner-mega">
-                                                        <h4>Weddings &amp; Events</h4>
-                                                        <ul class="menu vertical">
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Wedding Dresses</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Evening Dresses</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Prom Dresses</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Bridesmaid Dresses</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Flower Girl Dresses</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Cocktail Dresses</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                    <div class="medium-3 small-12 columns inner-mega float-left">
-                                                        <h4>Accessories</h4>
-                                                        <ul class="menu vertical">
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Sunglasses</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Headwear</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Baseball Caps</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Scarves &amp; Wraps</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Belts</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Skullies &amp; Beanies</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="mega-menu parent-nav is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label=" Men’s Clothing">
-                                            <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#"><i class="flaticon-male-businessman-clothes"></i> Men’s Clothing</a>
-                                            <ul class="child-nav second-child-nav backgroundstyle2 submenu is-dropdown-submenu first-sub vertical" data-submenu="" aria-hidden="true" role="menu">
-                                                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
-                                                    <div class="medium-3 small-12 columns inner-mega">
-                                                        <h4>Hot Categories</h4>
-                                                        <ul class="menu vertical">
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Dresses</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Blouses &amp; Shirts</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">T-Shirts</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Tank Tops</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Jumpsuits &amp; Rompers</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Bra &amp; Brief Sets</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                    <div class="medium-3 small-12 columns inner-mega">
-                                                        <h4>Bottoms</h4>
-                                                        <ul class="menu vertical">
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Skirts</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Shorts</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Jeans</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Pants &amp; Capris</a></li>
-                                                            <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Leggings</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li role="menuitem"><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#"><i class="fa fa-mobile" aria-hidden="true"></i> Phones &amp; Accessories</a></li>
-                                    </ul>
-                                </nav><!-- widget-content /-->
-
-                            </div><!-- widget /-->
-                            <!-- Categories -->
-                        </div> <!-- drop down container /-->
-                    </div> <!-- Categories /-->
+                    
 
                 </div><!-- first column /-->
 
@@ -287,37 +164,7 @@
                             </div>
                             <div class="clearfix"></div>
                         </div><!-- ends title /-->
-                        <!-- Hidden Menus -->
-                        <div class="dropdown-pane" id="my-cart" data-dropdown="vhml5n-dropdown" data-hover="true" data-hover-pane="true" aria-hidden="true" data-yeti-box="my-cart" data-resize="my-cart"  style="top: 56.6667px; left: 0px;" data-events="resize">
-                            <h5>Your Cart Detail</h5>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><img alt="" src="./assets/product4.jpg"></td>
-                                        <td>
-                                            Beautiful Rhinestone Pearl <br>
-                                            2x $ 140
-                                        </td>
-                                        <td>280</td>
-                                    </tr>
-                                    <tr>
-                                        <td><img alt="" src="./assets/product4.jpg"></td>
-                                        <td>
-                                            Beautiful Rhinestone Pearl <br>
-                                            2x $ 140
-                                        </td>
-                                        <td>400</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <hr>
-                            <div class="text-center"><strong>Subtotal: $ 240 </strong></div>
-                            <hr>
-                            <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/cart.html" class="button primary float-left">View Cart</a>
-                            <a href="http://www.webfulcreations.com/envato/webful_marketplace/html/checkout.html" class="button success float-right">Checkout</a>
-                            <div class="clearfix"></div>
-                        </div>
-                        <!-- Hidden Menus /-->
+                        
                     </div><!-- my Cart /-->
 
                     <div class="my-account-holder float-right">
@@ -352,19 +199,7 @@
                             </div>
                             <div class="clearfix"></div>
                         </div><!-- ends title /-->
-                        <!-- Hidden Menus -->
-                        <div class="dropdown-pane" id="myaccount-dropdown" data-dropdown="yfj7hn-dropdown" data-hover="true" data-hover-pane="true" aria-hidden="true" data-yeti-box="myaccount-dropdown" data-resize="myaccount-dropdown"  style="top: 56.6667px; left: 0px;" data-events="resize">
-                            <ul class="menu vertical">
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">My Account</a></li>
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">My Orders</a></li>
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Message Center</a></li>
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Wish List</a></li>
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">My Favorite Stores</a></li>
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">My Coupons</a></li>
-                                <li><a href="http://www.webfulcreations.com/envato/webful_marketplace/html/index.html#">Logout</a></li>
-                            </ul>
-                        </div>
-                        <!-- Hidden Menus /-->
+                       
                     </div><!-- my account holder /-->
 
                 </div><!-- Third Column /-->
