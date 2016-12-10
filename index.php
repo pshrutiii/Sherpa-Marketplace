@@ -26,8 +26,8 @@
             <!-- Main slider -->
             <div class="medium-9 small-12 columns main-slider no-pad-right">
 
-                <div id="homepageslider_wrapper" class="rev_slider_wrapper tp-mouseover" data-alias="news-gallery34" style="overflow: visible; height: 477px;">
-                      <img src="assets/background1.jpg" style="width:833px;height:477px"/>  
+                <div id="homepageslider_wrapper" class="rev_slider_wrapper tp-mouseover" data-alias="news-gallery34" style="overflow: visible; height: 250px;">
+                      <img src="assets/bg.jpg" style="width:833px;height:250px"/>  
                 </div><!-- END REVOLUTION SLIDER -->
 
             </div><!-- Main Slider /-->
@@ -102,7 +102,7 @@ $min=intval(($time-$hr*3600)/60);
     	 printf('<div class="medium-3 small-12 columns wd100 product">');
 	printf('<div class="product-image">');
 	printf('<div class="sale-tag">Deal</div>');
-	printf('<a href="%s">',$list['product_id']);
+	printf('<a href="%s">',$line['product_id']);
 	printf('<img style="height:150px;" src="%s" alt="">',$rows[$line['product_id']][3]);
 	printf('<img style="height:150px;" src="%s" alt="">',$rows[$line['product_id']][3]);
 	printf('</a>');
