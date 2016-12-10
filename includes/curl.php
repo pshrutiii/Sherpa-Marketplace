@@ -53,35 +53,40 @@
                     array_push($page_url, $ash_rows[$j][2]);
                     array_push($img_url, $ash_rows[$j][3]);
                     array_push($author, "Ashutosh Singh");
-                    array_push($avg_rating, $ash_rows[$j][9]);            
+                    array_push($avg_rating, $ash_rows[$j][9]);  
+                    array_push($price, $ash_rows[$j][8]);  
                 }elseif($shruti_rows[$j][7] == $top6Visits[$i]){
                     array_push($id, $shruti_rows[$j][0]);
                     array_push($title, $shruti_rows[$j][1]);
                     array_push($page_url, $shruti_rows[$j][2]);
                     array_push($img_url, $shruti_rows[$j][3]);
                     array_push($author, "Shruti Padmanabhan");
-                    array_push($avg_rating, $shruti_rows[$j][9]);         
+                    array_push($avg_rating, $shruti_rows[$j][9]); 
+                    array_push($price, $shruti_rows[$j][8]);  
                 }elseif($aj_rows[$j][7] == $top6Visits[$i]){
                     array_push($id, $aj_rows[$j][0]);
                     array_push($title, $aj_rows[$j][1]);
                     array_push($page_url, $aj_rows[$j][2]);
                     array_push($img_url, $aj_rows[$j][3]);
                     array_push($author, "Anthony Bell");
-                    array_push($avg_rating, $aj_rows[$j][9]);         
+                    array_push($avg_rating, $aj_rows[$j][9]);
+                    array_push($price, $aj_rows[$j][8]);  
                 }elseif($manu_rows[$j][7] == $top6Visits[$i]){
                     array_push($id, $manu_rows[$j][0]);
                     array_push($title, $manu_rows[$j][1]);
                     array_push($page_url, $manu_rows[$j][2]);
                     array_push($img_url, $manu_rows[$j][3]);
                     array_push($author, "Manu Barsainyan");
-                    array_push($avg_rating, $manu_rows[$j][9]);           
+                    array_push($avg_rating, $manu_rows[$j][9]);    
+                    array_push($price, $manu_rows[$j][9]);  
                 }elseif($hiral_rows[$j][7] == $top6Visits[$i]){
                     array_push($id, $hiral_rows[$j][0]);
                     array_push($title, $hiral_rows[$j][1]);
                     array_push($page_url, $hiral_rows[$j][2]);
                     array_push($img_url, $hiral_rows[$j][3]);
                     array_push($author, "Hiral Parikh");
-                    array_push($avg_rating, $hiral_rows[$j][9]);          
+                    array_push($avg_rating, $hiral_rows[$j][9]); 
+                    array_push($price, $hiral_rows[$j][8]);  
                 }else{                                       
                     array_push($id, $ami_rows[$j][0]);
                     array_push($title, $ami_rows[$j][1]);
@@ -89,6 +94,7 @@
                     array_push($img_url, $ami_rows[$j][3]);
                     array_push($author, "Ami Patel");
                     array_push($avg_rating, $ami_rows[$j][9]); 
+                    array_push($price, $ami_rows[$j][9]);  
                 }
             }
         }
