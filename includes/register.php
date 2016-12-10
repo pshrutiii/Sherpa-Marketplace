@@ -194,8 +194,11 @@ if (!$con) {
 
               $result = pg_query($con, "insert into users(firstname,lastname,email,password,birthdate,gender)
                values('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['youremail']."','".$_POST['password']."','".$_POST['birthmonth'][0].$_POST['birthmonth'][1]."/".$_POST['birthdate'][0].$_POST['birthdate'][1]."/".$_POST['birthyear'][0].$_POST['birthyear'][1].$_POST['birthyear'][2].$_POST['birthyear'][3]."','".$_POST['sex']."')");
-
-              if (!$result) {
+                
+                
+               $affectedRows =pg_affected_rows($result);
+              echo $affectedRows;
+              if ($affectedRows<=0) {
                  echo "registeration failed, please try again later";
                 # header('Location:http://sherpaa.herokuapp.com/index.php');
 
