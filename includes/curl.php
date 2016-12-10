@@ -96,7 +96,7 @@
                     array_push($img_url, $ami_rows[$j][3]);
                     array_push($author, "Ami Patel");
                     array_push($avg_rating, $ami_rows[$j][9]); 
-                    array_push($price, $ami_rows[$j][9]);  
+                    array_push($price, $ami_rows[$j][8]);  
                 }
             }
         }
