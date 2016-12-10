@@ -207,7 +207,7 @@ if (!$con) {
               }
 
             }
-            //pg_close($con);
+            pg_close($con);
                
           
     ?>
