@@ -17,7 +17,7 @@ var ShoppingCart = {
         var _this = ShoppingCart;
         //var $item = $(element);
         var price = $(".FinalCost").text();
-        alert(price);
+       // alert(price);
         if (isNaN(price)) {
             return 0;
         }
@@ -28,14 +28,14 @@ var ShoppingCart = {
     getProductName: function (element) {
         var _this = ShoppingCart;
         //var $item = $(element);
-        alert($(".productName").text());
+       // alert($(".productName").text());
         return $(".productName").text().trim();
     },
     getImage:function(element){
         var self=ShoppingCart;
         var $item = $(element);
         var img= $(".productImg");
-        alert(img.attr('src'));
+        //alert(img.attr('src'));
         return img.attr('src');
     },
     AddToCart: function () {
@@ -70,7 +70,8 @@ var ShoppingCart = {
 
         self.updateCartCount();
         console.log(total);
-        alert('Added to cart');
+        //alert('Added to cart');
+        toastr.success('Your selection has been added to cart','Cart updated');
 
         console.log(shipping);
         //  alert(shipping);
