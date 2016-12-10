@@ -44,6 +44,8 @@
                         <div class="content-section owl-carousel"><?php include('includes/mostVisited.php'); ?></div>
                 </div><!-- Featured Area /-->
             </div>
+</div>
+ <div class="featured_items row module">
 
              <div class="medium-12 small-12 columns">
                 <div class="featured-area">
