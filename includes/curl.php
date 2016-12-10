@@ -177,7 +177,7 @@
                     array_push($img_url_r, $hiral_rows[$j][3]);
                     array_push($author_r, "Hiral Parikh");
                     array_push($avg_rating_r, $hiral_rows[$j][9]);          
-                }else{                                       
+                }elseif($ami_rows[$j][9] == $top3Rated[$i]){                                     
                     array_push($id_r, $ami_rows[$j][0]);
                     array_push($title_r, $ami_rows[$j][1]);
                     array_push($page_url_r, $ami_rows[$j][2]);
