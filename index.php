@@ -175,7 +175,7 @@
     width: 271px;
 ">
                         <a href="https://hiralparikh.000webhostapp.com/firstPage.html">
-                            <img alt="" src="http://www.flyordie.com/snooker/images/snooker-lite.jpg" width="450px" height="350px" style="
+                            <img alt="" src="assets/store2.jpg" width="450px" height="350px" style="
     margin: auto;
     display: block;
 ">
@@ -256,7 +256,7 @@
     width: 188px;
 ">
                         <a href="smedia.herokuapp.com">
-                            <img alt="" src="https://lh4.ggpht.com/JOkWv8lWzrvT4CgnOxPfkysg4W3lLel5-9TXVJrWWgEXNqULbCtCWmch8LKlQ9hTRMc=w300" width="450px" height="350px">
+                            <img alt="" src="assets/store3.jpg" width="450px" height="350px">
                         </a>
   </div>   
     <h4><a href="https://codewarriors.herokuapp.com">Smedia</a></h4>
