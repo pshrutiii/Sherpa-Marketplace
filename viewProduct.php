@@ -53,7 +53,7 @@ $insertURL="";
                                 <br><br>   <h3  style="color:blue;font-family:comic sans mf;" class="price">Price : %s</h3><h3  style="color:blue;font-family:comic sans mf;" class="price" style="align:left"> Ratings : %s /5 </h3>
                           
                                  <br>   
-                             <form><input type="button" class="btn btn-primary" name="atc" style="background-color:#4CAF50; color: white;padding: 15px 32px;text-align: center;font-size: 16px;height:100;width:500;" value="Add to Cart"></form>
+                             <form><a href="javascript:void(0);"  class="btn btn-primary addCart" name="atc" style="background-color:#4CAF50; color: white;padding: 15px 32px;text-align: center;font-size: 16px;height:100;width:500;"> Add to Cart</a></form>
                              <br>
                           </div>
                      <div class="medium-6 columns no-pad-left" style="color:black;"> %s
@@ -166,5 +166,12 @@ else if($productgr=="hiral"){
      });
 
     </script>
+    <script type="text/javascript" src="js/cart.js"></script>
+     <script>
+    $(document).ready(function() {
+    ShoppingCart.init();
+    
+    });
+   </script>
 </body>
 </html>
