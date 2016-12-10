@@ -197,18 +197,17 @@ if (!$con) {
                 
                 
                $affectedRows =pg_affected_rows($result);
-              echo $affectedRows;
-    
-             if ($affectedRows<=0) {
+            var_dump($affectedRows);
+              /*   echo $affectedRows;
+              if ($affectedRows<=0) {
                  echo "registeration failed, please try again later";
                 # header('Location:http://sherpaa.herokuapp.com/index.php');
 
               }
               else {
-       
                # echo "<script>localStorage.setItem('username', '$email');</script>";
                 header('Location:http://sherpaa.herokuapp.com/includes/login.php');
-              }
+              }*/
              
 
             }
