@@ -43,14 +43,14 @@ $insertURL="";
       function view_products($rows, $author,$productno){
         
           printf(' <div class="banner row module" style="background-color:#FF5733">
-                     <center> <h1 style="color:white;font-family:comic sans mf;" class="lazyEffect "  >
+                     <center> <h1 style="color:white;font-family:comic sans mf;" class="lazyEffect productName"  >
                         %s
                         </h1></center>
                      </div>
                      <div class="banner row module">
                           <div class="medium-6 columns no-pad-left" >
-                                   <center><img src="%s" height="400" width="400" class="img-thumbnail"></img></center>
-                                <br><br>   <h3  style="color:blue;font-family:comic sans mf;" class="price">Price : %s</h3><h3  style="color:blue;font-family:comic sans mf;" class="price" style="align:left"> Ratings : %s /5 </h3>
+                                   <center><img src="%s" height="400" width="400" class="img-thumbnail productImg"></img></center>
+                                <br><br>   <h3  style="color:blue;font-family:comic sans mf;" class="price">Price : <span class="FinalCost"> %s </span></h3><h3  style="color:blue;font-family:comic sans mf;" class="price" style="align:left"> Ratings : %s /5 </h3>
                           
                                  <br>   
                              <form><a href="javascript:void(0);"  class="btn btn-primary addCart" name="atc" style="background-color:#4CAF50; color: white;padding: 15px 32px;text-align: center;font-size: 16px;height:100;width:500;"> Add to Cart</a></form>
@@ -166,7 +166,7 @@ else if($productgr=="hiral"){
      });
 
     </script>
-    <script type="text/javascript" src="js/cart.js"></script>
+    <script type="text/javascript" src="js/viewProductCart.js"></script>
      <script>
     $(document).ready(function() {
     ShoppingCart.init();
