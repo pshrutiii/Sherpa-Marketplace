@@ -117,6 +117,9 @@ function validateEmail(email) {
         var link=mailUrl+"?name="+storage.getItem("ordername")+"&email="+storage.getItem("orderemail")+"&zipcode="+storage.getItem("orderzipcode")+"&address="+storage.getItem("orderaddress");
         window.location.href = link;
         toastr.success('Order Submitted','Success');
+        storage.removeItem("ShoppingCart");
+        storage.removeItem("shippingRates");
+        storage.removeItem("total");
         }
         else{
           toastr.error('Please enter correct email address','Fail');

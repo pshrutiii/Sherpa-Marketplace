@@ -70,7 +70,7 @@ var ShoppingCart = {
         self.updateCartCount();
         console.log(total);
         // alert('Added to cart');
-
+        toastr.success('Your selection has been added to cart','Cart updated');
         console.log(shipping);
         //  alert(shipping);
     },
