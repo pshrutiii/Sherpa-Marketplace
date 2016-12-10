@@ -35,11 +35,11 @@
 	    printf('</div><!-- product title /-->
 	    <div class="product-meta">
 	        <div class="prices">
-	            <span class="price">custom</span>
+	            <span class="price">%s</span>
 	            
 	        </div>
 	        <div class="last-row">
-	            <div class="pro-rating float-left">');
+	            <div class="pro-rating float-left">',$price[$i]);
 	             printf(' <input id="%s" type="hidden" class="rating rate" value="%s" data-readonly data-filled="fa fa-star fa-x" data-empty="fa fa-star-o fa-x" data-fractions="2"/>',$id[$i], $avg_rating[$i]);
 	            printf('</div>
 	            <div class="store float-right">
