@@ -5,13 +5,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Marketplace</title>
 
-    <meta name="author" content="Ashutosh Singh">
+    <meta name="author" content="CMPE272">
     
     <!-- important for responsiveness remove to make your site non responsive. -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- FavIcon -->
-    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/fav.png">
     <!-- Foundation CSS File -->
     <link rel="stylesheet" type="text/css" href="./assets/foundation.min.css" media="all">
 
@@ -128,7 +128,7 @@
                 <div class="medium-4 small-12 columns logo-container">
                     <div class="logo float-left">
                         <a href="index.php">
-                            <img alt="" src="./assets/logo.png">
+                            <img alt="" src="./assets/logo.png" style="height:50px;">
                         </a>
                     </div><!-- Logo /-->
                     <!-- Categories -->
