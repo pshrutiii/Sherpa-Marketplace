@@ -47,10 +47,6 @@ var ShoppingCart = {
         var productName = self.getProductName(this);
         var image=self.getImage(this);
         
-        alert(cost);
-        alert(productName);
-        alert(image);
-
         var total = self._convertString(self.storage.getItem(self.total));
         var sTotal = total + cost;
         self.storage.setItem(self.total, sTotal);
