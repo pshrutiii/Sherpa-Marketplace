@@ -347,9 +347,8 @@
 
                                     if (isset($_GET['logged']) || isset($_POST['logged'])){
 
-                                        if($_POST['logged']=='true' || $_GET['logged']=='true'){
-                                            echo "Welcome,";
-                                            echo "<script type='text/javascript'> localStorage.getItem('username');</script>";
+                                        if( $_GET['logged']=='true'){
+                                            
 
                                         }
                                         else{
@@ -387,5 +386,9 @@
         </div>
 
         </div>
+        <script type="text/javascript">
+        
+        
+        </script>
         </body>
 </html>

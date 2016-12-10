@@ -92,22 +92,28 @@
                 }
               else{
 
-              $result = pg_query($con, "select * from users where email=". $email);
+              $result = pg_query($con, "select * from users where email= '". $email."'");
+              $resultcount = pg_numrows($result);
+              $line = pg_fetch_assoc($result);
+              $pwd = $_POST['password'];
+              
 
-              if ($line = pg_fetch_assoc($result)) {
-                if ($line['rows'] == 0) {
-                 echo "login failed";
-                 header('Location:http://sherpaa.herokuapp.com/index.php');
+                if ($resultcount == 0) {
+                 echo "login failed, try logging in again";
+                # header('Location:http://sherpaa.herokuapp.com/index.php');
                 }
-              }
               else {
+                $password = $line['password'];
 
-                  if($line['password']=$_POST['password']){
+                  if($password == $pwd){
                     session_start();
-                    $_session['username']='$email';
-                    print_r($_SESSION);
-                  #  echo "<script>localStorage.setItem('username', '$email');</script>";
-                    header('Location:http://sherpaa.herokuapp.com/index.php?logged=true&username='.$email);
+                    $_SESSION['username']=$email;
+                    #print_r($_SESSION);
+                    echo "<script>sessionStorage.setItem('username', '$email');</script>";
+                  #echo "<script>alert(sessionStorage.getItem('username'));</script>";
+                    
+                   # echo "Success"; 
+                    header('Location:http://sherpaa.herokuapp.com/index.php?logged=true');
                     
                   }
                   else{
