@@ -90,7 +90,7 @@
         </div>
         <!-- What's new section Ends /-->
         <!-- Suggested Stores -->
-        <div class="row suggested-stores module">
+       <div class="row suggested-stores module">
             <div class="big-section-title">
                 <h2><span>Suggested Websites</span></h2>
             </div><!-- big Section title ends.-->
@@ -170,10 +170,20 @@
 
                 <div class="medium-4 small-12 columns store">
                     <div class="thumbnail">
+  <div style="
+    height: 141px;
+    width: 271px;
+">
                         <a href="https://hiralparikh.000webhostapp.com/firstPage.html">
-                            <img alt="" src="http://www.flyordie.com/snooker/images/snooker-lite.jpg" width="450px" height="350px">
+                            <img alt="" src="http://www.flyordie.com/snooker/images/snooker-lite.jpg" width="450px" height="350px" style="
+    margin: auto;
+    display: block;
+">
                         </a>
-                        <h4><a href="https://hiralparikh.000webhostapp.com/firstPage.html">Parikh's Snooker Club</a></h4>
+  </div>   
+    <h4 style="
+    padding-top: 32px;
+"><a href="https://hiralparikh.000webhostapp.com/firstPage.html">Parikh's Snooker Club</a></h4>
                         <div class="store-reputation">
                             <div class="pro-rating float-left">
                                 <i class="fa fa-star"></i>
@@ -241,10 +251,15 @@
 
                 <div class="medium-4 small-12 columns store">
                     <div class="thumbnail">
+  <div style="
+    height: 174px;
+    width: 188px;
+">
                         <a href="smedia.herokuapp.com">
                             <img alt="" src="https://lh4.ggpht.com/JOkWv8lWzrvT4CgnOxPfkysg4W3lLel5-9TXVJrWWgEXNqULbCtCWmch8LKlQ9hTRMc=w300" width="450px" height="350px">
                         </a>
-                        <h4><a href="https://codewarriors.herokuapp.com">Smedia</a></h4>
+  </div>   
+    <h4><a href="https://codewarriors.herokuapp.com">Smedia</a></h4>
                         <div class="store-reputation">
                             <div class="pro-rating float-left">
                                 <i class="fa fa-star"></i>
