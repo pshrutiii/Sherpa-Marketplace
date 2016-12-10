@@ -200,9 +200,11 @@ if (!$con) {
             var_dump($affectedRows);
                 echo $affectedRows;
               if ($affectedRows==1) {
-                    
-               # echo "<script>localStorage.setItem('username', '$email');</script>";
-                header('Location:http://sherpaa.herokuapp.com/includes/login.php');
+                
+                echo "registration successful, click here to sign in";
+                echo '<a href="http://sherpaa.herokuapp.com/includes/login.php" class="sign-in special-margin">Sign in</a>';
+               #echo "<script>localStorage.setItem('username', '$email');</script>";
+                #header('Location:http://sherpaa.herokuapp.com/includes/login.php');
 
               }
               else {
