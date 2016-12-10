@@ -47,6 +47,7 @@
                 global $img_url;
                 global $avg_rating;
                 global $author;
+                global $price;
                 if($ash_rows[$j][7] == $top6Visits[$i]){
                     array_push($id, $ash_rows[$j][0]);
                     array_push($title, $ash_rows[$j][1]);
