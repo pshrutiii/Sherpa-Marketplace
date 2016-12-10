@@ -43,7 +43,7 @@ if(!$mail->send()) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    echo 'Mail has been sent';
+    echo '<img src="./assets/thankyou.jpg">';
     echo " <a href=\"javascript:history.go(-1)\">GO BACK</a>";
 
 }

@@ -179,9 +179,7 @@
 ">
                         </a>
   </div>   
-    <h4 style="
-    padding-top: 32px;
-"><a href="https://hiralparikh.000webhostapp.com/firstPage.html">Parikh's Snooker Club</a></h4>
+    <h4><a href="https://hiralparikh.000webhostapp.com/firstPage.html">Parikh's Snooker Club</a></h4>
                         <div class="store-reputation">
                             <div class="pro-rating float-left">
                                 <i class="fa fa-star"></i>

@@ -115,7 +115,7 @@
         </div>
         <div class="a-column a-span2 a-text-left" style="float: right;margin-top: -27px;">
             <div class="a-spacing-small pqty">
-                <input type='number' max="10" min="0" value='' class='qty' />
+                <input type='number' max="10" min="1" value='' class='qty' />
                 <div class="inc  button incrementer"><img class="plus" src="../assets/plus.svg">+</div><div  class="dec  button incrementer"><img class="minus" src="../assets/minus.jpg">-</div>
             </div>
             <p>
