@@ -168,6 +168,218 @@
                     </div><!-- Store container /-->
                 </div> <!-- Store /-->
 
+                <div class="medium-4 small-12 columns store">
+                    <div class="thumbnail">
+                        <a href="https://hiralparikh.000webhostapp.com/firstPage.html">
+                            <img alt="" src="http://www.flyordie.com/snooker/images/snooker-lite.jpg">
+                        </a>
+                        <h4><a href="https://hiralparikh.000webhostapp.com/firstPage.html">Parikh's Snooker Club</a></h4>
+                        <div class="store-reputation">
+                            <div class="pro-rating float-left">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star off"></i>
+                            </div>
+                            <span>270 reviews</span>
+                        </div><!-- Store reputation /-->
+                        <p class="store-end"><i class="fa fa-map-marker" aria-hidden="true"></i> 33 South, San Jose , USA</p>
+
+                        <div class="products-container">
+
+                            <div class="featured-product product">
+                                <div class="medium-5 small-5 columns">
+                                    <a href="https://hiralparikh.000webhostapp.com/setCookies.php?id=2">
+                                        <img src="http://ichef.bbci.co.uk/onesport/cps/480/cpsprodpb/A367/production/_86913814_o'sullivan-main-rex.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="medium-7 small-7 columns product-detail">
+                                    <h6><a href="https://hiralparikh.000webhostapp.com/setCookies.php?id=2">Organize Competition</a></h6>
+                                    <div class="top-product-review">
+                                        <div class="star">
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="off"><i class="fa fa-star"></i></span>
+                                            <span class="off"><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="price"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div> <!-- Product Ends /-->
+
+                            <div class="featured-product product no-border">
+                                <div class="medium-5 small-5 columns">
+                                    <a href="https://hiralparikh.000webhostapp.com/setCookies.php?id=3">
+                                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsoCKjPRTg7Tiua1DMIQtt6ivmk5Z8qfHsAFQGDUaLF3_VF-aH" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="medium-7 small-7 columns product-detail">
+                                    <h6><a href="https://hiralparikh.000webhostapp.com/setCookies.php?id=3">Learn and Play</a></h6>
+                                    <div class="top-product-review">
+                                        <div class="star">
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="off"><i class="fa fa-star"></i></span>
+                                            <span class="off"><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="price"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div> <!-- Product Ends /-->
+
+                        </div><!-- products container /-->
+
+                    </div><!-- Store container /-->
+                </div>
+
+                <div class="medium-4 small-12 columns store">
+                    <div class="thumbnail">
+                        <a href="smedia.herokuapp.com">
+                            <img alt="" src="https://lh4.ggpht.com/JOkWv8lWzrvT4CgnOxPfkysg4W3lLel5-9TXVJrWWgEXNqULbCtCWmch8LKlQ9hTRMc=w300">
+                        </a>
+                        <h4><a href="https://codewarriors.herokuapp.com">Smedia</a></h4>
+                        <div class="store-reputation">
+                            <div class="pro-rating float-left">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star off"></i>
+                            </div>
+                            <span>300 reviews</span>
+                        </div><!-- Store reputation /-->
+                        <p class="store-end"><i class="fa fa-map-marker" aria-hidden="true"></i> real almeda, San Jose , USA</p>
+
+                        <div class="products-container">
+
+                            <div class="featured-product product">
+                                <div class="medium-5 small-5 columns">
+                                    <a href="http://smedia.herokuapp.com/services/img9.php">
+                                        <img src="http://smedia.herokuapp.com/img/gallery/IMG_9.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="medium-7 small-7 columns product-detail">
+                                    <h6><a href="http://smedia.herokuapp.com/services/img9.php">Outdoor Sport</a></h6>
+                                    <div class="top-product-review">
+                                        <div class="star">
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="off"><i class="fa fa-star"></i></span>
+                                            <span class="off"><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="price"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div> <!-- Product Ends /-->
+
+                            <div class="featured-product product no-border">
+                                <div class="medium-5 small-5 columns">
+                                    <a href="http://smedia.herokuapp.com/services/img3.php">
+                                        <img src="http://smedia.herokuapp.com/img/gallery/IMG_3.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="medium-7 small-7 columns product-detail">
+                                    <h6><a href="http://smedia.herokuapp.com/services/img3.php">Big Sur</a></h6>
+                                    <div class="top-product-review">
+                                        <div class="star">
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="off"><i class="fa fa-star"></i></span>
+                                            <span class="off"><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="price"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div> <!-- Product Ends /-->
+
+                        </div><!-- products container /-->
+
+                    </div><!-- Store container /-->
+                </div>
+
+                <div class="medium-4 small-12 columns store">
+                    <div class="thumbnail">
+                        <a href="https://codewarriors.herokuapp.com">
+                            <img alt="" src="./assets/store1.jpg">
+                        </a>
+                        <h4><a href="https://hiralparikh.000webhostapp.com/firstPage.html">Parikh's Snooker Club</a></h4>
+                        <div class="store-reputation">
+                            <div class="pro-rating float-left">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star off"></i>
+                            </div>
+                            <span>270 reviews</span>
+                        </div><!-- Store reputation /-->
+                        <p class="store-end"><i class="fa fa-map-marker" aria-hidden="true"></i> 33 South, San Jose , USA</p>
+
+                        <div class="products-container">
+
+                            <div class="featured-product product">
+                                <div class="medium-5 small-5 columns">
+                                    <a href="https://hiralparikh.000webhostapp.com/setCookies.php?id=2">
+                                        <img src="http://ichef.bbci.co.uk/onesport/cps/480/cpsprodpb/A367/production/_86913814_o'sullivan-main-rex.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="medium-7 small-7 columns product-detail">
+                                    <h6><a href="https://hiralparikh.000webhostapp.com/setCookies.php?id=2">Organize Competition</a></h6>
+                                    <div class="top-product-review">
+                                        <div class="star">
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="off"><i class="fa fa-star"></i></span>
+                                            <span class="off"><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="price"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div> <!-- Product Ends /-->
+
+                            <div class="featured-product product no-border">
+                                <div class="medium-5 small-5 columns">
+                                    <a href="https://hiralparikh.000webhostapp.com/setCookies.php?id=3">
+                                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsoCKjPRTg7Tiua1DMIQtt6ivmk5Z8qfHsAFQGDUaLF3_VF-aH" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="medium-7 small-7 columns product-detail">
+                                    <h6><a href="https://hiralparikh.000webhostapp.com/setCookies.php?id=3">Learn and Play</a></h6>
+                                    <div class="top-product-review">
+                                        <div class="star">
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="on"><i class="fa fa-star"></i></span>
+                                            <span class="off"><i class="fa fa-star"></i></span>
+                                            <span class="off"><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="price"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div> <!-- Product Ends /-->
+
+                        </div><!-- products container /-->
+
+                    </div><!-- Store container /-->
+                </div>
 
             </div><!-- Store section /-->
         </div>
