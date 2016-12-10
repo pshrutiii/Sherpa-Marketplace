@@ -120,7 +120,7 @@ $min=intval(($time-$hr*3600)/60);
 	    printf('</div><!-- product title /-->
 	    <div class="product-meta">
 	        <div class="prices">
-	            <span class="price">.'$rows[$line['product_id']][8]'.</span>
+	            <span class="price">%s</span>
 	            
 	        </div>
 	        <div class="last-row">
@@ -131,7 +131,7 @@ $min=intval(($time-$hr*3600)/60);
 	        </div><!-- last row /-->
 	        <div class="clearfix"></div>
 	    </div><!-- product meta /-->
-	</div><!-- Product /-->');
+	</div><!-- Product /-->',$rows[$line['product_id']][8]);
 	
 }
 
