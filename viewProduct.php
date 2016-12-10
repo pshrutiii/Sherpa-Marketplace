@@ -119,6 +119,7 @@ else if($productgr=="hiral"){
     <a href="index.html#top" id="top" class="animated fadeInUp start-anim" style="display: none;"><i class="fa fa-angle-up"></i></a>
     <!-- Page Preloader -->
     <div class="preloader" style="display: none;"></div>
+    <link rel="stylesheet" href="css/toastr.min.css"/>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
@@ -136,6 +137,8 @@ else if($productgr=="hiral"){
     
     <script type="text/javascript" src="js/bootstrap-rating.min.js"></script>
     <script type="text/javascript" src="js/rating.js"></script>
+    <script type="text/javascript" src="js/toastr.min.js"></script>
+
     <script>
     $(document).ready(function() {
         $(".owl-carousel").owlCarousel({
