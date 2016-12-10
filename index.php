@@ -100,7 +100,7 @@
                 <div class="medium-4 small-12 columns store">
                     <div class="thumbnail">
                         <a href="https://codewarriors.herokuapp.com">
-                            <img alt="" src="./assets/store1.jpg">
+                            <img alt="" src="./assets/store1.jpg" width="450" height="350">
                         </a>
                         <h4><a href="https://codewarriors.herokuapp.com">Code Warriors - Custom Dev</a></h4>
                         <div class="store-reputation">
@@ -171,7 +171,7 @@
                 <div class="medium-4 small-12 columns store">
                     <div class="thumbnail">
                         <a href="https://hiralparikh.000webhostapp.com/firstPage.html">
-                            <img alt="" src="http://www.flyordie.com/snooker/images/snooker-lite.jpg">
+                            <img alt="" src="http://www.flyordie.com/snooker/images/snooker-lite.jpg" width="450" height="350">
                         </a>
                         <h4><a href="https://hiralparikh.000webhostapp.com/firstPage.html">Parikh's Snooker Club</a></h4>
                         <div class="store-reputation">
@@ -242,7 +242,7 @@
                 <div class="medium-4 small-12 columns store">
                     <div class="thumbnail">
                         <a href="smedia.herokuapp.com">
-                            <img alt="" src="https://lh4.ggpht.com/JOkWv8lWzrvT4CgnOxPfkysg4W3lLel5-9TXVJrWWgEXNqULbCtCWmch8LKlQ9hTRMc=w300">
+                            <img alt="" src="https://lh4.ggpht.com/JOkWv8lWzrvT4CgnOxPfkysg4W3lLel5-9TXVJrWWgEXNqULbCtCWmch8LKlQ9hTRMc=w300" width="450" height="350">
                         </a>
                         <h4><a href="https://codewarriors.herokuapp.com">Smedia</a></h4>
                         <div class="store-reputation">
