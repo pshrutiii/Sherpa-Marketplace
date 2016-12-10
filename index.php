@@ -90,7 +90,7 @@
         </div>
         <!-- What's new section Ends /-->
         <!-- Suggested Stores -->
-       <div class="row suggested-stores module">
+     <div class="row suggested-stores module">
             <div class="big-section-title">
                 <h2><span>Suggested Websites</span></h2>
             </div><!-- big Section title ends.-->
@@ -170,14 +170,12 @@
 
                 <div class="medium-4 small-12 columns store">
                     <div class="thumbnail">
-  <div style="
-    height: 141px;
-    width: 271px;
-">
+  <div>
                         <a href="https://hiralparikh.000webhostapp.com/firstPage.html">
-                            <img alt="" src="assets/store2.jpg" width="450px" height="350px" style="
+                            <img alt="" src="assets/store2.jpg" width="424px" height="350px" style="
     margin: auto;
     display: block;
+    height: 174px;
 ">
                         </a>
   </div>   
@@ -251,14 +249,13 @@
 
                 <div class="medium-4 small-12 columns store">
                     <div class="thumbnail">
-  <div style="
-    height: 174px;
-    width: 188px;
-">
+  
                         <a href="smedia.herokuapp.com">
-                            <img alt="" src="assets/store3.jpg" width="450px" height="350px">
+                            <img alt="" src="assets/store3.jpg" width="406px" height="326px" style="
+    height: 174px;
+">
                         </a>
-  </div>   
+     
     <h4><a href="https://codewarriors.herokuapp.com">Smedia</a></h4>
                         <div class="store-reputation">
                             <div class="pro-rating float-left">
