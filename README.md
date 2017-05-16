@@ -1,3 +1,8 @@
+## Architecture
+
+1. Module pattern in cart.js to expose only public methods and hide private methods.
+2. Literal pattern in shoppingCart.js
+
 ## Features
 
 1. Authentication of user
@@ -7,7 +12,7 @@
 5. Indexing of products and services to make them searchable
 6. Autocomplete on search bar
 7. Shopping Cart
-8. Mail after checkout
+8. Mail after checkout using PHPMailer
 9. New deals section showing items for limited period
 
 ## Compulsory Features
