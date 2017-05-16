@@ -29,7 +29,7 @@
                         </span>
                     </div> <!-- for quantity column -->
                     </div>
-			</div>		
+			</div>
             <div class="sc-subtotal a-text-right a-float-right ptop20">
                 <p class="a-spacing-none a-spacing-top-mini" id="sub-total">
                     <span class="a-size-medium a-text-bold">
@@ -39,7 +39,7 @@
                         </span>
                     </span>
                 </p>
-            </div>			
+            </div>
 		</div>
 	</div>
 </div>
@@ -72,7 +72,7 @@
                                         </span>
                                     </a>
                                     <span class="a-size-base sc-product-creator">
-                                        
+
                                     </span>
                                 </span>
                             </li>
@@ -130,13 +130,13 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
  <script type="text/javascript" src="js/shoppingCart.js"></script>
-   
+
   <script>
     $(document).ready(function() {
         console.log('Calling shopping cart to display');
         ShoppingCart.init();
     });
-    </script>   
+    </script>
 
 </body>
-</html>	
+</html>

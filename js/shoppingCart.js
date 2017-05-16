@@ -1,3 +1,6 @@
+    // 1. Supporting IE6 neccessiates using self instead of bind
+    // 2. For newer browsers, update to use call or apply
+    // 3. Using literal patten, for module pattern see cart.js
 var ShoppingCart = {
     btnAddToCart: $('.addCart'),
     btnEmptyCart: $('#empty-cart'),
